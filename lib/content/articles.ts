@@ -37,12 +37,16 @@ export const articles: Article[] = [
       'Lên lịch đi chợ nổi Cái Răng từ TP.HCM. Xem cách chọn chuyến trong ngày hoặc qua đêm, hẹn bến đón và tách chi phí xe với thuyền.',
     category: 'Lịch trình Cần Thơ',
     date: '2026-11-10',
-    image: '/images/seo-can-tho-7-2.jpg',
-    imageAlt: 'Các ghe chở hàng và thuyền nhỏ tại chợ nổi Cái Răng ở Cần Thơ',
-    imageCaption: 'Chợ nổi Cái Răng. Ảnh của Vyacheslav Argenberg, giấy phép CC BY 4.0.',
+    updatedAt: '2026-11-25',
+    showFirstSectionBeforeImage: true,
+    image: '/images/ford-transit-1.jpg',
+    imageAlt: 'Xe Ford Transit minh họa cho chặng đường bộ ra bến thuyền',
     sections: [
       {
         heading: 'Chốt chuyến thuyền trước khi hẹn giờ xe',
+        paragraphs: [
+          'Hỏi bên thuyền giờ đoàn cần có mặt, ghim bến lên và ghim bến trả trước khi hẹn xe đi chợ nổi Cái Răng. Sau đó chốt với nhà xe điểm xuống, đoạn đi bộ tới bến và nơi đón lại sau chuyến thuyền.',
+        ],
         blocks: [
           {
             type: 'paragraph',
@@ -50,19 +54,21 @@ export const articles: Article[] = [
               { text: 'Theo ' },
               {
                 text: 'hướng dẫn du lịch Cần Thơ của Cục Du lịch Quốc gia Việt Nam',
-                href: 'https://vietnam.travel/place-to-go/mekong-delta/can-tho/',
+                href: 'https://vietnam.travel/vi/place-to-go/mekong-delta/can-tho/',
               },
               {
-                text: ', nên đi chợ nổi Cái Răng vào buổi sớm. Hãy hỏi đơn vị thuyền giờ có mặt, địa chỉ hoặc ghim bản đồ của bến lên thuyền và bến trả khách. Dùng những mốc đó để hẹn xe đón tại TP.HCM hoặc tại khách sạn ở Cần Thơ.',
+                text: ', buổi sớm là thời điểm phù hợp để tham quan chợ nổi. Giờ tập trung của từng chuyến do bên thuyền xác nhận.',
               },
             ],
           },
           {
-            type: 'list',
-            items: [
-              'Gửi tài xế ghim bản đồ và tên cổng hoặc điểm xuống khách. Đoàn đông nên hỏi trước xe có thể dừng ở đâu và còn phải đi bộ bao xa tới bến.',
-              'Hỏi bến trả khách có trùng bến xuất phát không. Nếu khác, gửi ghim của cả hai bến và chốt điểm đón lại sau chuyến thuyền.',
-              'Hẹn một người trong đoàn báo giờ cập bến dự kiến cho tài xế. Nếu có lịch ăn sáng hoặc tham quan tiếp, ghi rõ điểm tiếp theo và thời gian cần đến.',
+            type: 'table',
+            caption: 'Các mốc bàn giao giữa xe và thuyền',
+            columns: ['Chặng', 'Cần xác nhận'],
+            rows: [
+              ['Xe đưa đến bến', 'Gửi nhà xe giờ phải có mặt, ghim bến lên và tên cổng. Hỏi xe dừng ở đâu và đoàn cần chừa bao nhiêu thời gian đi bộ.'],
+              ['Lên và xuống thuyền', 'Hỏi bên thuyền bến trả có trùng bến lên không và xin số liên hệ tại bến.'],
+              ['Xe đón lại', 'Chốt điểm xe đón theo bến trả. Cử một người báo giờ cập bến dự kiến cho tài xế và báo sớm nếu lịch thay đổi.'],
             ],
           },
         ],
@@ -89,8 +95,11 @@ export const articles: Article[] = [
           },
           {
             type: 'paragraph',
-            content:
-              'Nếu gia đình có trẻ nhỏ hoặc người lớn tuổi và khó tập trung sớm tại TP.HCM, ngủ lại một đêm giúp tách chặng đường bộ khỏi buổi tham quan. Nếu đi trong ngày, ưu tiên các điểm chính và chừa thời gian cho việc lên xuống thuyền.',
+            content: [
+              { text: 'Nếu đoàn khó tập trung sớm ở TP.HCM, xem ' },
+              { text: 'lịch Cần Thơ 2 ngày 1 đêm', href: '/kinh-nghiem/di-can-tho-2-ngay-1-dem-tu-tphcm-bang-xe-rieng' },
+              { text: ' để tính giờ khách sạn, chặng ra bến và lượt về.' },
+            ],
           },
         ],
       },
@@ -115,25 +124,16 @@ export const articles: Article[] = [
               { text: 'Tra dòng điểm đến và số chỗ trên ' },
               { text: 'bảng giá tuyến TP.HCM đi Cần Thơ', href: '/tuyen-xe/can-tho' },
               {
-                text: '. Mức niêm yết cho chuyến một ngày là giá tham khảo. Nếu ngủ lại, hãy hỏi báo giá theo toàn bộ lịch trình. Xác nhận riêng giá thuyền, điểm đón tại bến, giờ xe chờ, phí bãi đỗ và các khoản đã gồm trong tiền xe.',
+                text: '. Đối chiếu đúng điểm trả và gói một ngày. Nếu ngủ lại, hãy hỏi báo giá theo toàn bộ lịch trình. Xác nhận riêng giá thuyền, giờ xe chờ, phí bãi đỗ và phạm vi tiền xe.',
               },
             ],
           },
-        ],
-      },
-      {
-        heading: 'Nguồn ảnh chợ nổi Cái Răng',
-        blocks: [
           {
             type: 'paragraph',
             content: [
-              {
-                text: 'Nguồn ảnh chợ nổi Cái Răng trên Wikimedia Commons',
-                href: 'https://commons.wikimedia.org/wiki/File:Can_Tho,_Vietnam,_Floating_Market,_Boats.jpg',
-              },
-              { text: ' · ' },
-              { text: 'Giấy phép CC BY 4.0', href: 'https://creativecommons.org/licenses/by/4.0/' },
-              { text: '. Ảnh đã được tối ưu để hiển thị trên web.' },
+              { text: 'Khi hỏi qua ' },
+              { text: 'Zalo', href: contact.zalo },
+              { text: ', gửi ngày đi, điểm đón, số khách và giờ hẹn bến. Nếu đi và về ở hai bến khác nhau, gửi cả hai ghim.' },
             ],
           },
         ],
@@ -148,19 +148,29 @@ export const articles: Article[] = [
       'Kiểm tra tiền xe, phí cầu đường, bãi đỗ, thời gian chờ và chi phí qua đêm trước khi chốt báo giá thuê xe có tài xế từ TP.HCM.',
     category: 'Chi phí thuê xe',
     date: '2026-11-02',
+    updatedAt: '2026-11-25',
+    showFirstSectionBeforeImage: true,
     image: '/images/chi-phi-thue-xe-bao-gia.jpg',
     imageAlt: 'Đối chiếu giấy tờ và các khoản chi phí bằng máy tính cầm tay',
     sections: [
       {
         heading: 'Trước khi so giá, hãy so cùng một lịch trình',
         paragraphs: [
-          'Khi thuê xe có tài xế, con số cuối tin nhắn chỉ có ý nghĩa nếu bạn biết giá đó phục vụ chuyến đi nào. Cùng là xe 7 chỗ đi tỉnh, chuyến đưa khách một chiều sẽ khác chuyến có xe chờ, đưa đi ăn rồi đón về TP.HCM. Số điểm đón, giờ kết thúc và dòng xe cũng cần được ghi rõ.',
-          'Cách kiểm tra dễ nhất là gửi một lịch trình thống nhất cho các bên báo giá, sau đó tách ba nhóm: khoản đã nằm trong tiền xe, khoản khách thanh toán riêng và khoản chỉ phát sinh khi đổi kế hoạch. Đừng mặc định cụm từ “trọn gói” có cùng phạm vi ở mọi đơn vị.',
+          'Trước khi chốt thuê xe, hãy kiểm tra giá áp dụng cho đúng ngày, cỡ xe, các điểm đón trả và giờ kết thúc chuyến. Với từng khoản như cầu đường, bãi đỗ hay giờ chờ, hỏi rõ khoản nào đã gồm, khoản nào khách trả riêng và khi nào cần báo lại giá.',
         ],
       },
       {
         heading: 'Bảng kiểm các khoản cần hỏi trong báo giá',
         blocks: [
+          {
+            type: 'table',
+            caption: 'Cách đọc phạm vi của một dòng giá',
+            columns: ['Đối chiếu trên bảng giá', 'Cần xác nhận theo lịch'],
+            rows: [
+              ['Điểm trả, cỡ xe và thời lượng của dòng giá.', 'Giờ đón và giờ kết thúc, số lượt, các điểm ghé và những đoạn cần xe chờ.'],
+              ['Định mức ghi trên chính dòng giá.', 'Khoản đã gồm và khoản tính riêng cho lịch của bạn, kể cả phí đỗ, thuế hoặc chi phí qua đêm nếu có.'],
+            ],
+          },
           {
             type: 'table',
             caption: 'Các khoản cần xác nhận khi thuê xe có tài xế',
@@ -230,7 +240,7 @@ export const articles: Article[] = [
         heading: 'Giờ chờ, thêm điểm đón và thay đổi hành trình',
         paragraphs: [
           '“Thuê một ngày” cần được gắn với giờ bắt đầu và giờ kết thúc cụ thể. Bạn nên hỏi xe có chờ trong thời gian đoàn tham quan hay chỉ thực hiện các lượt đón trả đã hẹn. Nếu tiệc kết thúc muộn, cần biết cách tính phần thời gian vượt lịch trước khi đặt.',
-          'Chẳng hạn, lịch ban đầu là đón một điểm tại TP.HCM, đưa đến khách sạn rồi quay về. Nếu sau đó đoàn thêm hai điểm đón, ăn tối ở một nơi khác và đổi giờ về, hãy gửi lại toàn bộ lịch mới để nhận xác nhận giá. Yêu cầu báo chi phí bổ sung trước khi thực hiện chặng phát sinh, tránh chỉ trao đổi khi thanh toán cuối chuyến.',
+            'Ví dụ minh họa. Nếu đoàn thêm điểm đón hoặc đổi giờ về sau khi đã có báo giá, hãy gửi lại lịch mới và hỏi khoản nào thay đổi. Chốt chi phí của phần phát sinh trước khi thực hiện.',
         ],
       },
       {
@@ -273,8 +283,10 @@ export const articles: Article[] = [
               { text: 'Bạn có thể đối chiếu ' },
               { text: 'bảng giá thuê xe theo điểm đến', href: '/bang-gia' },
               {
-                text: ' trước khi gửi lịch trình qua Zalo của Hành Trình Phương Nam. Giá cho chuyến cụ thể cần được xác nhận trực tiếp. Trước khi chuyển tiền, đọc thêm ',
+                text: '. Khi hỏi qua ',
               },
+              { text: 'Zalo', href: contact.zalo },
+              { text: ', gửi ngày đi, điểm đón trả, số khách và ghi rõ lúc nào cần giữ xe chờ. Trước khi chuyển tiền, đọc thêm ' },
               {
                 text: 'những điều cần xác nhận khi đặt cọc thuê xe',
                 href: '/kinh-nghiem/dat-coc-thue-xe-can-xac-nhan-gi',
@@ -312,14 +324,15 @@ export const articles: Article[] = [
       'Checklist đặt cọc thuê xe có tài xế: xác nhận đơn vị nhận tiền, xe, lịch trình, số tiền, điều kiện đổi hủy và thông báo đã nhận cọc.',
     category: 'Đặt xe và thanh toán',
     date: '2026-11-02',
+    updatedAt: '2026-11-25',
+    showFirstSectionBeforeImage: true,
     image: '/images/dat-coc-thue-xe-xac-nhan.jpg',
     imageAlt: 'Kiểm tra và ký nội dung thỏa thuận trên bàn có máy tính xách tay',
     sections: [
       {
         heading: 'Chốt thông tin chuyến đi trước khi chốt tiền cọc',
         paragraphs: [
-          'Trước khi đặt cọc thuê xe có tài xế, bạn cần một nội dung xác nhận đủ để đối chiếu: ai cung cấp dịch vụ, xe nào, phục vụ ngày nào, đi đâu và tổng chi phí ra sao. Một tin nhắn chỉ có số tài khoản cùng lời nhắc “chuyển tiền giữ xe” vẫn thiếu những thông tin quan trọng cho chuyến đi.',
-          'Hãy phân biệt việc đang hỏi giá, đã nhận báo giá và đã được xác nhận đặt xe. Ảnh chụp chuyển khoản là một phần thông tin thanh toán; bạn vẫn cần đơn vị cung cấp xác nhận đã nhận tiền và giữ lịch theo thỏa thuận cụ thể. Bài viết này là bảng kiểm đặt dịch vụ, không công bố một mức cọc hay điều kiện hoàn tiền chung cho mọi chuyến.',
+          'Trước khi chuyển cọc, hãy yêu cầu xác nhận bằng văn bản về lịch xe, tổng giá, số tiền cần cọc nếu có, người nhận tiền và điều kiện đổi hoặc hủy. Sau khi chuyển, đề nghị bên nhận xác nhận đã nhận tiền, giữ lịch cho chuyến nào và số tiền còn lại.',
         ],
       },
       {
@@ -411,7 +424,7 @@ export const articles: Article[] = [
         heading: '4. Hỏi điều kiện đổi lịch, hủy và xử lý tiền đã chuyển',
         paragraphs: [
           'Các tình huống cần hỏi gồm khách đổi ngày, giảm số xe, hủy chuyến, đổi điểm đến hoặc đơn vị không cung cấp được xe như đã hẹn. Với mỗi tình huống, cần rõ cách thông báo, mốc thời gian, khoản được xử lý và thời hạn phản hồi hoặc hoàn tiền nếu áp dụng.',
-          'Không suy ra rằng báo sớm thì chắc chắn được hoàn toàn bộ, hoặc mọi khoản đã chuyển đều tự động mất khi thay đổi. Hãy yêu cầu điều kiện cụ thể bằng văn bản trước khi đặt cọc. Nếu nội dung bạn nhận có chỗ chưa rõ, hỏi lại trước khi chuyển tiền thay vì đợi đến ngày đi.',
+          'Nếu lịch của đoàn còn có thể đổi, hỏi trước hạn báo đổi và cách xử lý tiền đã chuyển. Lưu phần xác nhận này cùng báo giá để đối chiếu nếu đổi ngày, giảm số xe hoặc hủy chuyến.',
         ],
       },
       {

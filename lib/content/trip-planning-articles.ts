@@ -143,15 +143,15 @@ export const tripPlanningArticles: Article[] = [
       'Khung lịch đi Cần Thơ 2 ngày 1 đêm bằng xe riêng từ TP.HCM: bố trí chợ nổi, khách sạn, hành lý và các chặng cần xe phục vụ.',
     category: 'Lịch trình Cần Thơ',
     date: '2026-11-13',
-    image: '/images/seo-can-tho-7-1.jpg',
-    imageAlt: 'Cầu Cần Thơ bắc qua sông Hậu',
-    imageCaption: 'Ảnh Vyacheslav Argenberg / Wikimedia Commons, CC BY 4.0. Ảnh điểm đến minh họa.',
+    updatedAt: '2026-11-25',
+    showFirstSectionBeforeImage: true,
+    image: '/images/kia-carnival-2.jpg',
+    imageAlt: 'Xe Kia Carnival minh họa cho chuyến gia đình đi Cần Thơ bằng xe riêng',
     sections: [
       {
         heading: 'Chia chuyến thành một ngày đến và một buổi sáng trải nghiệm',
         paragraphs: [
-          'Với chuyến Cần Thơ 2 ngày 1 đêm, bạn có thể đến nơi ngày đầu, nhận phòng và dành buổi sáng ngày hai cho chuyến thuyền nếu đó là hoạt động chính. Cách bố trí này tách chặng từ TP.HCM khỏi giờ hẹn lên thuyền. Gia đình vẫn cần tính thời gian tập trung, ăn uống, nghỉ và di chuyển giữa khách sạn với bến.',
-          'Khung bên dưới là gợi ý để trao đổi với đơn vị xe, không phải tour đang bán hoặc cam kết giờ đến. Hãy chốt khách sạn, đơn vị thuyền và điểm tham quan theo ngày thực tế trước khi xác nhận toàn bộ lịch xe.',
+          'Nếu muốn đi chợ nổi vào sáng sớm, có thể đến Cần Thơ và nhận phòng từ ngày đầu. Trước khi đặt xe, hãy chốt sáng ngày hai cần xe đưa ra bến và quay lại khách sạn hay chỉ cần đón lúc trả phòng để về TP.HCM.',
         ],
       },
       {
@@ -195,14 +195,13 @@ export const tripPlanningArticles: Article[] = [
         heading: 'Ngày 2: hẹn thuyền, trả phòng và trở về',
         blocks: [
           {
-            type: 'list',
-            ordered: true,
-            items: [
-              'Xác nhận giờ có mặt và ghim bến với đơn vị thuyền trước; dùng mốc đó để hẹn giờ xe tại khách sạn.',
-              'Hỏi điểm xuống xe, quãng đi bộ tới bến và bến trả khách sau chuyến thuyền. Gửi cả hai ghim nếu khác nhau.',
-              'Sau chuyến thuyền, bố trí ăn sáng hoặc trở về khách sạn theo nhu cầu. Ghi rõ xe có chờ và đón lại hay không.',
-              'Đối chiếu giờ trả phòng, thu đủ hành lý và chọn nơi dùng bữa trước khi về nếu có.',
-              'Chốt giờ khởi hành về, các điểm trả ở TP.HCM và đầu mối báo thay đổi cho tài xế.',
+            type: 'table',
+            caption: 'Khung minh họa cho ngày thứ hai',
+            columns: ['Thời điểm', 'Việc cần chốt với nhà xe'],
+            rows: [
+              ['Buổi sáng', 'Nếu cần xe ra bến, báo giờ đón ở khách sạn và xe có cần chờ hoặc đón lại sau chuyến thuyền.'],
+              ['Trước khi trả phòng', 'Chốt nơi để vali trong lúc đi thuyền và giờ đón sau khi trả phòng.'],
+              ['Buổi trưa hoặc chiều', 'Ghi điểm ăn hoặc điểm ghé nếu có, giờ khởi hành về và các điểm trả tại TP.HCM.'],
             ],
           },
           {
@@ -263,23 +262,6 @@ export const tripPlanningArticles: Article[] = [
           },
         ],
       },
-      {
-        heading: 'Nguồn ảnh',
-        blocks: [
-          {
-            type: 'paragraph',
-            content: [
-              {
-                text: 'Cầu Cần Thơ — Vyacheslav Argenberg',
-                href: 'https://commons.wikimedia.org/wiki/File:Can_Tho,_Vietnam,_Bridge.jpg',
-              },
-              { text: ', ' },
-              { text: 'CC BY 4.0', href: 'https://creativecommons.org/licenses/by/4.0/' },
-              { text: '. Ảnh được tối ưu để hiển thị trên website.' },
-            ],
-          },
-        ],
-      },
     ],
     faq: [
       {
@@ -303,6 +285,8 @@ export const tripPlanningArticles: Article[] = [
       'Checklist tổ chức đoàn đi Cần Thơ: tổng hợp khách và hành lý, chia điểm đón, chốt đầu mối, hẹn bến thuyền và kiểm tra trước lượt về.',
     category: 'Tổ chức chuyến đi',
     date: '2026-11-13',
+    updatedAt: '2026-11-25',
+    showFirstSectionBeforeImage: true,
     image: '/images/ford-transit-1.jpg',
     imageAlt: 'Xe Ford Transit trong bộ ảnh do Hành Trình Phương Nam cung cấp',
     imageCaption:
@@ -311,8 +295,7 @@ export const tripPlanningArticles: Article[] = [
       {
         heading: 'Một bảng thông tin chung, một người chốt lịch với nhà xe',
         paragraphs: [
-          'Khi cả đoàn cùng đặt xe đi Cần Thơ, khó khăn thường nằm ở việc mỗi người gửi một địa chỉ, thay đổi giờ riêng hoặc mang thêm đồ sát ngày. Người tổ chức nên dùng một bảng tổng hợp và chỉ định một đầu mối trao đổi với nhà xe. Người này giữ phiên bản lịch mới nhất, còn các nhóm khách nhận thông tin từ cùng một nguồn.',
-          'Không cần thu thập giấy tờ cá nhân cho bảng điều phối thông thường. Chỉ lưu thông tin cần thiết như số khách, nhóm đón, số hành lý và người liên hệ; chia sẻ danh sách với người thực sự cần xử lý chuyến.',
+          'Cử một trưởng đoàn chốt lịch với nhà xe và một người phụ trách ở mỗi điểm đón. Mỗi người phụ trách báo số khách, số kiện và thay đổi tại điểm của mình để trưởng đoàn cập nhật vào cùng một bảng.',
         ],
       },
       {
@@ -353,40 +336,46 @@ export const tripPlanningArticles: Article[] = [
           {
             type: 'paragraph',
             content: [
-              { text: 'Với nhóm đang cân nhắc ' },
-              { text: 'Ford Transit', href: '/doi-xe/ford-transit' },
-              { text: ', gửi cả bảng hành lý để kiểm tra sức chứa. Xem ' },
+              { text: 'Gửi bảng số khách và hành lý để nhà xe kiểm tra chiếc xe dự kiến. Có thể đối chiếu ' },
               { text: 'xe 16 chỗ đi Cần Thơ', href: '/thue-xe/16-cho/di-can-tho' },
-              { text: ' hoặc hỏi xe lớn hơn nếu số khách và đồ không phù hợp chiếc xe dự kiến.' },
+              { text: ' và ' },
+              { text: 'xe 29 chỗ đi Cần Thơ', href: '/thue-xe/29-cho/di-can-tho' },
+              { text: ' theo số khách ở lượt đông nhất, số kiện và khả năng dừng xe tại từng điểm đón.' },
             ],
           },
         ],
       },
       {
         heading: 'Chia điểm đón ở TP.HCM theo khả năng tập kết',
-        paragraphs: [
-          'Trước hết, hỏi đoàn có thể tập trung tại một điểm thuận tiện hay không. Nếu bắt buộc đón nhiều nơi, gửi tất cả ghim để nhà xe kiểm tra thứ tự và thời gian. Không tự hẹn các điểm cùng một giờ hoặc giả định xe lớn có thể vào mọi hẻm. Người phụ trách mỗi điểm cần biết chính xác nơi đứng đợi và cách liên hệ khi khách chưa đủ.',
-          'Ví dụ minh họa: đoàn có hai nhóm ở hai địa chỉ, mỗi nhóm cử một đại diện báo “đã đủ người và hành lý” cho đầu mối chung. Nếu có người đổi điểm đón, cập nhật cả số khách ở điểm cũ lẫn điểm mới để tránh đếm trùng. Thống nhất cách xử lý khi có khách đến muộn trước ngày khởi hành.',
+        blocks: [
+          {
+            type: 'table',
+            caption: 'Ví dụ minh họa khi một khách đổi điểm đón',
+            columns: ['Điểm đón', 'Số khách trước và sau khi đổi'],
+            rows: [['Điểm A', '12 → 11 khách'], ['Điểm B', '8 → 9 khách'], ['Cả đoàn', '20 khách ở cả hai phương án']],
+          },
+          {
+            type: 'paragraph',
+            content: 'Khi một người chuyển từ điểm A sang điểm B, trưởng đoàn cập nhật cả hai dòng rồi gửi lại số khách cho từng đại diện. Với mỗi điểm, ghi thêm ghim, giờ có mặt, số kiện và tên người phụ trách. Hỏi trước nhà xe có thể dừng tại ghim đó không.',
+          },
         ],
       },
       {
-        heading: 'Hẹn bến thuyền bằng hai ghim và một giờ tập trung',
+        heading: 'Chia người kiểm khách ở bến thuyền',
         blocks: [
           {
             type: 'list',
             items: [
-              'Xin ghim bến lên thuyền và bến trả khách; kiểm tra chúng có cùng địa điểm không.',
-              'Hỏi đơn vị thuyền giờ cả đoàn phải có mặt, cách chia nhóm nếu không đi chung một thuyền và người liên hệ tại bến.',
-              'Gửi nhà xe vị trí xuống khách và điểm đón lại; chốt nơi xe chờ thay vì mặc định đỗ ngay cổng bến.',
-              'Cử một người tập hợp đoàn trước lượt lên thuyền và sau khi trở lại. Báo tài xế khi lịch cập bến dự kiến thay đổi.',
-              'Đối chiếu số khách trước khi xe rời điểm đón lại; xác nhận người nào tự di chuyển hoặc kết thúc chuyến tại Cần Thơ.',
+              'Hỏi bên thuyền cách chia nhóm và cử một người kiểm khách cho mỗi nhóm.',
+              'Khi cập bến, các nhóm báo số khách cho trưởng đoàn. Báo riêng người tự đi về hoặc kết thúc chuyến tại Cần Thơ.',
+              'Trưởng đoàn đối chiếu số người cần lên xe và báo tài xế nếu giờ đón thay đổi.',
             ],
           },
           {
             type: 'paragraph',
             content: [
               {
-                text: 'Các bước này tập trung vào điều phối đoàn. Phần chọn lịch và phối hợp xe/thuyền được giải thích thêm tại ',
+                text: 'Khi cần chốt ghim bến, điểm xe dừng và giờ đón lại, xem ',
               },
               {
                 text: 'hướng dẫn đi chợ nổi Cái Răng',

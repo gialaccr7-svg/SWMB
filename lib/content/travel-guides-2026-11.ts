@@ -1,4 +1,5 @@
 import type { Article, ArticleBlock, InlineContent } from './articles';
+import { contact } from '../contact.ts';
 
 const paragraph = (content: InlineContent): ArticleBlock => ({ type: 'paragraph', content });
 const checklist = (items: InlineContent[]): ArticleBlock => ({ type: 'list', items });
@@ -391,18 +392,20 @@ export const travelGuides: Article[] = [
       'Chọn xe 29 hay 45 chỗ cho đoàn công ty theo số khách, hành lý, thiết bị và bãi đỗ. Có checklist lịch đưa đón và cách so sánh báo giá.',
     category: 'Xe đoàn và sự kiện',
     date: '2026-11-17',
+    updatedAt: '2026-11-25',
+    showFirstSectionBeforeImage: true,
     image: '/images/bus.jpg',
     imageAlt: 'Ảnh minh họa xe khách du lịch cho chương trình đưa đón đoàn công ty',
     imageCaption: 'Ảnh minh họa xe đoàn; mẫu xe phục vụ cần xác nhận khi đặt.',
     sections: [
       {
-        heading: 'Chọn theo đoàn thực đi, không chỉ theo tên nhóm xe',
+        heading: 'Kiểm số khách, khoang đồ và đường vào trước khi chọn xe',
         blocks: [
           paragraph(
-            'Xe 29 chỗ và 45 chỗ là hai nhóm để tham khảo khi tổ chức du lịch, hội nghị hoặc đưa đón nhân sự. Quyết định nên bắt đầu từ số khách ở lượt đông nhất, danh sách người phụ trách và tổng hành lý. Hỏi lại số ghế dành cho khách trên xe dự kiến, thay vì suy ra mọi ghế ghi trong tên xe đều có thể phân cho đoàn.',
+            'Chọn xe 29 chỗ nếu nhà xe xác nhận đủ ghế cho lượt đông nhất, đủ khoang hành lý và vào được các điểm đón trả. Nếu thiếu ghế hoặc khoang đồ, hãy so phương án xe 45 chỗ với phương án chia lượt hoặc chở riêng thiết bị.',
           ),
           paragraph(
-            'Nếu chương trình có thiết bị âm thanh, thùng quà, phông nền hoặc đồ teambuilding, cần gửi kích thước và cách đóng kiện. Không xem ghế trống là nơi mặc định để xếp đồ lớn. Trường hợp đồ không phù hợp khoang chứa, hỏi phương án vận chuyển riêng trước khi quyết định tăng cỡ xe.',
+            'Với thùng quà, thiết bị âm thanh hoặc đồ sự kiện, gửi kích thước kiện lớn nhất và hỏi cách đưa kiện qua cửa khoang. Gửi thêm ghim cổng và bãi xe để nhà xe kiểm tra chỗ dừng, quay đầu và đỗ của từng phương án.',
           ),
         ],
       },
@@ -477,8 +480,13 @@ export const travelGuides: Article[] = [
             },
           ]),
           paragraph(
-            'Khi làm việc qua công ty, hãy gửi thông tin đơn vị nhận hóa đơn, đầu mối duyệt lịch và yêu cầu hồ sơ thanh toán để hỏi khả năng đáp ứng. Đối chiếu giá đã gồm/chưa gồm thuế và các khoản phục vụ. Người phụ trách đoàn nên giữ cùng bản lịch đã xác nhận với nhà xe, tránh mỗi bộ phận dùng một phiên bản.',
+            'Khi làm việc qua công ty, hãy gửi thông tin đơn vị nhận hóa đơn, đầu mối duyệt lịch và yêu cầu hồ sơ thanh toán để hỏi khả năng đáp ứng. Đối chiếu giá đã gồm/chưa gồm thuế và các khoản phục vụ.',
           ),
+          paragraph([
+            { text: 'Khi hỏi qua ' },
+            { text: 'Zalo', href: contact.zalo },
+            { text: ', gửi số khách theo từng lượt, số vali, kích thước kiện lớn nhất và ghim đón trả để nhà xe so sánh hai cỡ xe.' },
+          ]),
           paragraph([
             { text: 'Trước khi chuyển tiền, xem ' },
             {
@@ -514,30 +522,25 @@ export const travelGuides: Article[] = [
       'Checklist đặt xe đón đoàn ở Tân Sơn Nhất: mã chuyến bay, nhà ga, hành lý, điểm gặp và cách thống nhất thời gian chờ khi chuyến bay thay đổi.',
     category: 'Đưa đón sân bay',
     date: '2026-11-17',
+    updatedAt: '2026-11-25',
+    showFirstSectionBeforeImage: true,
     image: '/images/ford-transit-2.jpg',
-    imageAlt: 'Ảnh xe Ford Transit do doanh nghiệp cung cấp để tham khảo khi đặt xe đoàn',
-    imageCaption:
-      'Ảnh xe do doanh nghiệp cung cấp; không phải ảnh một lượt đón sân bay đã thực hiện.',
+    imageAlt: 'Xe Ford Transit minh họa cho phương án đón đoàn sân bay',
     sections: [
       {
         heading: 'Gửi mã chuyến bay và xác nhận đúng nhà ga',
         blocks: [
           paragraph(
-            'Để đặt xe đón đoàn tại Tân Sơn Nhất, cần gửi mã chuyến bay, ngày đến, giờ hạ cánh dự kiến và nhà ga thể hiện trên thông tin chuyến bay. Chỉ nói tên hãng hoặc “ga nội địa” có thể chưa đủ để hẹn đúng nơi. Trước ngày đi, kiểm tra lại thông báo của hãng và cập nhật cho đầu mối nhà xe nếu nhà ga hoặc lịch bay thay đổi.',
+            'Đặt xe đón đoàn tại Tân Sơn Nhất, hãy gửi mã chuyến bay, ngày đến, nhà ga, số khách, số kiện và số điện thoại của trưởng đoàn. Hẹn giờ gặp dựa trên lúc đoàn dự kiến đã nhận đủ hành lý và có thể ra xe.',
           ),
           paragraph([
-            { text: 'Cục Hàng không Việt Nam đã có ' },
+            { text: 'Kiểm tra nhà ga trên thông báo mới nhất của hãng. Nếu cần tìm điểm gặp tại nhà ga, hỏi ' },
             {
-              text: 'lưu ý dành cho hành khách đến và đi nhà ga T3',
-              href: 'https://caa.gov.vn/hanh-khach-can-biet/luu-y-danh-cho-hanh-khach-di-va-den-nha-ga-hanh-khach-t3-cang-hkqt-tan-son-nhat-20250423085137159.htm',
+              text: 'quầy thông tin trợ giúp của sân bay',
+              href: 'https://acv.vn/vi/sgn/thong-tin-dich-vu-sgn/quay-thong-tin-tro-giup',
             },
-            {
-              text: '. Thông tin khai thác có thể thay đổi theo chuyến và thời điểm; hãy dùng xác nhận mới nhất của hãng thay vì áp dụng một danh sách hãng/nhà ga cố định trong bài viết.',
-            },
+            { text: ' rồi xác nhận với nhà xe vị trí phù hợp để đón đoàn.' },
           ]),
-          paragraph(
-            'Giờ hạ cánh không phải giờ toàn đoàn sẵn sàng ra xe. Khách còn cần xuống máy bay, nhận hành lý và làm các thủ tục liên quan. Khi hỏi xe, nêu chuyến nội địa hay quốc tế và tình trạng hành lý để thống nhất giờ xe có mặt, cách báo đã ra ngoài và điểm tập trung.',
-          ),
         ],
       },
       {
@@ -592,7 +595,7 @@ export const travelGuides: Article[] = [
             'Lưu số liên hệ và gửi thay đổi cho đúng đầu mối, không tự hiểu nhà xe luôn theo dõi mọi cập nhật.',
           ]),
           paragraph(
-            'Một tin nhắn cập nhật nên có mã chuyến, giờ mới và thay đổi về khách/đồ. Nếu đổi sang chuyến khác, cần nhà xe xác nhận lại khả năng bố trí; lịch mới không tự thay thế lịch cũ khi chưa có phản hồi. Không gửi hộ chiếu hoặc thông tin cá nhân không cần thiết chỉ để hỏi giá xe.',
+            'Nếu chuyến bay đổi giờ hoặc đổi ga, trưởng đoàn báo mã chuyến và thông tin mới cho đầu mối nhà xe. Hỏi lại giờ xe có thể đến, điểm gặp và mốc tính thời gian chờ trước khi thông báo cho cả đoàn.',
           ),
         ],
       },
@@ -613,6 +616,11 @@ export const travelGuides: Article[] = [
           paragraph(
             'Trước khi xác nhận, đối chiếu báo giá có đủ số điểm trả, phí đỗ/chờ và nhu cầu hỗ trợ đã trao đổi. Chỉ chọn phương án sau khi nhà xe xác nhận chiếc xe phù hợp; tên nhóm xe không bảo đảm đủ khoang chứa cho mọi đoàn có cùng số khách.',
           ),
+          paragraph([
+            { text: 'Nếu cần hỏi xe qua ' },
+            { text: 'Zalo', href: contact.zalo },
+            { text: ', gửi thêm địa chỉ trả khách và kích thước kiện lớn. Với đoàn đến bằng nhiều chuyến, ghi số khách và số kiện theo từng chuyến.' },
+          ]),
         ],
       },
     ],
