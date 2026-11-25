@@ -1,5 +1,6 @@
 import { tripPlanningArticles } from './trip-planning-articles.ts';
 import { travelGuides } from './travel-guides-2026-11.ts';
+import { contact } from '../contact.ts';
 
 export type InlineContent = string | { text: string; href?: string }[];
 export type ArticleBlock =
@@ -20,6 +21,7 @@ export type Article = {
   imageCaption?: string;
   date: string;
   updatedAt?: string;
+  showFirstSectionBeforeImage?: boolean;
   sections: { heading: string; paragraphs?: string[]; blocks?: ArticleBlock[] }[];
   faq?: { question: string; answer: InlineContent }[];
 };
@@ -501,17 +503,17 @@ export const articles: Article[] = [
     topics: ['vung-tau', 'lich-trinh'],
     title: 'Đi Vũng Tàu trong ngày hay 2 ngày 1 đêm?',
     description:
-      'So sánh hai lịch trình đi Vũng Tàu từ TP.HCM, cách chọn giữa xe ở lại và đưa đón hai lượt, kèm mẫu tin nhắn hỏi giá.',
+      'So sánh đi Vũng Tàu trong ngày và 2 ngày 1 đêm theo giờ tập kết, giờ nhận trả phòng và lịch xe về. Có mẫu tin nhắn để hỏi giá từng lịch.',
     category: 'Lịch trình đi tỉnh',
     date: '2026-11-02',
+    updatedAt: '2026-11-25',
     image: '/images/vung-tau-bien-nui-nho.jpg',
     imageAlt: 'Biển Vũng Tàu và tượng Chúa Kitô trên đỉnh đồi xanh nhìn từ xa',
     sections: [
       {
-        heading: 'Chọn thời lượng theo cách cả đoàn muốn đi chơi',
+        heading: 'Chọn theo giờ muốn về và lịch phòng',
         paragraphs: [
-          'Đi Vũng Tàu trong ngày phù hợp khi cả đoàn muốn ra biển, dùng bữa và trở về mà không sắp xếp lưu trú. Chuyến 2 ngày 1 đêm có thêm thời gian nghỉ, nhưng cần xác định rõ xe sẽ phục vụ xuyên suốt hay chỉ đưa đi và đón về. Chính sự khác nhau về phạm vi phục vụ này ảnh hưởng trực tiếp đến báo giá.',
-          'Trước khi hỏi “xe đi Vũng Tàu bao nhiêu tiền”, bạn nên chốt số khách, ngày đi, nơi đón tại TP.HCM, địa chỉ đến và giờ về dự kiến. Không cần lịch trình kín từng phút; một kế hoạch đủ rõ, có đánh dấu phần chưa chốt, sẽ giúp nhận báo giá sát nhu cầu hơn.',
+          'Nếu các điểm ghé và giờ tập kết đều vừa với lịch về, đi Vũng Tàu trong ngày giúp giữ lịch gọn. Nếu muốn nghỉ qua đêm, hãy chốt giờ nhận phòng, trả phòng và giờ xe đón ngày thứ hai trước khi hỏi giá.',
         ],
       },
       {
@@ -540,7 +542,7 @@ export const articles: Article[] = [
               [
                 'Thông tin cần thêm',
                 'Nơi tắm, dùng bữa và điểm tập kết lúc về.',
-                'Địa chỉ lưu trú, lịch ngày hai, nơi đỗ xe và ăn nghỉ tài xế nếu xe ở lại.',
+                'Địa chỉ lưu trú, giờ nhận trả phòng, điểm ghé ngày hai và giờ tập kết về.',
               ],
               [
                 'Cách lấy giá',
@@ -590,11 +592,23 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu lịch trình 2 ngày 1 đêm: tách rõ hai phương án xe',
+        heading: 'Mẫu lịch 2 ngày 1 đêm theo giờ nhận và trả phòng',
         paragraphs: [
-          'Ngày đầu: ghi giờ đón, điểm đến, địa chỉ lưu trú, các chặng trước và sau khi nhận phòng. Nếu có bữa tối hoặc hoạt động buổi tối cần xe đưa đón, nêu riêng giờ dự kiến kết thúc. Giờ nhận phòng cần được xác nhận với nơi lưu trú, không mặc định xe hay tài xế sẽ xử lý phần chờ ngoài lịch.',
-          'Ngày thứ hai: ghi hoạt động buổi sáng, giờ trả phòng, nơi dùng bữa, giờ tập kết để về và các điểm trả khách. Nếu còn chặng tham quan sau khi trả phòng, báo trước việc hành lý sẽ mang trên xe trong thời gian đó.',
-          'Phương án thứ nhất là xe ở lại, phục vụ theo lịch hai ngày đã thống nhất; khi đó cần hỏi nơi đỗ và phương án ăn nghỉ của tài xế. Phương án thứ hai là đưa đi rồi hẹn đón về; cần rõ ngày giờ hai lượt và việc di chuyển trong thời gian lưu trú do ai sắp xếp. Hãy yêu cầu báo giá đúng phương án, không xem hai cách phục vụ là tương đương.',
+          'Ngày đầu, ghi giờ đón ở TP.HCM, địa chỉ lưu trú, giờ nhận phòng đã xác nhận và các điểm ghé. Nếu có lịch dùng xe buổi tối, thêm giờ bắt đầu và kết thúc dự kiến.',
+          'Ngày thứ hai, ghi giờ trả phòng, điểm tập kết và giờ xe đón về. Nếu đoàn còn ghé ăn hoặc tham quan sau khi trả phòng, báo thứ tự điểm ghé và cho nhà xe biết hành lý sẽ đi cùng đoàn.',
+        ],
+        blocks: [
+          {
+            type: 'paragraph',
+            content: [
+              { text: 'Khi đã chốt ngủ lại, xem ' },
+              {
+                text: 'cách chọn xe ở lại hay đưa đón hai lượt',
+                href: '/kinh-nghiem/di-vung-tau-xe-o-lai-hay-dua-don-hai-luot',
+              },
+              { text: ' để hỏi đúng các chặng cần xe.' },
+            ],
+          },
         ],
       },
       {
@@ -605,26 +619,12 @@ export const articles: Article[] = [
             content: [
               { text: 'Gia đình hoặc nhóm nhỏ có thể bắt đầu từ ' },
               { text: 'xe 7 chỗ đi Vũng Tàu', href: '/thue-xe/7-cho/di-vung-tau' },
-              { text: '; đoàn đông hơn có thể tham khảo ' },
+              { text: '. Đoàn đông hơn có thể tham khảo ' },
               { text: 'xe 16 chỗ đi Vũng Tàu', href: '/thue-xe/16-cho/di-vung-tau' },
-              { text: '. Khi hỏi dòng ' },
-              { text: 'Toyota Innova', href: '/doi-xe/toyota-innova' },
-              {
-                text: ', gửi cả số người và số vali để kiểm tra cấu hình thực tế. Tên nhóm số chỗ không tự xác nhận số khách cùng lượng hành lý có thể chở.',
-              },
+              { text: '. Xem ' },
+              { text: 'cách chọn xe theo số người và hành lý', href: '/kinh-nghiem/chon-xe-du-lich-theo-so-nguoi' },
+              { text: ' nếu đoàn có thêm vali qua đêm, xe đẩy hoặc đồ đi biển.' },
             ],
-          },
-          {
-            type: 'paragraph',
-            content:
-              'Đồ đi biển, thùng đồ ăn, xe đẩy và hành lý qua đêm cần được tính cùng nhau. Với nhóm công ty, ghi thêm đồ dùng chung hoặc thiết bị sự kiện. Cung cấp địa chỉ cụ thể ở Vũng Tàu; nếu đổi sang Long Hải, Hồ Tràm hay Hồ Cốc thì cần hỏi lại đúng tuyến, không dùng báo giá đến trung tâm Vũng Tàu để suy ra.',
-          },
-          {
-            type: 'image',
-            src: '/images/vung-tau-thanh-pho-ve-chieu.jpg',
-            alt: 'Toàn cảnh đô thị Vũng Tàu nhìn từ trên đồi qua những tán cây',
-            width: 1600,
-            height: 1067,
           },
         ],
       },
@@ -666,7 +666,7 @@ export const articles: Article[] = [
           {
             type: 'paragraph',
             content:
-              '“Tôi cần xe từ TP.HCM đi Vũng Tàu ngày [ngày/giờ đi], về [ngày/giờ về]. Đoàn có [số người lớn, trẻ em] và [số vali, xe đẩy hoặc đồ cồng kềnh]. Đón tại [địa chỉ từng điểm], đến [địa chỉ/khách sạn], trả tại [địa chỉ khi về]. Ngày đầu ghé [các điểm]. Nếu qua đêm, ngày sau ghé [các điểm] và cần xe [ở lại phục vụ/đưa đi rồi đón về]. Nhờ xác nhận giờ xe phục vụ, tổng giá và các khoản đã gồm hoặc tính riêng.”',
+              '“Đón tại [ghim ở TP.HCM] lúc [ngày/giờ]. Đoàn có [số người lớn, trẻ em] và [số vali, xe đẩy hoặc đồ lớn]. Điểm đến là [tên và ghim], ghé [các điểm theo thứ tự]. Nếu đi trong ngày, xe đón về lúc [ngày/giờ/ghim]. Nếu ngủ lại, đoàn trả phòng lúc [ngày/giờ], xe đón về tại [ngày/giờ/ghim]. Điểm trả cuối là [địa chỉ]. Nhờ báo riêng cho từng lịch.”',
           },
           {
             type: 'paragraph',
@@ -705,13 +705,12 @@ export const articles: Article[] = [
       'Từ xe 4 chỗ đến 45 chỗ: cách cân đối quy mô đoàn, hành lý và lịch trình để chọn xe phù hợp.',
     category: 'Kinh nghiệm thuê xe',
     date: '2026-10-08',
-    updatedAt: '2026-11-10',
+    updatedAt: '2026-11-25',
     sections: [
       {
         heading: 'Đếm số khách trước, kiểm tra hành lý sau',
         paragraphs: [
-          'Số chỗ là bước khởi đầu, nhưng không phải yếu tố duy nhất. Một nhóm nhỏ mang nhiều vali có thể cần dòng xe rộng hơn nhóm có cùng số người chỉ mang túi xách. Khi hỏi xe, hãy gửi cả số khách và số kiện hành lý.',
-          'Cấu hình chỗ ngồi của từng xe cần được xác nhận với đơn vị cho thuê. Đừng chỉ dựa vào tên dòng xe hoặc hình ảnh.',
+          'Đếm số khách thực đi, rồi gửi số kiện và kích thước món lớn nhất để nhà xe kiểm tra chỗ ngồi cùng khoang đồ. Nếu xếp hết vali và xe đẩy làm thiếu ghế cho khách, hãy hỏi phương án xe lớn hơn và kiểm tra chỗ xe có thể dừng đón.',
         ],
       },
       {
@@ -734,7 +733,7 @@ export const articles: Article[] = [
                   { text: ' hoặc ' },
                   { text: 'Kia Carnival', href: '/doi-xe/kia-carnival' },
                 ],
-                'Yêu cầu xác nhận cách xếp hành lý khi tất cả khách có ghế. Nếu cần gập ghế để đủ khoang đồ, hỏi thêm xe lớn hơn.',
+                'Gửi cỡ từng vali và kích thước xe đẩy sau khi gấp. Hỏi còn đủ năm ghế cho khách khi xếp hết đồ hay cần chọn xe lớn hơn.',
               ],
               [
                 'Mười hai khách có vali riêng',
@@ -755,7 +754,7 @@ export const articles: Article[] = [
           {
             type: 'paragraph',
             content:
-              'Các phương án trên dùng để bắt đầu trao đổi. Hãy xác nhận số ghế dành cho khách, cách bố trí ghế và khoang chứa của chiếc xe được bố trí. Khi có trẻ nhỏ, gửi thêm nhu cầu ghế trẻ em và kích thước xe đẩy sau khi gấp.',
+              'Hỏi số ghế dành cho khách và cách xếp đồ trên chiếc xe dự kiến phục vụ. Nếu đổi sang xe lớn hơn mà điểm đón nằm trong hẻm, gửi ghim để thống nhất nơi tập kết. Khi có trẻ nhỏ, ghi thêm nhu cầu ghế trẻ em và kích thước xe đẩy sau khi gấp.',
           },
         ],
       },
@@ -859,25 +858,31 @@ export const articles: Article[] = [
       'Sao chép mẫu hỏi báo giá thuê xe. Điền ngày giờ, điểm đón trả, số khách, hành lý và nhu cầu xe chờ để nhận báo giá theo chuyến.',
     category: 'Lên kế hoạch',
     date: '2026-10-08',
-    updatedAt: '2026-11-10',
+    updatedAt: '2026-11-25',
+    showFirstSectionBeforeImage: true,
     sections: [
       {
         heading: 'Sao chép mẫu tin nhắn này và điền lịch của bạn',
+        paragraphs: [
+          'Gửi một tin Zalo gồm loại chuyến, ngày giờ, ghim đón và trả, số khách và hành lý để nhà xe chọn phương án. Nếu có lượt về, ghi riêng ngày giờ và ghim đón về, rồi thêm địa chỉ trả khách cuối cùng.',
+        ],
         blocks: [
           {
             type: 'list',
             items: [
-              'Chào anh/chị, em cần xe [một chiều / khứ hồi / phục vụ theo lịch] cho chuyến đi từ […] đến […].',
-              'Đón lúc […] ngày […] tại [địa chỉ và ghim bản đồ]. Nếu có thêm điểm đón, thứ tự là […].',
-              'Các điểm cần ghé theo thứ tự là […]. Em dự kiến về lúc […] ngày […] và trả khách tại […].',
-              'Đoàn có […] người lớn, […] trẻ em, […] vali và [xe đẩy hoặc đồ cồng kềnh nếu có].',
-              'Em cần xe [chờ trong chuyến / chỉ đưa đi rồi quay lại đón]. Nhờ anh/chị xác nhận dòng xe phù hợp và gửi báo giá theo lịch trên.',
+              'Em cần xe [một chiều/khứ hồi/phục vụ theo lịch]. Đón [ngày/giờ] tại [ghim], trả lượt đi tại [ghim]. Các điểm ghé theo thứ tự là [ghim và thời gian dừng].',
+              'Đoàn có [số người lớn/trẻ em], hành lý gồm [số vali theo cỡ và kích thước kiện lớn].',
+              'Nếu có lượt về, đón về lúc [ngày/giờ] tại [ghim], trả khách cuối tại [địa chỉ].',
+              'Xe cần [chờ/chỉ đưa đi rồi đón lại]. Mốc còn dự kiến là […]. Nhờ xác nhận xe phù hợp, phạm vi phục vụ và tổng giá.',
             ],
           },
           {
             type: 'paragraph',
-            content:
-              'Nếu giờ về hoặc địa chỉ lưu trú còn dự kiến, ghi rõ mốc nào có thể đổi. Nếu đang phân vân hai lịch, ghi riêng phương án A và B để nhận giá cho từng phương án.',
+            content: [
+              { text: 'Mẫu đã điền có thể gửi qua ' },
+              { text: 'Zalo Hành Trình Phương Nam', href: contact.zalo },
+              { text: '. Nếu đang cân nhắc hai lịch, gửi riêng từng phương án để nhận báo giá tương ứng.' },
+            ],
           },
         ],
       },

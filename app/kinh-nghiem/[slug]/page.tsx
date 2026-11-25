@@ -30,6 +30,19 @@ export default async function ArticlePage({ params }: Props) {
   if (!article) notFound();
   const url = absoluteUrl(articlePath(slug));
   const related = relatedArticles(article, listArticles());
+  const sections = article.sections.map((section, index) => {
+    const id = articleSectionId(index);
+    return (
+      <section key={id} id={id} aria-labelledby={`${id}-title`}>
+        <h2 id={`${id}-title`}>{section.heading}</h2>
+        {section.paragraphs?.map((text) => (
+          <p key={text}>{text}</p>
+        ))}
+        {section.blocks && <ArticleContent blocks={section.blocks} />}
+      </section>
+    );
+  });
+  const firstAfterImage = article.showFirstSectionBeforeImage ? 1 : 0;
   return (
     <main id="main">
       <StructuredData
@@ -89,12 +102,14 @@ export default async function ArticlePage({ params }: Props) {
               </>
             )}
           </p>
+          {article.showFirstSectionBeforeImage && sections[0]}
           <figure className="article-figure">
             <ResponsiveImage
               src={article.image}
               alt={article.imageAlt}
               sizes="(max-width: 760px) calc(100vw - 36px), 780px"
-              fetchPriority="high"
+              loading={article.showFirstSectionBeforeImage ? 'lazy' : undefined}
+              fetchPriority={article.showFirstSectionBeforeImage ? undefined : 'high'}
             />
             {article.imageCaption && <figcaption>{article.imageCaption}</figcaption>}
           </figure>
@@ -115,19 +130,7 @@ export default async function ArticlePage({ params }: Props) {
               </ol>
             </nav>
           )}
-          {article.sections.map((section, index) => (
-            <section
-              key={section.heading}
-              id={articleSectionId(index)}
-              aria-labelledby={`${articleSectionId(index)}-title`}
-            >
-              <h2 id={`${articleSectionId(index)}-title`}>{section.heading}</h2>
-              {section.paragraphs?.map((text) => (
-                <p key={text}>{text}</p>
-              ))}
-              {section.blocks && <ArticleContent blocks={section.blocks} />}
-            </section>
-          ))}
+          {sections.slice(firstAfterImage)}
           {!!article.faq?.length && (
             <section className="article-faq" aria-labelledby="article-faq-title">
               <h2 id="article-faq-title">Câu hỏi thường gặp</h2>

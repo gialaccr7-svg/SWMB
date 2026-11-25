@@ -277,45 +277,36 @@ export const travelGuides: Article[] = [
       'Phân biệt điểm trả Vũng Tàu, Long Hải và Hồ Tràm khi hỏi giá xe. Chuẩn bị địa chỉ lưu trú, điểm ghé và thời lượng để đối chiếu đúng báo giá.',
     category: 'Tuyến biển và báo giá',
     date: '2026-11-17',
+    updatedAt: '2026-11-25',
     image: '/images/mpv.jpg',
     imageAlt: 'Ảnh minh họa xe Toyota Innova cho nhu cầu thuê xe đi biển',
-    imageCaption: 'Ảnh minh họa dòng xe; không phải ảnh ghi nhận một chuyến đi Hồ Tràm.',
+    imageCaption: 'Ảnh minh họa dòng xe đi biển.',
     sections: [
       {
         heading: 'Tên điểm đến ảnh hưởng trực tiếp đến phạm vi báo giá',
         blocks: [
           paragraph(
-            'Khi hỏi xe đi biển, hãy ghi rõ Vũng Tàu, Long Hải hay Hồ Tràm cùng tên khách sạn và ghim vị trí. Đây là những điểm đến riêng trong dữ liệu bảng giá của website; báo giá đến một điểm không tự áp dụng cho điểm còn lại. Nếu chỉ nói “đi Vũng Tàu” nhưng trả tại resort Hồ Tràm, hai bên có thể hiểu khác hành trình.',
+            'Khi hỏi xe đi Vũng Tàu, Long Hải hoặc Hồ Tràm, hãy gửi tên nơi trả khách và ghim đúng cổng. Liệt kê riêng các điểm chỉ ghé để nhà xe tra theo đúng địa chỉ và lịch của đoàn.',
           ),
           paragraph(
-            'Tên thương mại của khu nghỉ dưỡng cũng có thể giống hoặc dễ nhầm. Gửi địa chỉ đặt phòng và ghim cổng đón trả sẽ rõ hơn chỉ gửi ảnh quảng cáo. Khi chương trình có nhiều điểm, ghi theo thứ tự thực đi và đánh dấu nơi xe kết thúc chuyến, nơi chỉ dừng ăn hoặc tham quan.',
+            'Bảng giá có ba dòng một ngày riêng cho Thành Phố Vũng Tàu, Long Hải Dinh Cô và Hồ Tràm. Dùng địa chỉ trong xác nhận đặt phòng để tra đúng dòng, sau đó gửi giờ đi, giờ về và các điểm ghé để nhà xe xác nhận giá theo lịch.',
           ),
-          paragraph([
-            { text: 'Tham khảo thêm ' },
-            {
-              text: 'bài giới thiệu Hồ Tràm của Báo ảnh Việt Nam',
-              href: 'https://vietnam.vnanet.vn/english/english/long-form/ho-tram-a-tourism-paradise-318614.html',
-            },
-            {
-              text: ' để hình dung khu vực ven biển. Khi đặt xe, vẫn dùng địa chỉ cụ thể trong xác nhận lưu trú để chốt điểm trả.',
-            },
-          ]),
         ],
       },
       {
         heading: 'Thông tin cần gửi cho từng phương án',
         blocks: [
           table(
-            'Cách mô tả điểm đến để nhận báo giá rõ ràng',
-            ['Phương án', 'Thông tin chính', 'Điểm dễ bỏ sót'],
+            'Dòng bảng giá và thông tin cần gửi theo điểm trả',
+            ['Dòng bảng giá', 'Thông tin chính', 'Điểm dễ bỏ sót'],
             [
               [
-                'Vũng Tàu',
+                'Thành Phố Vũng Tàu',
                 'Tên khách sạn/địa chỉ, điểm ăn và các bãi biển muốn ghé.',
                 'Lượt di chuyển giữa khách sạn, nhà hàng và điểm tham quan.',
               ],
               [
-                'Long Hải',
+                'Long Hải Dinh Cô',
                 'Cơ sở lưu trú, giờ đến và có ghé điểm khác trước/sau không.',
                 'Nhầm tên khu vực với một cơ sở lưu trú khác; thiếu ghim điểm trả.',
               ],
@@ -325,7 +316,7 @@ export const travelGuides: Article[] = [
                 'Chỉ báo tên tuyến chung, chưa ghi nhu cầu ra ngoài resort.',
               ],
               [
-                'Ghép nhiều điểm',
+                'Lịch ghép nhiều điểm',
                 'Toàn bộ thứ tự điểm ghé, thời gian dừng và nơi kết thúc.',
                 'So sánh giá chuyến ghép với giá chỉ đưa đến một nơi.',
               ],
@@ -340,10 +331,10 @@ export const travelGuides: Article[] = [
         heading: 'Một chiều, trong ngày và qua đêm là các phạm vi khác nhau',
         blocks: [
           paragraph(
-            'Chuyến một chiều kết thúc sau khi trả khách theo thỏa thuận; chuyến đi về trong ngày cần thêm giờ đón lại và các lượt sử dụng giữa hai chặng. Với hai ngày một đêm, phải làm rõ xe có ở lại và đoàn có dùng xe buổi tối hoặc sáng hôm sau không. Cùng điểm trả nhưng phạm vi phục vụ khác thì giá không còn tương đương.',
+            'Chuyến một chiều kết thúc khi trả khách theo thỏa thuận. Chuyến đi về trong ngày cần thêm giờ đón lại và các lượt dùng xe giữa chuyến. Với lịch hai ngày một đêm, ghi rõ xe có ở lại và đoàn có dùng xe buổi tối hoặc sáng hôm sau không. Hỏi giá theo phạm vi phục vụ đã thống nhất.',
           ),
           paragraph(
-            'Ví dụ minh họa: đoàn A chỉ cần đưa tới resort rồi đón về hôm sau; đoàn B muốn thêm xe đi ăn tối và ghé Long Hải trước khi về. Hãy gửi hai lịch riêng để nhận hai phương án, không lấy giá của đoàn A làm chuẩn cho đoàn B. Chi phí liên quan đến tài xế, bãi đỗ và thời gian chờ cần được xác nhận bằng văn bản.',
+            'Ví dụ minh họa, đoàn nghỉ tại resort Hồ Tràm và ghé Dinh Cô trên đường về nên ghi resort là điểm lưu trú và Dinh Cô là điểm dừng. Gửi hai ghim, thời gian dừng và giờ về để nhà xe báo giá cho lịch ghép điểm.',
           ),
         ],
       },
@@ -365,6 +356,9 @@ export const travelGuides: Article[] = [
             'Chuyến qua đêm bố trí ăn nghỉ tài xế như thế nào?',
             'Nếu thêm một điểm hoặc lùi giờ về, cách tính điều chỉnh và xác nhận ra sao?',
           ]),
+          paragraph(
+            'Mẫu hỏi giá qua Zalo: “Đón tại [ghim TP.HCM] lúc [ngày/giờ], trả tại [tên và ghim cổng]. Các điểm ghé theo thứ tự là [ghim và thời gian dừng]. Lượt về [ngày/giờ], trả tại [địa chỉ]. Đoàn có [khách và vali]. Nhờ xác nhận dòng giá phù hợp hoặc báo riêng theo lịch.”',
+          ),
           paragraph([
             { text: 'Nếu đã chọn resort, xem ' },
             {
@@ -767,30 +761,21 @@ export const travelGuides: Article[] = [
       'Lên lịch xe đi Hồ Tràm 2 ngày 1 đêm theo giờ nhận trả phòng, nhu cầu ra ngoài resort và phương án xe ở lại hoặc đón về hôm sau.',
     category: 'Lịch nghỉ Hồ Tràm',
     date: '2026-11-17',
+    updatedAt: '2026-11-25',
     image: '/images/kia-carnival-1.jpg',
     imageAlt:
       'Xe Kia Carnival trong bộ ảnh doanh nghiệp cung cấp để tham khảo chuyến nghỉ gia đình',
-    imageCaption: 'Ảnh xe do doanh nghiệp cung cấp; không phải ảnh ghi nhận một chuyến đi Hồ Tràm.',
+    imageCaption: 'Ảnh minh họa mẫu xe gia đình.',
     sections: [
       {
-        heading: 'Lấy giờ nhận và trả phòng làm hai mốc chính',
+        heading: 'Chốt cổng đón trả và giờ phòng trước khi hẹn xe',
         blocks: [
           paragraph(
-            'Với chuyến nghỉ Hồ Tràm hai ngày một đêm, nên chốt tên resort, giờ nhận phòng và giờ trả phòng trước khi hẹn xe. Từ hai mốc đó, trao đổi giờ đón tại nơi xuất phát, điểm ăn trưa và thời gian rời resort hôm sau. Đừng mặc định đến sớm là có phòng hoặc xe luôn chờ tới lúc cả đoàn quyết định về.',
+            'Hỏi resort xe được trả khách ở cổng hay sảnh, rồi gửi ghim đó cùng giờ nhận và trả phòng cho nhà xe. Hẹn giờ đón về sau khi cả đoàn trả phòng và gom đồ, đồng thời xác nhận chỗ xe có thể dừng hoặc chờ.',
           ),
           paragraph(
-            'Nếu xuất phát từ khu vực nội đô TP.HCM, gửi đầy đủ các địa chỉ đón để nhà xe tính thứ tự. Khi gọi một tuyến là “đi Hồ Tràm từ TP.HCM”, địa chỉ cụ thể vẫn quan trọng hơn tên tuyến, nhất là khi có nhiều điểm đón. Gia đình có trẻ nhỏ nên hỏi trước nơi gửi đồ hoặc nghỉ tạm nếu đến trước giờ nhận phòng.',
+            'Gửi các điểm đón ở TP.HCM theo thứ tự dự kiến. Nếu đến trước giờ nhận phòng, hỏi resort nơi gửi đồ hoặc nghỉ tạm và thỏa thuận giờ xe phục vụ với nhà xe.',
           ),
-          paragraph([
-            { text: 'Có thể xem ' },
-            {
-              text: 'giới thiệu du lịch Hồ Tràm của Vietnam Airlines',
-              href: 'https://www.vietnamairlines.com/vn/en/plan-book/travel/travel-guide/bai-bien-ho-tram',
-            },
-            {
-              text: ' để tham khảo điểm đến. Giờ phục vụ, hoạt động và điều kiện lưu trú phải kiểm tra trực tiếp với cơ sở bạn đặt.',
-            },
-          ]),
         ],
       },
       {
@@ -828,17 +813,14 @@ export const travelGuides: Article[] = [
         ],
       },
       {
-        heading: 'Xe ở lại hay chỉ đưa đi và đón về?',
+        heading: 'Hẹn điểm đón về và chỗ xe chờ',
         blocks: [
           paragraph(
-            'Phương án xe ở lại phù hợp để hỏi khi đoàn cần di chuyển ngoài resort trong thời gian lưu trú. Phương án đưa đi rồi đón về hôm sau cần chốt hai mốc rõ ràng và không mặc định có xe phục vụ giữa hai lượt. Không có phương án luôn rẻ hơn; so sánh theo lịch thực tế và điều kiện phục vụ.',
+            'Ngày đi, thống nhất cổng hoặc sảnh trả khách và nơi xe chờ nếu đoàn có lượt đi ăn tối. Ngày về, trả phòng → gom đồ tại nơi resort hướng dẫn → ra ghim đón đã hẹn → kiểm hành lý trước khi xe chạy.',
           ),
-          checklist([
-            'Có ra ngoài ăn uống, tham quan hoặc đón thêm khách giữa chuyến không?',
-            'Nếu xe ở lại, thời gian phục vụ và các khoản ăn nghỉ tài xế được bố trí thế nào?',
-            'Nếu đón hai lượt, ai liên hệ và bao giờ cần chốt lại giờ về?',
-            'Thay đổi giờ trả phòng hoặc thêm chặng được xác nhận và tính chi phí ra sao?',
-          ]),
+          paragraph(
+            'Nếu xe đoàn phải dừng ngoài cổng, dành thêm thời gian để đưa người và đồ từ sảnh ra điểm đón. Khi giờ trả phòng thay đổi, đầu mối của đoàn báo lại để nhà xe xác nhận giờ đón mới và điều kiện chờ.',
+          ),
           paragraph([
             { text: 'Có thể đọc ' },
             {
@@ -855,7 +837,7 @@ export const travelGuides: Article[] = [
         heading: 'Mẫu hỏi xe đi resort và kiểm tra báo giá',
         blocks: [
           paragraph(
-            '“Gia đình tôi có … người lớn, … trẻ em và … vali/xe đẩy. Đi ngày …, về ngày …; đón tại …. Resort …, ghim …. Giờ nhận phòng …, trả phòng …. Chúng tôi cần/không cần xe đi ăn tối; muốn ghé …. Nhờ báo phương án xe phù hợp, các lượt phục vụ và chi phí gồm/chưa gồm.”',
+            '“Đón tại [ghim TP.HCM] lúc [ngày/giờ]. Đoàn có [khách, vali và xe đẩy]. Resort [tên], nhận phòng [giờ], trả phòng [giờ]. Cổng hoặc sảnh trả khách [ghim], điểm xe chờ [nếu cần]. Ngày về đón [ngày/giờ và ghim], ghé thêm [điểm và giờ]. Nhờ xác nhận vị trí xe dừng, lượt phục vụ và báo giá cho lịch hai ngày.”',
           ),
           paragraph([
             { text: 'Đối chiếu đúng dòng Hồ Tràm trong ' },

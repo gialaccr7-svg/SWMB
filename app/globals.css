@@ -2579,6 +2579,17 @@ footer {
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
+.article-layout .article-table-hint {
+  display: none;
+}
+@media (max-width: 456px) {
+  .article-layout .article-table-hint {
+    display: block;
+    margin: 0 0 8px;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+}
 .article-table {
   width: 100%;
   border-collapse: collapse;

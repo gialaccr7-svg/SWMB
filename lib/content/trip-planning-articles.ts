@@ -10,15 +10,14 @@ export const tripPlanningArticles: Article[] = [
       'So sánh xe ở lại và đưa đón hai lượt khi đi Vũng Tàu: nhu cầu di chuyển, cách đối chiếu chi phí và mẫu lịch để hỏi hai phương án.',
     category: 'Lịch trình Vũng Tàu',
     date: '2026-11-13',
-    image: '/images/seo-vung-tau-7-1.jpg',
-    imageAlt: 'Bãi Trước Vũng Tàu nhìn từ trên cao',
-    imageCaption:
-      'Ảnh NDTK08 / Wikimedia Commons, CC BY 4.0. Ảnh điểm đến, không phải ảnh chuyến xe đã phục vụ.',
+    updatedAt: '2026-11-25',
+    image: '/images/vung-tau-thanh-pho-ve-chieu.jpg',
+    imageAlt: 'Toàn cảnh đô thị Vũng Tàu nhìn từ trên đồi qua những tán cây',
     sections: [
       {
         heading: 'Chọn theo các chặng cần xe trong thời gian lưu trú',
         paragraphs: [
-          'Hai gia đình cùng đi Vũng Tàu 2 ngày 1 đêm có thể cần hai cách bố trí xe khác nhau. Gia đình ở một nơi và tự đi lại tại chỗ chỉ cần lượt đưa đến và lượt đón về. Nhóm có bữa ăn, điểm tham quan và lịch đón khách rải trong hai ngày cần tính thêm các chặng giữa chuyến. Hãy liệt kê các lượt di chuyển trước khi so tổng tiền.',
+          'Nếu đã chốt ngủ lại Vũng Tàu và cần xe đi ăn, tham quan hoặc đón thêm khách, hãy hỏi báo giá xe ở lại theo từng khung giờ. Nếu đoàn tự đi lại tại chỗ, hãy hỏi hai lượt đưa đến và đón về, kèm giờ và ghim cho từng lượt.',
           'Xe ở lại phục vụ theo lịch đã thống nhất không có nghĩa xe sẵn sàng chạy bất kỳ giờ nào. Với đưa đón hai lượt, cũng không mặc định cùng một chiếc xe hoặc cùng tài xế thực hiện cả lượt đi và về. Những yêu cầu này cần được xác nhận trong nội dung đặt xe.',
         ],
       },
@@ -62,8 +61,8 @@ export const tripPlanningArticles: Article[] = [
       {
         heading: 'So tổng chi phí trên cùng một danh sách chặng',
         paragraphs: [
-          'Lập hai cột ngân sách. Phương án A gồm báo giá xe ở lại, các khoản tính riêng và phần ngoài lịch nếu có. Phương án B gồm lượt đưa, lượt đón, phương tiện di chuyển tại Vũng Tàu và các khoản tính riêng. Chỉ so khi hai phương án đáp ứng cùng nhu cầu; nếu bỏ các cuốc đi ăn khỏi phương án B, kết quả sẽ không phản ánh toàn bộ chuyến.',
-          'Không có cơ sở để kết luận đưa đón hai lượt luôn rẻ hơn hay xe ở lại luôn tiện hơn. Giá phụ thuộc điểm đón, ngày đi, dòng xe, thời gian và các chặng phục vụ. Không dùng giá một ngày trên website để tự tính gói qua đêm.',
+          'Đưa đón hai lượt gồm TP.HCM → nơi lưu trú và nơi lưu trú → TP.HCM theo hai giờ đã hẹn. Phương án xe ở lại có thêm các chặng giữa chuyến theo lịch đã xác nhận.',
+          'Khi so tổng tiền, cộng chi phí đi lại tại chỗ vào phương án hai lượt. Với cả hai báo giá, hỏi rõ giờ phục vụ, nơi đỗ, khoản ăn nghỉ tài xế nếu có và điều kiện đổi giờ. Yêu cầu báo riêng cho gói qua đêm.',
         ],
         blocks: [
           {
@@ -87,24 +86,18 @@ export const tripPlanningArticles: Article[] = [
           {
             type: 'list',
             items: [
-              'Gia đình đến một nơi lưu trú, dự kiến nghỉ tại chỗ và tự sắp xếp đi ăn: có thể bắt đầu hỏi phương án đưa đến rồi đón về. Kiểm tra trước việc di chuyển tại chỗ và giờ trả phòng.',
-              'Đoàn ghé bãi biển, nhà hàng, khách sạn rồi có lịch ăn tối bên ngoài: nên yêu cầu thêm phương án xe ở lại theo các khung giờ. Đánh dấu rõ các khoảng đoàn không cần xe để bên vận chuyển tư vấn.',
+              'Gia đình nghỉ tại chỗ và tự sắp xếp xe đi ăn có thể hỏi phương án đưa đến rồi đón về. Ghi riêng phần đi lại tại chỗ khi so tổng tiền.',
+              'Đoàn ghé bãi biển, nhà hàng, khách sạn rồi đi ăn tối có thể hỏi phương án xe ở lại. Ghi giờ bắt đầu và kết thúc của từng chặng cần xe.',
             ],
           },
           {
             type: 'paragraph',
             content: [
-              {
-                text: 'Đây là tình huống giả định, không phải hồ sơ chuyến đã chạy. Nhóm nhỏ xem ',
-              },
+              { text: 'Nhóm nhỏ có thể tham khảo ' },
               { text: 'xe 7 chỗ đi Vũng Tàu', href: '/thue-xe/7-cho/di-vung-tau' },
-              { text: '; đoàn đông hơn xem ' },
+              { text: '. Đoàn đông hơn có thể tham khảo ' },
               { text: 'xe 16 chỗ đi Vũng Tàu', href: '/thue-xe/16-cho/di-vung-tau' },
-              { text: '. Nếu đang cân nhắc ' },
-              { text: 'Toyota Innova', href: '/doi-xe/toyota-innova' },
-              {
-                text: ', gửi số người và vali để kiểm tra cấu hình thực tế thay vì chỉ chọn theo tên xe.',
-              },
+              { text: '. Gửi số người và hành lý để nhà xe kiểm tra phương án.' },
             ],
           },
         ],
@@ -112,7 +105,7 @@ export const tripPlanningArticles: Article[] = [
       {
         heading: 'Mẫu yêu cầu báo giá hai phương án',
         paragraphs: [
-          '“Đoàn […] khách, […] vali, đi ngày […] và về ngày […]. Đón tại […], lưu trú tại […]. Các chặng trong thời gian ở Vũng Tàu gồm […], dùng xe vào giờ […]. Nhờ báo phương án A: xe ở lại phục vụ đúng các chặng trên; phương án B: đưa đi và đón về, ghi rõ các chặng giữa chuyến có được cung cấp hay không. Với mỗi phương án, xác nhận tổng giá, phần tính riêng, điều kiện đổi giờ và cách bố trí xe/tài xế.”',
+          '“Đoàn có [số khách và vali]. Lượt đi đón tại [ghim TP.HCM] lúc [ngày/giờ], trả tại [nơi lưu trú và ghim]. Lượt về đón tại [ghim] lúc [ngày/giờ], trả tại [địa chỉ]. Các chặng giữa chuyến gồm [ngày/giờ và ghim từng chặng]. Nhờ báo tổng giá xe ở lại theo các chặng và giá đưa đón hai lượt, ghi rõ phần tính riêng và điều kiện đổi giờ.”',
         ],
         blocks: [
           {
@@ -126,23 +119,6 @@ export const tripPlanningArticles: Article[] = [
                 href: '/kinh-nghiem/di-vung-tau-trong-ngay-hay-2-ngay-1-dem',
               },
               { text: '.' },
-            ],
-          },
-        ],
-      },
-      {
-        heading: 'Nguồn ảnh',
-        blocks: [
-          {
-            type: 'paragraph',
-            content: [
-              {
-                text: 'Bãi Trước Vũng Tàu — NDTK08',
-                href: 'https://commons.wikimedia.org/wiki/File:Bai_Truoc_Vung_Tau.jpg',
-              },
-              { text: ', ' },
-              { text: 'giấy phép CC BY 4.0', href: 'https://creativecommons.org/licenses/by/4.0/' },
-              { text: '. Ảnh được tối ưu để hiển thị trên website.' },
             ],
           },
         ],

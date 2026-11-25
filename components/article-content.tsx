@@ -44,6 +44,9 @@ export function ArticleContent({ blocks }: { blocks: ArticleBlock[] }) {
             tabIndex={0}
             key={index}
           >
+            {block.columns.length > 2 && (
+              <p className="article-table-hint">Vuốt ngang để xem các cột còn lại.</p>
+            )}
             <table className="article-table">
               <caption>{block.caption}</caption>
               <thead>
