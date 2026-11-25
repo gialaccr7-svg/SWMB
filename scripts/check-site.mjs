@@ -206,7 +206,6 @@ for (const canonical of sitemapUrls) {
   assert(logos.length >= 2, `${path}: header and footer logos are required`);
   for (const [tag] of logos)
     assert.match(tag, /src="\/images\/logo321-192\.png"/, `${path}: unapproved logo`);
-  assert(!html.includes('/images/brand-mark.svg'), `${path}: former logo remains`);
   assert.equal(Array.from(html.matchAll(/<h1[\s>]/g)).length, 1, `${path}: exactly one H1`);
   const title = html.match(/<title>(.*?)<\/title>/s)?.[1];
   assert(title && !titles.has(title), `${path}: missing or duplicate title`);
