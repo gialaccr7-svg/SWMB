@@ -91,13 +91,8 @@ export const rentalRouteGuides: Partial<Record<string, RentalRouteGuide>> = {
         blocks: [
           {
             type: 'paragraph',
-            content: [
-              { text: 'Dùng ' },
-              { text: 'mẫu lịch có thể điền và sao chép', href: '#hoi-gia-tuyen' },
-              {
-                text: ' bên dưới để gửi chung danh sách điểm đón, số khách, hành lý và giờ cần xe chờ. Giữ lại bản lịch cuối cùng cùng báo giá để đối chiếu khi xác nhận chuyến.',
-              },
-            ],
+            content:
+              'Gửi danh sách điểm đón, số khách, hành lý và giờ cần xe chờ. Lưu lịch trình và báo giá để đối chiếu khi xác nhận chuyến.',
           },
           {
             type: 'paragraph',
@@ -344,7 +339,7 @@ export const rentalRouteGuides: Partial<Record<string, RentalRouteGuide>> = {
       {
         heading: 'Gửi yêu cầu báo giá cho cả đoàn',
         paragraphs: [
-          'Dùng mẫu lịch có thể điền và sao chép bên dưới để tổng hợp yêu cầu của cả đoàn trong một tin nhắn. Ghi rõ số khách ở từng điểm, tổng hành lý, giờ xe phục vụ và đầu mối thuyền nếu có, thay vì gửi các thay đổi rời rạc cho nhiều người.',
+          'Khi hỏi giá cho cả đoàn, ghi rõ số khách ở từng điểm, tổng hành lý, giờ xe phục vụ và đầu mối thuyền nếu có.',
           'Trước khi đặt, đối chiếu bản lịch cuối, số tiền cọc nếu có, cách xác nhận giữ xe và thời điểm cung cấp thông tin tài xế. Nếu thêm điểm hoặc đổi giờ, yêu cầu cập nhật báo giá để cả hai bên có cùng nội dung.',
         ],
         blocks: [

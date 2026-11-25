@@ -83,8 +83,8 @@ export default async function Destination({ params }: { params: Promise<{ slug: 
                 href={articlePath('di-vung-tau-trong-ngay-hay-2-ngay-1-dem')}
               >
                 chọn lịch đi Vũng Tàu trong ngày hay 2 ngày 1 đêm
-              </a>{' '}
-              và mẫu tin nhắn hỏi giá.
+              </a>
+              .
             </p>
           </>
         )}

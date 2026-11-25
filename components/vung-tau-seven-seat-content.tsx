@@ -115,12 +115,8 @@ export function VungTauSevenSeatContent() {
 
       <h2>Gửi lịch để hỏi giá xe 7 chỗ đi Vũng Tàu</h2>
       <p>
-        Dùng{' '}
-        <a className="text-link" href="#hoi-gia-tuyen">
-          mẫu lịch hỏi giá có thể điền và sao chép
-        </a>{' '}
-        bên dưới để gửi số khách, hành lý, điểm đón trả và các giờ cần xe phục vụ. Nhờ tư vấn viên
-        xác nhận dòng xe, tổng giá và điều kiện đặt trước khi giữ lịch.
+        Gửi số khách, hành lý, điểm đón trả và các giờ cần xe phục vụ. Xác nhận dòng xe, tổng giá
+        và điều kiện đặt trước khi giữ lịch.
       </p>
       <a className="button" href={site.zalo} target="_blank" rel="noopener noreferrer">
         Gửi lịch đi Vũng Tàu qua Zalo

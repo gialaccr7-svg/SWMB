@@ -109,11 +109,8 @@ export const travelGuides: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu lịch gửi hỏi xe',
+        heading: 'Gửi lịch đi Nha Trang để hỏi giá',
         blocks: [
-          paragraph(
-            '“Đoàn tôi đi Nha Trang từ ngày … đến ngày …, gồm … người lớn và … trẻ em; có … vali, … xe đẩy. Đón tại …, khách sạn dự kiến …. Ngày thứ hai muốn …. Ngày về cần trả tại …. Nhờ tư vấn xe và báo rõ phạm vi phục vụ, thời gian chờ, các khoản gồm/chưa gồm và điều kiện thay đổi lịch.”',
-          ),
           paragraph([
             { text: 'Có thể dùng thêm ' },
             {
@@ -356,9 +353,6 @@ export const travelGuides: Article[] = [
             'Chuyến qua đêm bố trí ăn nghỉ tài xế như thế nào?',
             'Nếu thêm một điểm hoặc lùi giờ về, cách tính điều chỉnh và xác nhận ra sao?',
           ]),
-          paragraph(
-            'Mẫu hỏi giá qua Zalo: “Đón tại [ghim TP.HCM] lúc [ngày/giờ], trả tại [tên và ghim cổng]. Các điểm ghé theo thứ tự là [ghim và thời gian dừng]. Lượt về [ngày/giờ], trả tại [địa chỉ]. Đoàn có [khách và vali]. Nhờ xác nhận dòng giá phù hợp hoặc báo riêng theo lịch.”',
-          ),
           paragraph([
             { text: 'Nếu đã chọn resort, xem ' },
             {
@@ -603,7 +597,7 @@ export const travelGuides: Article[] = [
         ],
       },
       {
-        heading: 'Chọn xe và gửi mẫu hỏi giá đầy đủ',
+        heading: 'Chọn xe và kiểm tra báo giá đón sân bay',
         blocks: [
           paragraph([
             { text: 'Tham khảo ' },
@@ -616,9 +610,6 @@ export const travelGuides: Article[] = [
             { text: 'trang dịch vụ thuê xe', href: '/dich-vu' },
             { text: '.' },
           ]),
-          paragraph(
-            '“Nhờ tư vấn xe đón chuyến … ngày …, dự kiến hạ cánh lúc … tại nhà ga … theo xác nhận hãng. Đoàn có … người, … vali và … kiện lớn. Người liên hệ là …; trả tại …. Vui lòng báo giá, điểm gặp, cách liên hệ tài xế, thời gian chờ đã gồm và điều kiện khi chuyến bay trễ.”',
-          ),
           paragraph(
             'Trước khi xác nhận, đối chiếu báo giá có đủ số điểm trả, phí đỗ/chờ và nhu cầu hỗ trợ đã trao đổi. Chỉ chọn phương án sau khi nhà xe xác nhận chiếc xe phù hợp; tên nhóm xe không bảo đảm đủ khoang chứa cho mọi đoàn có cùng số khách.',
           ),
@@ -834,11 +825,8 @@ export const travelGuides: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu hỏi xe đi resort và kiểm tra báo giá',
+        heading: 'Kiểm tra báo giá xe đi resort',
         blocks: [
-          paragraph(
-            '“Đón tại [ghim TP.HCM] lúc [ngày/giờ]. Đoàn có [khách, vali và xe đẩy]. Resort [tên], nhận phòng [giờ], trả phòng [giờ]. Cổng hoặc sảnh trả khách [ghim], điểm xe chờ [nếu cần]. Ngày về đón [ngày/giờ và ghim], ghé thêm [điểm và giờ]. Nhờ xác nhận vị trí xe dừng, lượt phục vụ và báo giá cho lịch hai ngày.”',
-          ),
           paragraph([
             { text: 'Đối chiếu đúng dòng Hồ Tràm trong ' },
             { text: 'bảng giá', href: '/bang-gia' },
@@ -964,11 +952,8 @@ export const travelGuides: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu trao đổi nhu cầu với nhà xe',
+        heading: 'Xác nhận nhu cầu hỗ trợ với nhà xe',
         blocks: [
-          paragraph(
-            '“Gia đình tôi đi … ngày …, có … người và … người lớn tuổi. Nhu cầu hỗ trợ khi lên xuống là …. Có … vali, … đồ hỗ trợ gấp với kích thước …. Đón tại …, muốn nghỉ ở … nếu phù hợp tuyến; các điểm bắt buộc là …. Nhờ kiểm tra mẫu xe, cách bố trí người/đồ và báo giá theo lịch có điểm nghỉ.”',
-          ),
           paragraph([
             { text: 'Xem ' },
             { text: 'dịch vụ thuê xe', href: '/dich-vu' },

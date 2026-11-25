@@ -122,17 +122,8 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu tin nhắn hỏi xe đi chợ nổi',
+        heading: 'Nguồn ảnh chợ nổi Cái Răng',
         blocks: [
-          {
-            type: 'list',
-            items: [
-              'Ngày đi và về […] · Số người lớn […], trẻ em […] · Vali và xe đẩy […].',
-              'Đón lúc […] tại [địa chỉ TP.HCM]. Lên thuyền lúc […] tại [ghim bến].',
-              'Xe đón lại lúc […] tại [ghim bến trả khách]. Sau đó ghé […] và trả khách tại […] lúc […].',
-              'Nếu ngủ lại, khách sạn tại […] và cần xe vào các khung giờ […]. Nhờ xác nhận xe phù hợp, phạm vi phục vụ và các khoản tính riêng.',
-            ],
-          },
           {
             type: 'paragraph',
             content: [
@@ -274,13 +265,8 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu tin nhắn để nhận báo giá rõ ràng',
+        heading: 'Đối chiếu bảng giá trước khi đặt',
         blocks: [
-          {
-            type: 'paragraph',
-            content:
-              '“Tôi cần xe có tài xế ngày [ngày đi], đón lúc [giờ] tại [địa chỉ], đi [điểm đến], về [địa chỉ] lúc [giờ/ngày]. Đoàn có [số người], [số kiện hành lý], dừng tại [các điểm]. Vui lòng xác nhận dòng xe, tổng giá, khoản đã gồm/chưa gồm, giờ phục vụ và cách tính nếu thêm điểm hoặc về muộn. Tôi [có/không] cần hóa đơn.”',
-          },
           {
             type: 'paragraph',
             content: [
@@ -451,13 +437,8 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu yêu cầu xác nhận trước khi đặt cọc',
+        heading: 'Bảng giá và điều kiện dịch vụ',
         blocks: [
-          {
-            type: 'paragraph',
-            content:
-              '“Nhờ bên mình xác nhận chuyến ngày [ngày], xe [nhóm/dòng xe], đón [giờ, địa chỉ], đi [các điểm], trả [giờ, địa chỉ]. Tổng giá là [số tiền], gồm [các khoản], chưa gồm [các khoản]. Tôi đặt cọc [số tiền], còn lại [số tiền], thanh toán vào [thời điểm]. Xin xác nhận tài khoản nhận tiền, điều kiện đổi/hủy và gửi xác nhận giữ lịch sau khi nhận cọc.”',
-          },
           {
             type: 'paragraph',
             content: [
@@ -503,7 +484,7 @@ export const articles: Article[] = [
     topics: ['vung-tau', 'lich-trinh'],
     title: 'Đi Vũng Tàu trong ngày hay 2 ngày 1 đêm?',
     description:
-      'So sánh đi Vũng Tàu trong ngày và 2 ngày 1 đêm theo giờ tập kết, giờ nhận trả phòng và lịch xe về. Có mẫu tin nhắn để hỏi giá từng lịch.',
+      'So sánh đi Vũng Tàu trong ngày và 2 ngày 1 đêm theo giờ tập kết, giờ nhận trả phòng và lịch xe về.',
     category: 'Lịch trình đi tỉnh',
     date: '2026-11-02',
     updatedAt: '2026-11-25',
@@ -559,13 +540,8 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu lịch trình trong ngày để gửi đơn vị thuê xe',
+        heading: 'Các chặng cần tính khi đi trong ngày',
         blocks: [
-          {
-            type: 'paragraph',
-            content:
-              'Bạn có thể dùng khung sau rồi điền ngày và giờ phù hợp. Đây là kế hoạch trao đổi để tính phạm vi phục vụ, không phải lịch tour hay cam kết thời gian chạy xe.',
-          },
           {
             type: 'list',
             ordered: true,
@@ -592,7 +568,7 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu lịch 2 ngày 1 đêm theo giờ nhận và trả phòng',
+        heading: 'Lịch xe 2 ngày 1 đêm theo giờ nhận và trả phòng',
         paragraphs: [
           'Ngày đầu, ghi giờ đón ở TP.HCM, địa chỉ lưu trú, giờ nhận phòng đã xác nhận và các điểm ghé. Nếu có lịch dùng xe buổi tối, thêm giờ bắt đầu và kết thúc dự kiến.',
           'Ngày thứ hai, ghi giờ trả phòng, điểm tập kết và giờ xe đón về. Nếu đoàn còn ghé ăn hoặc tham quan sau khi trả phòng, báo thứ tự điểm ghé và cho nhà xe biết hành lý sẽ đi cùng đoàn.',
@@ -661,13 +637,8 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu tin nhắn hỏi giá xe đi Vũng Tàu',
+        heading: 'Hỏi giá theo từng lịch đi Vũng Tàu',
         blocks: [
-          {
-            type: 'paragraph',
-            content:
-              '“Đón tại [ghim ở TP.HCM] lúc [ngày/giờ]. Đoàn có [số người lớn, trẻ em] và [số vali, xe đẩy hoặc đồ lớn]. Điểm đến là [tên và ghim], ghé [các điểm theo thứ tự]. Nếu đi trong ngày, xe đón về lúc [ngày/giờ/ghim]. Nếu ngủ lại, đoàn trả phòng lúc [ngày/giờ], xe đón về tại [ngày/giờ/ghim]. Điểm trả cuối là [địa chỉ]. Nhờ báo riêng cho từng lịch.”',
-          },
           {
             type: 'paragraph',
             content:

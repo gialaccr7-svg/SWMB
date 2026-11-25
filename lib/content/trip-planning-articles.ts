@@ -7,7 +7,7 @@ export const tripPlanningArticles: Article[] = [
     seoTitle: 'Xe đi Vũng Tàu: ở lại hay đón hai lượt?',
     title: 'Thuê xe đi Vũng Tàu: chọn xe ở lại hay đưa đón hai lượt?',
     description:
-      'So sánh xe ở lại và đưa đón hai lượt khi đi Vũng Tàu: nhu cầu di chuyển, cách đối chiếu chi phí và mẫu lịch để hỏi hai phương án.',
+      'So sánh xe ở lại và đưa đón hai lượt khi đi Vũng Tàu theo nhu cầu di chuyển và chi phí từng phương án.',
     category: 'Lịch trình Vũng Tàu',
     date: '2026-11-13',
     updatedAt: '2026-11-25',
@@ -103,10 +103,7 @@ export const tripPlanningArticles: Article[] = [
         ],
       },
       {
-        heading: 'Mẫu yêu cầu báo giá hai phương án',
-        paragraphs: [
-          '“Đoàn có [số khách và vali]. Lượt đi đón tại [ghim TP.HCM] lúc [ngày/giờ], trả tại [nơi lưu trú và ghim]. Lượt về đón tại [ghim] lúc [ngày/giờ], trả tại [địa chỉ]. Các chặng giữa chuyến gồm [ngày/giờ và ghim từng chặng]. Nhờ báo tổng giá xe ở lại theo các chặng và giá đưa đón hai lượt, ghi rõ phần tính riêng và điều kiện đổi giờ.”',
-        ],
+        heading: 'Hỏi giá cho hai phương án',
         blocks: [
           {
             type: 'paragraph',

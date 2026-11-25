@@ -1,6 +1,5 @@
 import type { RentalRouteSummary as Summary } from '@/lib/content/rental-route-summaries';
 import { site } from '@/lib/site';
-import { RentalRequest } from '@/components/rental-request';
 import { ResponsiveImage } from '@/components/responsive-image';
 import { findVehicles } from '@/lib/services/vehicle-service';
 
@@ -27,7 +26,7 @@ export function RentalRouteSummary({ summary }: { summary: Summary }) {
           <dd>{summary.trip}</dd>
         </div>
       </dl>
-      <nav aria-label="Nội dung trang thuê xe" className="rental-request-actions">
+      <nav aria-label="Nội dung trang thuê xe" className="rental-route-nav">
         <a className="text-link" href="#bang-gia-tuyen">
           Xem bảng giá
         </a>
@@ -94,13 +93,16 @@ export function RentalRouteBooking({
           </p>
         </section>
       )}
-      <RentalRequest template={summary.request} />
       <h3>Ai tư vấn và xác nhận chuyến?</h3>
       <p>
         {site.name} là thương hiệu do {site.company.name} vận hành. Mã số thuế:{' '}
         {site.company.taxCode}. Liên hệ{' '}
         <a className="text-link" href={`tel:${site.phone}`}>
           {site.phoneDisplay}
+        </a>{' '}
+        hoặc{' '}
+        <a className="text-link" href={site.zalo} target="_blank" rel="noopener noreferrer">
+          Zalo
         </a>{' '}
         để kiểm tra xe và lịch phục vụ. Đặt xe được xác nhận sau khi hai bên thống nhất xe thực tế,
         lịch trình, tổng giá và điều kiện dịch vụ qua kênh liên hệ trực tiếp.

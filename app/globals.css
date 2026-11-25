@@ -2712,32 +2712,12 @@ footer {
 #chi-tiet-chuyen {
   scroll-margin-top: 110px;
 }
-.rental-request label {
-  display: block;
-  font-weight: 700;
-}
-.rental-request textarea {
-  display: block;
-  width: 100%;
-  min-height: 280px;
-  padding: 16px;
-  border: 1px solid #688174;
-  border-radius: 8px;
-  font: inherit;
-  line-height: 1.7;
-  resize: vertical;
-  background: #fff;
-  color: #172c24;
-}
-.rental-request-actions {
+.rental-route-nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 16px;
   margin-top: 16px;
-}
-.rental-request [role='status'] {
-  min-height: 1.7em;
 }
 .rental-content-date {
   color: var(--muted);

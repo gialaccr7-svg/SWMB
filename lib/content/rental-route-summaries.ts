@@ -6,7 +6,6 @@ export type RentalRouteSummary = {
   pickup: string;
   trip: string;
   checklist: string[];
-  request: string;
   updatedAt: string;
 };
 
@@ -26,8 +25,6 @@ export const rentalRouteSummaries: Partial<Record<string, RentalRouteSummary>> =
       'Với chuyến trong ngày, chốt giờ đón về và nơi thay đồ, nhận hành lý trước khi lên xe.',
       'Với chuyến qua đêm, chọn xe ở lại phục vụ hoặc đưa đón hai lượt; đối chiếu cả nhu cầu đi ăn tối.',
     ],
-    request:
-      'Tôi cần xe 7 chỗ có tài xế từ TP.HCM đi Vũng Tàu.\nNgày đi: […] — giờ đón: […]\nĐịa chỉ đón: […] — địa chỉ trả: […]\nSố người lớn/trẻ em: […] — vali/xe đẩy: […]\nCác điểm ghé: […]\nLoại chuyến: [một chiều / đi về trong ngày / 2 ngày 1 đêm]\nNgày giờ về: […] — các khoảng cần xe chờ: […]\nNhờ xác nhận dòng xe, số ghế cho khách, chỗ để đồ, tổng giá, khoản đã gồm/chưa gồm và điều kiện cọc, đổi hủy.',
     updatedAt: '2026-11-14',
   },
   '/thue-xe/16-cho/di-vung-tau': {
@@ -46,8 +43,6 @@ export const rentalRouteSummaries: Partial<Record<string, RentalRouteSummary>> =
       'Xin ghim nhà hàng, khách sạn và vị trí xuống gần bãi biển; kiểm tra nơi dừng, đỗ cho xe 16 chỗ.',
       'Chốt giờ tập trung về và các lượt đưa đón buổi tối nếu nghỉ lại; cập nhật báo giá khi đổi lịch.',
     ],
-    request:
-      'Đoàn cần xe 16 chỗ có tài xế từ TP.HCM đi Vũng Tàu.\nNgày đi: […] — ngày giờ về: […]\nSố khách: […] — số vali/đồ dùng chung: […]\nCác điểm đón theo thứ tự, số khách mỗi điểm: […]\nĐiểm trả, bãi biển, nhà hàng/khách sạn: […]\nLoại chuyến: [một chiều / đi về trong ngày / 2 ngày 1 đêm]\nCác khung giờ cần xe chờ/đưa đón: […]\nNhờ xác nhận xe, số ghế cho khách, khoang hành lý, tổng giá, khoản đã gồm/chưa gồm và điều kiện cọc, đổi hủy.',
     updatedAt: '2026-11-14',
   },
   '/thue-xe/7-cho/di-can-tho': {
@@ -65,8 +60,6 @@ export const rentalRouteSummaries: Partial<Record<string, RentalRouteSummary>> =
       'Với chuyến qua đêm, liệt kê cả lượt ra bến buổi sáng và đi ăn tối để so sánh xe ở lại với đưa đón hai lượt.',
       'Thống nhất hành lý để ở khách sạn hay mang theo xe sau trả phòng; kiểm tra chỗ chứa cho chặng về.',
     ],
-    request:
-      'Gia đình cần xe 7 chỗ có tài xế từ TP.HCM đi Cần Thơ.\nNgày đi, giờ đón: […] — ngày giờ về: […]\nĐịa chỉ đón/trả: […] — khách sạn nếu có: […]\nSố người lớn/trẻ em: […] — vali/xe đẩy: […]\nLoại chuyến: [một chiều / đi về trong ngày / 2 ngày 1 đêm]\nĐiểm ghé, giờ dùng xe tại Cần Thơ: […]\nNếu đi thuyền: bến lên/trả, giờ hẹn, lượt xe cần đón: […]\nNhờ xác nhận dòng xe, hành lý, tổng giá xe đường bộ, khoản đã gồm/chưa gồm và điều kiện cọc, đổi hủy.',
     updatedAt: '2026-11-14',
   },
   '/thue-xe/16-cho/di-can-tho': {
@@ -84,8 +77,6 @@ export const rentalRouteSummaries: Partial<Record<string, RentalRouteSummary>> =
       'Xin riêng ghim bến lên và bến trả, giờ tập trung và người liên hệ thuyền để hẹn xe đón lại.',
       'Sau chuyến thuyền, kiểm đủ khách trước khi rời bến; gửi cả giờ trả phòng và phương án mang hành lý.',
     ],
-    request:
-      'Đoàn cần xe 16 chỗ có tài xế từ TP.HCM đi Cần Thơ.\nNgày giờ đi/về: […]\nSố khách, vali và kiện đồ chung: […]\nĐiểm đón theo thứ tự, số khách và đầu mối từng điểm: […]\nĐịa chỉ trả, khách sạn, nhà hàng và điểm ghé: […]\nLoại chuyến: [một chiều / đi về trong ngày / 2 ngày 1 đêm]\nCác giờ cần xe phục vụ/chờ: […]\nNếu đi thuyền: bến lên/trả, giờ hẹn và đầu mối: […]\nNhờ xác nhận xe, số ghế cho khách, khoang đồ, tổng giá xe đường bộ, khoản đã gồm/chưa gồm và điều kiện cọc, đổi hủy.',
     updatedAt: '2026-11-14',
   },
 };
