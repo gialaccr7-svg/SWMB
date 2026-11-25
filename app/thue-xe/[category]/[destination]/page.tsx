@@ -10,6 +10,7 @@ import { RentalRouteSummary, RentalRouteBooking } from '@/components/rental-rout
 import { rentalRouteSummaries } from '@/lib/content/rental-route-summaries';
 import { rentalRouteGuides } from '@/lib/content/rental-route-guides';
 import { ResponsiveImage } from '@/components/responsive-image';
+import { ImageCredits } from '@/components/image-credits';
 import { parseCategory } from '@/lib/catalog';
 import { rentalCategoryGuides } from '@/lib/content/rental-categories';
 import {
@@ -145,13 +146,6 @@ export default async function SeatRoutePage({ params }: { params: Params }) {
                   }
                   loading={index === 0 ? 'eager' : 'lazy'}
                 />
-                <figcaption>
-                  {image.alt} · Ảnh:{' '}
-                  <a href={image.source} target="_blank" rel="noopener noreferrer nofollow">
-                    {image.credit}
-                  </a>{' '}
-                  ({image.license})
-                </figcaption>
               </figure>
             ))}
           </div>
@@ -283,6 +277,7 @@ export default async function SeatRoutePage({ params }: { params: Params }) {
               </a>
             ))}
         </div>
+        {media && <ImageCredits images={media.images} />}
       </section>
     </main>
   );

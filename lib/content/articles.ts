@@ -39,8 +39,8 @@ export const articles: Article[] = [
     date: '2026-11-10',
     updatedAt: '2026-11-25',
     showFirstSectionBeforeImage: true,
-    image: '/images/ford-transit-1.jpg',
-    imageAlt: 'Xe Ford Transit minh họa cho chặng đường bộ ra bến thuyền',
+    image: '/images/seo-can-tho-7-2.jpg',
+    imageAlt: 'Các ghe chở hàng và thuyền nhỏ tại chợ nổi Cái Răng ở Cần Thơ',
     sections: [
       {
         heading: 'Chốt chuyến thuyền trước khi hẹn giờ xe',

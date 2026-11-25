@@ -1,5 +1,6 @@
 import { articlePath } from '@/lib/paths';
 import { ArticleContent, ArticleInline } from '@/components/article-content';
+import { ImageCredits } from '@/components/image-credits';
 import { notFound } from 'next/navigation';
 import { StructuredData } from '@/components/structured-data';
 import { ResponsiveImage } from '@/components/responsive-image';
@@ -8,9 +9,11 @@ import { getArticle, listArticles } from '@/lib/services/article-service';
 import { PageBanner } from '@/components/page-banner';
 import { site, absoluteUrl } from '@/lib/site';
 import { articleSectionId, relatedArticles } from '@/lib/content/article-navigation';
+import { seatRouteMedia } from '@/lib/content/seat-routes';
 
 type Props = { params: Promise<{ slug: string }> };
 const displayDate = (date: string) => date.split('-').reverse().join('/');
+const creditedImages = Object.values(seatRouteMedia).flatMap((media) => media?.images ?? []);
 
 export function generateStaticParams() {
   return listArticles().map((article) => ({ slug: article.slug }));
@@ -43,6 +46,12 @@ export default async function ArticlePage({ params }: Props) {
     );
   });
   const firstAfterImage = article.showFirstSectionBeforeImage ? 1 : 0;
+  const articleImages = new Set([article.image]);
+  for (const { blocks } of article.sections) {
+    for (const block of blocks ?? []) {
+      if (block.type === 'image') articleImages.add(block.src);
+    }
+  }
   return (
     <main id="main">
       <StructuredData
@@ -131,6 +140,7 @@ export default async function ArticlePage({ params }: Props) {
             </nav>
           )}
           {sections.slice(firstAfterImage)}
+          <ImageCredits images={creditedImages.filter(({ src }) => articleImages.has(src))} />
           {!!article.faq?.length && (
             <section className="article-faq" aria-labelledby="article-faq-title">
               <h2 id="article-faq-title">Câu hỏi thường gặp</h2>

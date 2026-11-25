@@ -22,7 +22,6 @@ export const travelGuides: Article[] = [
     date: '2026-11-17',
     image: '/images/seo-nha-trang-7-2.jpg',
     imageAlt: 'Hàng dừa và ô che nắng bên bãi biển Nha Trang',
-    imageCaption: 'Ảnh Nha Trang của Quangpraha, CC0; dùng minh họa điểm đến.',
     sections: [
       {
         heading: 'Ba ngày nên dành bao nhiêu thời gian cho di chuyển?',
@@ -121,14 +120,6 @@ export const travelGuides: Article[] = [
             {
               text: ' để điền đủ điểm đón, giờ đi và giờ về trước khi trao đổi với Hành Trình Phương Nam.',
             },
-          ]),
-          paragraph([
-            { text: 'Nguồn ảnh minh họa: ' },
-            {
-              text: 'Nha-trang-3039566.jpg trên Wikimedia Commons',
-              href: 'https://commons.wikimedia.org/wiki/File:Nha-trang-3039566.jpg',
-            },
-            { text: ', tác giả Quangpraha, CC0.' },
           ]),
         ],
       },

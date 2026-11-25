@@ -145,8 +145,8 @@ export const tripPlanningArticles: Article[] = [
     date: '2026-11-13',
     updatedAt: '2026-11-25',
     showFirstSectionBeforeImage: true,
-    image: '/images/kia-carnival-2.jpg',
-    imageAlt: 'Xe Kia Carnival minh họa cho chuyến gia đình đi Cần Thơ bằng xe riêng',
+    image: '/images/seo-can-tho-7-1.jpg',
+    imageAlt: 'Cầu Cần Thơ bắc qua sông Hậu',
     sections: [
       {
         heading: 'Chia chuyến thành một ngày đến và một buổi sáng trải nghiệm',

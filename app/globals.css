@@ -478,14 +478,15 @@ p {
   object-fit: cover;
   border-radius: 14px;
 }
-.seat-route-photo figcaption {
-  margin-top: 9px;
+.image-credits {
+  margin-block: 24px;
   color: var(--muted);
-  font-size: 12px;
-  line-height: 1.6;
 }
-.seat-route-photo figcaption a {
-  color: inherit;
+.image-credits summary {
+  cursor: pointer;
+  width: fit-content;
+}
+.image-credits a {
   text-decoration: underline;
 }
 .seat-route-gallery.split-left {
@@ -580,9 +581,6 @@ p {
 }
 .seat-route-gallery.cinema .seat-route-photo {
   height: 360px;
-}
-.seat-route-gallery.cinema figcaption {
-  color: #dce9e7;
 }
 .seat-route-gallery.postcard {
   grid-template-columns: 1.4fr 1fr;
@@ -763,9 +761,6 @@ p {
     margin: 0;
     transform: none;
     clip-path: none;
-  }
-  .seat-route-gallery.cinema figcaption {
-    color: var(--muted);
   }
 }
 .trust-row {
