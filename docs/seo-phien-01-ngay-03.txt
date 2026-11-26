@@ -1,0 +1,333 @@
+PHIÊN 01 · NGÀY 03
+Rà năm bài Kinh nghiệm, đối soát bảng giá và kiểm tra kỹ thuật
+Hành Trình Phương Nam · 26/11/2026 (giờ Việt Nam)
+
+Phạm vi: gói 015–021, mục 0351–0525. Mốc mã nguồn 907e81f. Production quan sát
+khoảng 09:05 ngày 26/11, trước các thay đổi local. Bản local sửa năm URL hiện hữu,
+giữ nguyên slug, title và H1. Số bài mới: 0. Số bài phát hành: 0. Chờ chủ website
+duyệt trước khi push. Cột “Đạt” trong phần nghiệm thu mô tả mặt đã có bằng chứng
+trên môi trường được ghi. “Chờ” nêu dữ kiện hoặc quyền còn thiếu. Người duyệt
+nội dung, ảnh và quyền phát hành: chủ website. Đầu mối điều xe xác nhận điều kiện
+thực tế; phụ trách SEO xác nhận GSC khi có quyền.
+Tổng hợp 175 mục: 148 Đạt, 23 Chờ và 4 Không áp dụng.
+
+PHIẾU 015 · LỊCH NHA TRANG 3 NGÀY 2 ĐÊM · Ưu tiên cao
+https://hanhtrinhphuongnam.vn/kinh-nghiem/di-nha-trang-3-ngay-2-dem-tu-tphcm-bang-xe-rieng
+Nguồn bài: lib/content/travel-guides-2026-11.ts
+Mở cũ: “nên xem ngày đầu và ngày cuối là hai ngày có chặng đường dài”.
+Mở mới: “Dành ngày đầu để đi từ TP.HCM đến khách sạn, ngày giữa để tham quan
+và ngày cuối để về. Nếu đi đảo vào ngày giữa, chốt với bên tàu cả bến lên và bến
+về rồi hẹn xe đưa đón trên bờ theo hai ghim đó.”
+Bản cũ có đoạn “Đếm số người thực đi rồi lập danh sách vali, xe đẩy và đồ dùng
+chung”, gần với bài 016 (“Lập một danh sách chung ... Ghi số vali, kích cỡ ...”).
+Bản mới giữ bảng lịch ba ngày và tình huống hai bến ở 015, chuyển phần chọn xe
+sang 016 qua liên kết. Dòng Nha Trang trong bảng giá là 1 ngày/860 km theo định
+mức. Bài chỉ dẫn nơi tra thời lượng và định mức rồi hỏi giá riêng cho ba ngày.
+Điều xe xác nhận xe chờ, các lượt xe và phụ phí. Bên tàu xác nhận bến, giờ lên
+bờ. Khách sạn xác nhận nơi gửi hành lý. Giữ ảnh bãi biển đang có. Hồ sơ nội bộ
+ghi Quangpraha, CC0 1.0, đã đối chiếu trang giấy phép ngày 26/11.
+https://commons.wikimedia.org/wiki/File:Nha-trang-3039566.jpg
+Nguồn đối chiếu biển đảo: Cục Du lịch Quốc gia Việt Nam.
+https://vietnam.travel/place-to-go/south-central-coast-central-highlands/nha-trang/
+
+PHIẾU 016 · XE 7 HAY 16 CHỖ ĐI NHA TRANG · Ưu tiên cao
+https://hanhtrinhphuongnam.vn/kinh-nghiem/di-nha-trang-nen-chon-xe-7-hay-16-cho
+Nguồn bài: lib/content/travel-guides-2026-11.ts
+Mở cũ: “Xe 7 chỗ có thể là phương án cho gia đình hoặc nhóm nhỏ”.
+Mở mới: “Chọn xe 7 chỗ khi nhà xe xác nhận đủ ghế cho cả đoàn và xếp vừa hành lý
+trên chiếc xe dự kiến. Nếu thiếu ghế hoặc có vali lớn, xe đẩy hay thùng đồ chưa
+có chỗ, hỏi thêm phương án 16 chỗ với cùng danh sách khách và đồ.”
+Bảng dùng cùng tiêu chí cho hai cỡ. Ví dụ xe đẩy và vali cứng nêu điểm quyết
+định khi phải gập ghế đang cần dùng. Giữ link hai trang cỡ xe theo tuyến. Bài
+chọn xe theo số người dùng nguyên tắc chung; 016 tập trung chặng Nha Trang và
+so cùng lịch. Ảnh van.jpg cho thấy thân xe, chưa chứng minh khoang đồ. Chờ chủ
+website xác nhận hồ sơ ảnh hiện hữu và ảnh cabin/khoang đúng xe dự kiến. Điều xe
+xác nhận ghế cho khách, cấu hình và phương án xếp đồ.
+
+PHIẾU 017 · CHUẨN BỊ THUÊ XE CƯỚI · Ưu tiên cao
+https://hanhtrinhphuongnam.vn/kinh-nghiem/chuan-bi-thue-xe-cuoi
+Nguồn bài: lib/content/articles.ts
+Mở cũ: “Giờ đón dâu, giờ làm lễ và giờ đến nhà hàng là những mốc cần cung cấp
+trước tiên.” Mở mới bắt đầu từ giờ làm lễ và tính ngược giờ lắp hoa, đón dâu,
+điểm làm lễ. Bảng tách xe hoa và xe chở khách, với ví dụ xe hoa còn chụp ảnh
+thì đoàn khách đã đi nhà hàng. Phần “giờ xe có mặt để lắp hoa” từng lặp với 018;
+giữ quy trình lập lịch đầy đủ tại 017 và dẫn sang 018 khi cần chọn dòng xe.
+Giữ đường tới /xe-cuoi và bài chọn xe theo nhóm. Tư vấn xác nhận người lắp hoa,
+chỗ lắp, cách tính chờ, điều kiện đổi/hủy, và đầu mối từng bên. Ảnh wedding.jpg
+minh họa sedan bạc trước trang trí và trùng nội dung tệp mercedes.jpg (cùng
+SHA-256). Danh sách góc cần chụp khi có quyền gồm cổng/sảnh xe có thể dừng,
+xe hoa tại điểm lắp và chỗ xe đoàn trả khách. Chờ hồ sơ ảnh đang dùng.
+
+PHIẾU 018 · XE CƯỚI MERCEDES HAY CAMRY · Ưu tiên vừa
+https://hanhtrinhphuongnam.vn/kinh-nghiem/thue-xe-cuoi-mercedes-hay-camry
+Nguồn bài: lib/content/travel-guides-2026-11.ts
+Mở cũ khuyên xác định xe chở ai và có đồ lễ hoặc váy cưới cồng kềnh. Mở mới
+cho hai tiêu chí xác nhận thực tế: xin ảnh xe theo màu yêu cầu; kiểm cửa, ghế và
+khoang đồ theo trang phục và đồ lễ. Dùng chung một lịch khi so báo giá. Chuyển
+checklist chi tiết sang 017. Giữ link Mercedes-Benz E-Class, Toyota Camry và dịch
+vụ xe cưới. Ảnh mercedes.jpg là ảnh minh họa; chờ quyền ảnh, ảnh Camry tương ứng
+nếu cần so trực quan, và xác nhận màu/đời/chính xác xe có thể bố trí. Giá xe cưới
+và hoa hỏi qua tư vấn theo lịch.
+
+PHIẾU 019 · XE ĐI TỈNH CÙNG NGƯỜI LỚN TUỔI · Ưu tiên vừa
+https://hanhtrinhphuongnam.vn/kinh-nghiem/thue-xe-di-tinh-cung-nguoi-lon-tuoi
+Nguồn bài: lib/content/travel-guides-2026-11.ts
+Mở cũ nói bắt đầu từ việc lên xuống và đồ mang theo, sau đó chuyển sang giải
+thích phạm vi bài. Mở mới chốt ngay điểm nghỉ, kích thước đồ hỗ trợ, bậc lên
+xuống và ghế của xe dự kiến. Bảng điểm nghỉ giữ nguyên. Ví dụ khung tập đi gấp
+nối ba điểm từ đón gần nhà, nghỉ giữa đường đến trả gần sảnh. Bài chọn xe theo
+số người giữ nội dung kiểm số khách/kiện; bài này giữ thao tác lên xuống và đồ
+cần lấy giữa đường. Ảnh Kia Carnival cho thấy khoang ghế và lối đi. Chủ website
+xác nhận quyền ảnh; điều xe xác nhận bậc lên xuống, chỗ xếp và khả năng đáp
+ứng thiết bị đặc biệt; cơ sở lưu trú xác nhận cổng và điểm trả.
+
+GÓI 020 · ĐỐI SOÁT GIÁ
+Nguồn: lib/content/route-prices.json · lib/pricing.ts · scripts/check-prices.mjs
+Tên tệp được ghi trong JSON: Bang_Bao_Gia_Goc_ThueXeHanhTrinhPhuongNam_FormatChuan.xlsx.
+Repo đang làm việc không có bản .xlsx để kiểm tra trực tiếp. Nguồn đối chiếu
+lượt này là rawPrices trong JSON và quy tắc chuẩn hóa có sẵn.
+Mốc 24/10/2026 · TP.HCM · 166 ID và 166 sourceRow riêng · 28 nhóm vùng · 830 ô
+(816 giá số, 14 Liên hệ). Toàn bộ duration là 1 ngày và có định mức km. Hai
+dòng City tour có 4/8 tiếng trong tên và định mức 50/100 km. 5 dòng nhóm TP.HCM
+có surcharge 0, 161 dòng khác có 100.000. Giá hiển thị đọc prices đã chuẩn hóa,
+không cộng thêm surcharge lần nữa. Có 473 ô bỏ lệch 1 đồng và 3 ngoại lệ được
+khai báo trong check-prices.mjs, xác nhận theo quy tắc repo:
+- tay-ninh-tan-chau-dong-pan · dòng 40 · 7 chỗ · raw 2.000,00 → 2.100.000đ.
+- da-nang-da-nang · dòng 192 · 4 chỗ · raw 12,00,000 → 12.100.000đ.
+- hue-hue · dòng 193 · 4 chỗ · raw 14,00,000 → 14.100.000đ.
+Ô Liên hệ thuộc 6 điểm ở An Giang (29 chỗ) và Pleiku, Kon Tum, Đà Nẵng, Huế
+(29/45 chỗ). SHA-256 của JSON trên workspace:
+daca5a60e11d69d1ade7c9fa33c3c9c2a09413c1662215d5fe03400c463dc98e
+
+Đối chiếu mẫu trước/sau · Giá VNĐ/chuyến, thứ tự 4 / 7 / 16 / 29 / 45 chỗ
+ID (sourceRow)                     | Ngày / km  | Cả production và bản local
+vung-tau-thanh-pho-vung-tau (63)    | 1 / 220   | 1.700.000 / 1.900.000 / 2.000.000 / 3.300.000 / 4.500.000
+can-tho-tp-can-tho (110)             | 1 / 350   | 2.300.000 / 2.700.000 / 2.700.000 / 4.400.000 / 6.900.000
+khanh-hoa-nha-trang (158)            | 1 / 860   | 4.000.000 / 4.500.000 / 5.400.000 / 7.600.000 / 11.500.000
+
+Ví dụ đọc đúng: 4.500.000đ là dòng xe 7 chỗ, TP.HCM tới Nha Trang, thời lượng
+1 ngày, định mức 860 km. Gửi lịch và địa chỉ để xác nhận báo giá áp dụng.
+HTML /bang-gia và 18 trang tuyến/cỡ xe theo tuyến cho 1.030 ô hiển thị mỗi môi
+trường, gồm 830 ô từ bảng chung và 200 ô lặp lại theo vùng/cỡ xe. Đối chiếu cả
+tên điểm trả, vùng, thời lượng, km và giá nổi bật tại 18 trang. 0 chênh lệch.
+Bản local đưa định mức lên cạnh giá tuyến, ghi dòng giá cụ thể khi tên khác
+tên tuyến và nhắc hỏi riêng với lịch khác. Phía trên bảng có dòng điều kiện
+hiển thị ngoài vùng cuộn ngang. Mức giá và quy tắc trong JSON/TS giữ nguyên.
+Chờ điều xe duyệt phạm vi đón theo địa chỉ thật, điều kiện gộp phí cầu đường,
+VAT, đỗ, chờ, lưu đêm, cao điểm, xe đặc biệt và nhiều điểm đón. Giữ tên vùng
+nguồn trong bảng để tra cứu. Khi cần xác định cổng/địa chỉ hành chính hoặc
+đường vào, dùng ghim do khách cung cấp và hỏi điểm đến/điều xe.
+
+GÓI 021 · MỐC KỸ THUẬT
+Production: https://hanhtrinhphuongnam.vn · local: build Vite/Nitro từ 907e81f
+và diff Ngày 03. Mẫu 36 URL gồm trang chủ/bảng giá và các trang điều hướng liên
+quan, 5 trang cỡ xe, 3 trang tuyến, 15 trang cỡ xe theo tuyến, 5 bài Ngày 03.
+Thứ tự cỡ xe khi lấy mẫu: 7, 16, 4, 29, 45.
+Production: 36/36 HTTP 200, canonical đúng, mỗi trang có 1 H1 và title, 36/36
+robots meta index/follow và đích Zalo https://zalo.me/0899473333. Sitemap HTTP
+200 có 58 URL duy nhất, robots.txt HTTP 200 cho phép trang công khai và chặn
+/api/. HTTP và HTTPS www dùng 301 về HTTPS tên miền chính và giữ query mẫu.
+Đây là khả năng được lập chỉ mục quan sát từ server. Chờ GSC để kiểm trạng thái
+thực. Production vẫn có lastmod cũ của năm bài, bản local dùng 26/11/2026.
+Chrome 360px: bảng cuộn bên trong, kiểm bộ lọc chọn 7 chỗ tại /bang-gia và năm
+ảnh bài tải được. Tự động kiểm proxy local mô phỏng HTTPS, host preview noindex,
+và các đích dẫn nội bộ. Luồng Zalo xác minh URL nhận. Chưa kiểm ứng dụng Zalo
+trên điện thoại vật lý hoặc gửi tin. Các trang trong mẫu không có nút copy.
+Build và các lệnh typecheck, check:content, check:prices, check:seo, verify:local
+đã đạt. verify:local kiểm đủ 58 URL sitemap trên localhost. Logo SVG có cùng
+SHA-256 với bản gốc được chủ website duyệt.
+Bước duyệt: xem năm phiếu và diff, xác nhận hồ sơ ảnh còn thiếu trước khi duyệt
+phát hành. Nếu được duyệt push, đối chiếu lại 36 URL khi có deploy và ghi mốc
+GSC riêng khi được cấp quyền.
+
+NGHIỆM THU THEO MÃ MỤC
+Mã | Trạng thái | Kết quả và bằng chứng
+
+GÓI 015
+0351 | Đạt | Đã đọc mã nguồn 907e81f và HTML production ngày 26/11.
+0352 | Đạt | Quyết định là chia ngày đi, ngày tham quan và ngày về.
+0353 | Đạt | Câu trả lời cũ có ngay ở phần thân nhưng nằm sau ảnh; local đã đưa lên trước ảnh.
+0354 | Đạt | Thu gọn diễn giải chuyến dài và phần chọn xe trùng bài 016.
+0355 | Đạt | Bảng ngày 2 và cách hẹn xe hai bến là phần riêng của bài.
+0356 | Đạt | Đối chiếu bài 016 và /tuyen-xe/nha-trang.
+0357 | Đạt | Hai đoạn về danh sách vali đối chiếu tại phiếu 015; giữ nội dung chi tiết ở 016.
+0358 | Đạt | Title/H1 hướng dẫn ba ngày từ TP.HCM; phần mở bám đúng chuyến.
+0359 | Đạt | Các mục phục vụ lịch, cỡ xe, phạm vi giá và bước hỏi giá.
+0360 | Đạt | 3 ngày 2 đêm là lịch minh họa; dòng tham khảo chính là 1 ngày/860 km.
+0361 | Đạt | Dòng 158 khanh-hoa-nha-trang; lịch ba ngày cần điều xe báo riêng.
+0362 | Đạt | Bảng và trường hợp hai bến ghi rõ lịch/ví dụ minh họa.
+0363 | Đạt | Đã đối chiếu Nha Trang có hoạt động biển đảo; bến thật do bên tàu xác nhận.
+0364 | Chờ | Chờ giờ xe, chỗ chờ và khoản liên quan tài xế theo từng lịch từ điều xe.
+0365 | Đạt | Ảnh biển nhận diện điểm đến, phần bàn giao xe/tàu giải thích bằng chữ.
+0366 | Đạt | Ảnh CC0; bảng ba ngày phân biệt xe và tàu.
+0367 | Đạt | Alt tả cảnh bãi biển; nguồn ảnh nằm trong hồ sơ nội bộ.
+0368 | Đạt | Giữ link tuyến, nguồn du lịch, thêm bài chọn cỡ xe và Zalo theo đoạn.
+0369 | Đạt | Chrome 360px kiểm vị trí phần mở, ảnh và vùng cuộn bảng.
+0370 | Đạt | CTA chữ ngắn gồm ngày đi/về, khách sạn, lượt xe và hai bến nếu có.
+0371 | Đạt | Hữu ích cao; chính xác khi có xác nhận lịch; khác biệt ở hai bến; ảnh phù hợp; bước tiếp rõ.
+0372 | Đạt | Giữ URL. Sửa bố cục, bảng ngày giữa và liên kết.
+0373 | Đạt | Đã soạn hai câu mở và ví dụ bàn giao hai bến trong mã nguồn.
+0374 | Chờ | Bên tàu, khách sạn và điều xe cần xác nhận các dữ kiện nêu trong phiếu.
+0375 | Đạt | Đã lập phiếu 015; ưu tiên cao.
+
+GÓI 016
+0376 | Đạt | Đã đọc mã nguồn 907e81f và HTML production ngày 26/11.
+0377 | Đạt | Đủ ghế đang dùng và đủ chỗ xếp tổng hành lý là tiêu chí chọn.
+0378 | Đạt | Câu trả lời cũ thiên về nhóm khách; local đặt tiêu chí chọn trước ảnh.
+0379 | Đạt | Rút phần diễn giải danh sách hành lý thành hướng dẫn ngắn theo kiện lớn.
+0380 | Đạt | Ví dụ gập ghế cho xe đẩy và vali cho thấy khi nào cần hỏi xe lớn.
+0381 | Đạt | Đối chiếu bài 015, bài chọn xe theo số người và hai trang cỡ xe.
+0382 | Đạt | 015 cũ “Đếm số người thực đi...” và 016 cũ “Lập một danh sách chung...”; tập trung cách chọn tại 016.
+0383 | Đạt | Title và H1 nêu 7/16 chỗ đi Nha Trang; mở đầu đưa ngưỡng chọn theo xe thật.
+0384 | Đạt | Bảng, ví dụ và bước xác nhận đều phục vụ quyết định cỡ xe.
+0385 | Đạt | 7/16 là nhãn nhóm xe; không gán số ghế hữu dụng hoặc dung tích khoang.
+0386 | Đạt | Link tra giá đúng xe, đúng tuyến; báo giá nhiều ngày theo lịch thực tế.
+0387 | Đạt | Ba trường hợp được đặt dưới tiêu đề tình huống minh họa.
+0388 | Đạt | Điểm đón, hẻm và điểm tập kết phải dựa trên ghim, không điền địa chỉ ví dụ như địa chỉ thật.
+0389 | Chờ | Điều xe xác nhận ghế, cấu hình và vị trí đồ trên xe dự kiến.
+0390 | Đạt | Ảnh Transit giúp nhận diện thân xe 16 chỗ.
+0391 | Chờ | Thiếu hồ sơ quyền và ảnh cabin/khoang theo đúng cấu hình ghế.
+0392 | Đạt | Đã sửa alt/chú thích về vai trò minh họa, bỏ tuyên bố nguồn ảnh.
+0393 | Đạt | Giữ hai link cỡ xe/tham khảo lịch, bổ sung Zalo.
+0394 | Đạt | Chrome 360px kiểm vị trí phần mở, ảnh và thao tác cuộn bảng.
+0395 | Đạt | CTA gồm khách, vali, kiện lớn và ghim đón; dùng cùng lịch khi hỏi hai cỡ.
+0396 | Đạt | Hữu ích cao; khác biệt ở chọn cỡ theo kiện; bằng chứng hình khoang còn thiếu.
+0397 | Đạt | Giữ URL và sửa sâu tiêu chí chọn, ví dụ và bước hỏi.
+0398 | Đạt | Đã lưu câu mở và tình huống gập ghế trong bản local.
+0399 | Chờ | Điều xe và chủ website xác nhận xe, cấu hình, ảnh và quyền.
+0400 | Đạt | Đã lập phiếu 016; ưu tiên cao.
+
+GÓI 017
+0401 | Đạt | Đọc nguồn lib/content/articles.ts và bản công khai trước khi biên tập.
+0402 | Đạt | Chốt giờ làm lễ, sắp giờ lắp hoa và tách lịch xe hoa/xe khách.
+0403 | Đạt | Phần mở cũ liệt kê nhiều mốc; phần mới nói rõ mốc bắt đầu.
+0404 | Đạt | Gộp đoạn liệt kê lịch trùng thành bảng hai dòng theo từng xe.
+0405 | Đạt | Hai lịch tách xe hoa chờ chụp ảnh và xe khách cần đến nhà hàng.
+0406 | Đạt | Đối chiếu bài 018 và /xe-cuoi.
+0407 | Đạt | Hai bài đều có “giờ xe tới nơi trang trí”; 017 giữ checklist, 018 chỉ giữ điều kiện so hai xe.
+0408 | Đạt | Title/H1 về chuẩn bị thuê; mở bài chuyển sang thứ tự thực hiện.
+0409 | Đạt | Các đề mục phục vụ giờ, hoa, xe đoàn và lịch tách.
+0410 | Đạt | 7/16/29/45 là nhóm xe tham khảo; không hứa số khách thực chở, thời gian hay giá.
+0411 | Không áp dụng | Giá xe cưới theo lịch, ngoài phạm vi bảng tuyến.
+0412 | Đạt | Tình huống chụp ảnh và đưa khách là ví dụ.
+0413 | Đạt | Ghim nhà trai/nhà gái và cổng nhà hàng cần chốt với đơn vị tổ chức.
+0414 | Chờ | Điều xe và bên hoa xác nhận thời lượng lắp, điểm lắp, điểm dừng và chi phí.
+0415 | Đạt | wedding.jpg minh họa sedan trước trang trí; bảng riêng giải thích cách điều phối.
+0416 | Chờ | Đã ghi góc sảnh/cổng, xe hoa và điểm trả khách; chờ tư liệu và quyền ảnh.
+0417 | Đạt | Alt/chú thích mô tả ảnh minh họa và xe cần xác nhận.
+0418 | Đạt | Link dịch vụ, bài chọn xe theo người và bài so Mercedes/Camry.
+0419 | Đạt | Chrome 360px kiểm ảnh và bảng hai nhóm xe trên bản local.
+0420 | Đạt | CTA gồm ngày cưới, giờ lễ, ghim và số người từng lượt.
+0421 | Đạt | Hữu ích cao; riêng biệt ở tách hai lịch; ảnh cần hồ sơ quyền; bước tiếp rõ.
+0422 | Đạt | Giữ URL và sửa sâu thứ tự lập lịch.
+0423 | Đạt | Đã lưu phần mở và bảng lịch minh họa.
+0424 | Chờ | Chờ điều xe, đơn vị hoa và chủ website xác nhận giờ/chỗ/ảnh.
+0425 | Đạt | Đã lập phiếu 017; ưu tiên cao.
+
+GÓI 018
+0426 | Đạt | Đọc nguồn lib/content/travel-guides-2026-11.ts và bản công khai.
+0427 | Đạt | So hai xe theo màu, trang phục, đồ lễ và lịch đón dâu.
+0428 | Đạt | Hai câu mở mới nêu điều kiện ảnh và điều kiện bố trí đồ/người.
+0429 | Đạt | Bỏ danh sách mốc trùng bài 017; giữ cùng lịch cho hai báo giá.
+0430 | Đạt | Tiêu chí màu xe và cách xử lý nếu đồ lễ không vừa là phần riêng.
+0431 | Đạt | Đối chiếu bài 017, trang xe cưới và hai trang mẫu xe.
+0432 | Đạt | Đoạn mốc trang trí và nhà trai/nhà gái giữ đầy đủ tại 017; 018 giữ điều kiện để so xe.
+0433 | Đạt | Title/H1 dùng Mercedes/Camry và phần mở xác định theo xe dự kiến.
+0434 | Đạt | Các mục bám chọn xe, cùng lịch, trang trí và điều kiện báo giá.
+0435 | Đạt | Không có bảng giá, dung tích khoang hoặc thời lượng thực tế.
+0436 | Không áp dụng | Báo giá xe cưới riêng, không có dòng xe cưới tương ứng trong bảng tuyến.
+0437 | Đạt | Trường hợp màu xe/đồ lễ có nhãn ví dụ.
+0438 | Đạt | Ghim đầu hẻm và chỗ dừng xác nhận theo địa chỉ thực.
+0439 | Chờ | Điều xe xác nhận xe còn trống, màu/đời, khoang, phương án thay và giá.
+0440 | Đạt | mercedes.jpg cung cấp hình minh họa một mẫu tham khảo.
+0441 | Chờ | Chờ hồ sơ quyền và xác nhận xe được duyệt; chưa có ảnh Camry cùng góc để so.
+0442 | Đạt | Alt/chú thích giữ vai trò minh họa; không dùng để cam kết xe.
+0443 | Đạt | Giữ link hai mẫu, dịch vụ và checklist 017, thêm Zalo.
+0444 | Đạt | Chrome 360px kiểm ảnh và bảng so sánh.
+0445 | Đạt | CTA gửi ngày cưới, lịch và yêu cầu màu hoặc đồ lễ.
+0446 | Đạt | Hữu ích vừa/cao; có quyết định cụ thể; ảnh một dòng; bước tiếp rõ.
+0447 | Đạt | Giữ URL, sửa tập trung phần so xe và gọn phần lịch.
+0448 | Đạt | Lưu câu mở và ví dụ màu xe/đồ lễ.
+0449 | Chờ | Điều xe và chủ website xác nhận mẫu/ảnh/chính sách đổi xe.
+0450 | Đạt | Đã lập phiếu 018; ưu tiên vừa.
+
+GÓI 019
+0451 | Đạt | Đọc nguồn lib/content/travel-guides-2026-11.ts và bản công khai.
+0452 | Đạt | Sắp điểm nghỉ, thao tác lên xuống và đồ hỗ trợ trước khi chốt xe.
+0453 | Đạt | Đưa hai câu trả lời về lịch nghỉ và kiểm xe lên trước ảnh.
+0454 | Đạt | Rút lời dẫn dài, giữ vấn đề vận hành và thiết bị đặc biệt.
+0455 | Đạt | Bảng điểm nghỉ và tình huống khung tập đi nối ba mốc chuyến.
+0456 | Đạt | Đối chiếu bài chọn xe theo người, nhóm xe 7 và 16 chỗ.
+0457 | Đạt | Bài chung giữ “đếm số khách ... số kiện”; 019 giữ điểm nghỉ, bậc và đồ hỗ trợ.
+0458 | Đạt | Title/H1 phù hợp chuyến có người lớn tuổi; mở đầu bám việc cần xác nhận.
+0459 | Đạt | Các mục giải đáp xe, điểm nghỉ, người phụ trách và bước hỏi.
+0460 | Đạt | Không gán thời gian nghỉ cứng, kích thước khoang hoặc thông số thiết bị.
+0461 | Không áp dụng | Không có giá tiền trong bài; nhu cầu đặc biệt hỏi điều xe theo lịch.
+0462 | Đạt | Tình huống khung tập đi ghi rõ ví dụ.
+0463 | Đạt | Nhà, điểm nghỉ và cổng lưu trú là vị trí minh họa, ghim thật theo đoàn.
+0464 | Chờ | Chờ điều xe kiểm khả năng chuyên dụng và điểm dừng thật với khách.
+0465 | Đạt | Ảnh khoang Kia Carnival minh họa vị trí ghế và lối đi.
+0466 | Chờ | Lịch minh họa đã soạn; chờ hồ sơ quyền ảnh hiện có.
+0467 | Đạt | Alt/chú thích mô tả khoang ghế và nêu điểm cần xác nhận, không ghi nguồn công khai.
+0468 | Đạt | Giữ link 7, 16 chỗ, bài chọn xe chung; thay CTA chung bằng Zalo theo nhu cầu.
+0469 | Đạt | Chrome 360px kiểm ảnh và bảng điểm nghỉ.
+0470 | Đạt | CTA hỏi điểm đón/nghỉ, hỗ trợ lên xuống và kích thước đồ.
+0471 | Đạt | Hữu ích cho gia đình; riêng biệt ở các điểm nghỉ; ảnh chưa thể hiện bậc; CTA rõ.
+0472 | Đạt | Giữ URL và cập nhật câu mở, ví dụ và đường hỏi riêng.
+0473 | Đạt | Lưu câu mở và ví dụ ba chặng trong bản local.
+0474 | Chờ | Điều xe, cơ sở lưu trú và chủ website xác nhận thiết bị, cổng, ảnh.
+0475 | Đạt | Đã lập phiếu 019; ưu tiên vừa.
+
+GÓI 020
+0476 | Đạt | Đối soát 166 dòng, 5 cỡ, 830 ô và chuẩn hóa kiểu số/null.
+0477 | Đạt | Đã kiểm JSON, rawPrices, formatPrice, PriceLookup và quy tắc kiểm giá.
+0478 | Đạt | Nguồn tên xlsx, mốc 24/10/2026, ID/sourceRow/URL đã ghi; chờ xlsx nếu cần đối soát gốc.
+0479 | Đạt | Đối chiếu nhãn ba tuyến và trường tên nguồn của 166 điểm; tên hành chính/cổng cụ thể hỏi theo ghim.
+0480 | Chờ | Nguồn ghi TP.HCM, đúng chiều đi; chờ điều xe xác nhận giới hạn đón trước sáp nhập theo địa chỉ.
+0481 | Đạt | 830 ô đủ năm cột; 816 số, 14 Liên hệ.
+0482 | Đạt | Đối chiếu rawPrices, bỏ lệch 1 đồng và ba ngoại lệ, hiển thị VNĐ/chuyến.
+0483 | Đạt | 161 dòng surcharge 100.000, 5 dòng 0; 14 Liên hệ, mã ngoại lệ trong biên bản.
+0484 | Đạt | 166 dòng 1 ngày có km; City tour có 4/8 giờ trong tên.
+0485 | Đạt | Bản local gọi “định mức km” và nhắc hỏi giá ngoài lịch.
+0486 | Chờ | Điều xe cần xác nhận nhiều điểm đón/trả, ghim và phạm vi.
+0487 | Chờ | VAT, phí cầu đường và khoản đã gồm cần điều xe xác nhận.
+0488 | Chờ | Bến bãi, chờ, lưu đêm và các khoản tách riêng cần điều xe xác nhận.
+0489 | Chờ | Phạm vi đổi lịch, cao điểm hay xe đặc biệt chưa có điều kiện chính thức trong nguồn dùng.
+0490 | Chờ | Dùng “giá tham khảo theo chuyến” theo nguồn; chờ duyệt điều kiện nếu công bố trọn gói.
+0491 | Đạt | Định mức kề giá tuyến; điều kiện bảng ở ngoài vùng cuộn theo Chrome 360px.
+0492 | Đạt | So 1.030 ô mỗi môi trường và giá nổi bật tại 18 URL. Không thấy lệch.
+0493 | Đạt | Năm bài được rà không suy giá một chiều/nhiều ngày; bài Nha Trang dẫn hỏi riêng.
+0494 | Đạt | CTA dẫn Zalo, có hướng dẫn dữ liệu theo lịch, xe cưới và ngoài gói.
+0495 | Đạt | Ví dụ Nha Trang 7 chỗ 4.500.000đ, dòng 158, 1 ngày/860 km.
+0496 | Đạt | Title/alt/FAQ của năm bài và nội dung giá theo dòng không hứa số ngoài nguồn.
+0497 | Đạt | Đã ghi 0 lệch giá và hai điểm trình bày cần sửa ở component bảng/tóm tắt.
+0498 | Chờ | Đã ghi câu hỏi cho điều xe; đang chờ phản hồi và duyệt.
+0499 | Đạt | Bảng trước/sau và checksum trong biên bản.
+0500 | Đạt | Kiểm lại giá và phạm vi ở bảng chung, trang tuyến và trang cỡ xe theo tuyến.
+
+GÓI 021
+0501 | Đạt | Mẫu kỹ thuật kiểm URL, khả năng lập chỉ mục và đường hỏi giá.
+0502 | Đạt | Đã kiểm bản công khai và build local từ mã 907e81f + diff.
+0503 | Đạt | 36 URL gồm 5 cỡ theo thứ tự 7,16,4,29,45, 3 tuyến, 15 cỡ theo tuyến và 5 bài.
+0504 | Đạt | Mốc quan sát production 26/11 khoảng 09:05 giờ Việt Nam.
+0505 | Đạt | 36 URL HTTP 200; HTTP và www redirect 301 giữ query kiểm.
+0506 | Đạt | Canonical đúng; sitemap 58 URL duy nhất, đủ 36 URL lấy mẫu.
+0507 | Đạt | Robots cho phép trang công khai, chặn /api/; production index/follow và local kiểm host preview noindex.
+0508 | Đạt | 36 trang có title và đúng 1 H1; năm bài local giữ tên hiện có.
+0509 | Đạt | HTML trả dữ liệu giá và CTA; Chrome chọn 7 chỗ cập nhật cột.
+0510 | Đạt | Lọc tương tác phụ thuộc hydration; dữ liệu bảng và đích CTA có ngay trong HTML.
+0511 | Đạt | Đích Zalo đúng 0899473333; kiểm nội bộ bằng bộ check-site.
+0512 | Đạt | 360px: bảng có vùng cuộn riêng, không tràn toàn trang ở mẫu đo.
+0513 | Đạt | Năm ảnh tải được trên 360px; hồ sơ quyền còn chờ ở 4 ảnh hiện hữu.
+0514 | Không áp dụng | Không có nút sao chép trong phạm vi mẫu. Luồng chính là liên kết Zalo.
+0515 | Đạt | Local thấy thời lượng/km ở giá tuyến và lời nhắc ngoài vùng cuộn bảng.
+0516 | Đạt | So production với local về URL, metadata, giá, ảnh và thứ tự mở bài.
+0517 | Đạt | Bằng chứng gắn 36 URL và mốc mã local; không có mã deploy public.
+0518 | Đạt | Hai component giá ảnh hưởng 18 trang tuyến/cỡ và bảng chung; nội dung chỉ 5 URL.
+0519 | Chờ | Chờ cấp quyền GSC để kiểm trạng thái URL thực tế.
+0520 | Đạt | Ưu tiên HTTP, canonical, bảng giá và CTA; chưa thấy lỗi làm mất các luồng này.
+0521 | Đạt | Ghi HTTP, redirect, số URL/ô giá, thông số 360px và nguồn trong biên bản.
+0522 | Đạt | Đã so bản công khai với build local sau thay đổi; giá và URL khớp.
+0523 | Đạt | Đã ghi thứ tự chốt ảnh, dữ kiện điều xe, duyệt bản local và kiểm lại khi có deploy.
+0524 | Chờ | Phần phát hành chờ chủ website duyệt push; GSC chờ quyền.
+0525 | Đạt | Đã bàn giao biên bản bảo toàn URL và đường hỏi giá.

@@ -81,6 +81,10 @@ export function PriceLookup({
       <p className="price-result" role="status" aria-live="polite">
         {filtered.length} tuyến phù hợp · Khởi hành từ TP.HCM
       </p>
+      <p className="price-result">
+        Giá thuê nguyên xe theo thời gian và định mức km của từng dòng. Lịch khác bảng cần báo
+        giá riêng.
+      </p>
       <div
         className="price-scroll"
         tabIndex={0}

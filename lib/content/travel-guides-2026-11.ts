@@ -20,14 +20,16 @@ export const travelGuides: Article[] = [
       'Gợi ý lịch đi Nha Trang 3 ngày 2 đêm từ TP.HCM bằng xe riêng: chia ngày di chuyển, chọn điểm tham quan và chốt phạm vi dùng xe.',
     category: 'Lịch trình Nha Trang',
     date: '2026-11-17',
+    updatedAt: '2026-11-26',
+    showFirstSectionBeforeImage: true,
     image: '/images/seo-nha-trang-7-2.jpg',
     imageAlt: 'Hàng dừa và ô che nắng bên bãi biển Nha Trang',
     sections: [
       {
-        heading: 'Ba ngày nên dành bao nhiêu thời gian cho di chuyển?',
+        heading: 'Dành ngày giữa cho hoạt động chính',
         blocks: [
           paragraph(
-            'Với chuyến xe riêng từ TP.HCM, nên xem ngày đầu và ngày cuối là hai ngày có chặng đường dài. Dành ngày giữa cho hoạt động chính tại Nha Trang giúp lịch trình có khoảng nghỉ, thay vì xếp điểm tham quan nối tiếp ngay sau khi đến. Mốc giờ cụ thể cần được nhà xe tính theo điểm đón, điểm nghỉ, tình hình đường và địa chỉ khách sạn.',
+            'Dành ngày đầu để đi từ TP.HCM đến khách sạn, ngày giữa để tham quan và ngày cuối để về. Nếu đi đảo vào ngày giữa, chốt với bên tàu cả bến lên và bến về rồi hẹn xe đưa đón trên bờ theo hai ghim đó.',
           ),
           paragraph(
             'Trước khi đặt phòng, hãy đối chiếu giờ nhận phòng với giờ đến dự kiến. Nếu đến sớm, hỏi nơi gửi đồ và phương án nghỉ trong lúc chờ; nếu về muộn ngày cuối, hỏi cách gửi hành lý sau khi trả phòng. Không nên tự mặc định tài xế phục vụ xuyên đêm hoặc mọi lượt đi trong thành phố đều nằm trong báo giá.',
@@ -48,7 +50,7 @@ export const travelGuides: Article[] = [
         heading: 'Lịch trình 3 ngày 2 đêm để tham khảo',
         blocks: [
           table(
-            'Khung lịch minh họa, chưa phải chương trình tour hoặc lịch xe đã xác nhận',
+            'Lịch minh họa cho chuyến Nha Trang 3 ngày 2 đêm',
             ['Ngày', 'Gợi ý sắp xếp', 'Điều cần chốt với nhà xe'],
             [
               [
@@ -59,7 +61,7 @@ export const travelGuides: Article[] = [
               [
                 'Ngày 2',
                 'Chọn một chương trình chính: tham quan trên bờ hoặc dành phần lớn ngày cho chuyến biển đảo.',
-                'Địa chỉ đón, điểm trả, giờ kết thúc, nơi xe chờ; chuyến thuyền đặt riêng nếu có.',
+                'Nếu đi đảo, đặt tàu riêng. Hẹn xe trả tại bến đi và đón tại bến về theo giờ bên tàu xác nhận.',
               ],
               [
                 'Ngày 3',
@@ -69,24 +71,20 @@ export const travelGuides: Article[] = [
             ],
           ),
           paragraph(
-            'Đoàn có trẻ nhỏ hoặc người lớn tuổi có thể giữ buổi chiều ngày đầu nhẹ hơn và chọn hoạt động gần khách sạn. Nếu muốn thêm nhiều điểm tham quan, nên cắt bớt điểm hoặc tăng số ngày sau khi trao đổi với nhà xe. Không dùng khung lịch này để suy ra thời gian lái liên tục hay cam kết giờ đến.',
+            'Ví dụ, nếu tàu về bến khác với bến đi, gửi hai ghim riêng cho nhà xe. Hỏi bên tàu thời gian lên bờ dự kiến và thống nhất ai báo tài xế nếu giờ hoặc bến thay đổi.',
           ),
         ],
       },
       {
-        heading: 'Chọn xe theo người và đồ của cả chuyến',
+        heading: 'Chọn xe sau khi chốt số khách và hành lý',
         blocks: [
-          paragraph(
-            'Đếm số người thực đi rồi lập danh sách vali, xe đẩy và đồ dùng chung. Với chuyến hai đêm, hành lý thường khác chuyến đi trong ngày; ảnh chụp các kiện lớn giúp nhà xe tư vấn cụ thể hơn. Số chỗ của nhóm xe không tự thể hiện số ghế hành khách còn dùng được và sức chứa khoang đồ trên chiếc xe được bố trí.',
-          ),
           paragraph([
-            { text: 'Gia đình có thể tham khảo ' },
-            { text: 'xe 7 chỗ đi Nha Trang', href: '/thue-xe/7-cho/di-nha-trang' },
-            { text: '; đoàn đông hơn hoặc cần thêm không gian hành lý nên đối chiếu ' },
-            { text: 'xe 16 chỗ đi Nha Trang', href: '/thue-xe/16-cho/di-nha-trang' },
+            { text: 'Khi đã có lịch, xem cách ' },
             {
-              text: '. Hãy yêu cầu xác nhận mẫu xe, số ghế cho khách và cách bố trí đồ trước khi đặt cọc.',
+              text: 'chọn xe 7 hay 16 chỗ đi Nha Trang',
+              href: '/kinh-nghiem/di-nha-trang-nen-chon-xe-7-hay-16-cho',
             },
+            { text: ' theo số khách, vali và điểm đón.' },
           ]),
         ],
       },
@@ -103,7 +101,7 @@ export const travelGuides: Article[] = [
             { text: 'Xem ' },
             { text: 'trang tuyến Nha Trang', href: '/tuyen-xe/nha-trang' },
             {
-              text: ' để đối chiếu thời lượng trong bảng giá. Giá tham khảo cho thời lượng khác không nên được nhân hoặc chia máy móc thành giá 3 ngày 2 đêm.',
+              text: ' để tra thời lượng và định mức của dòng giá hiện hành. Chuyến 3 ngày 2 đêm cần báo giá riêng theo lịch sử dụng xe.',
             },
           ]),
         ],
@@ -112,14 +110,9 @@ export const travelGuides: Article[] = [
         heading: 'Gửi lịch đi Nha Trang để hỏi giá',
         blocks: [
           paragraph([
-            { text: 'Có thể dùng thêm ' },
-            {
-              text: 'mẫu hỏi báo giá theo lịch trình',
-              href: '/kinh-nghiem/thong-tin-can-co-khi-hoi-bao-gia',
-            },
-            {
-              text: ' để điền đủ điểm đón, giờ đi và giờ về trước khi trao đổi với Hành Trình Phương Nam.',
-            },
+            { text: 'Gửi ngày đi, ngày về, địa chỉ khách sạn và các lượt cần xe ở Nha Trang qua ' },
+            { text: 'Zalo', href: contact.zalo },
+            { text: '. Nếu đi đảo, gửi thêm bến đi và bến về khi đã có.' },
           ]),
         ],
       },
@@ -146,18 +139,20 @@ export const travelGuides: Article[] = [
       'So sánh xe 7 và 16 chỗ đi Nha Trang theo số khách, vali, điểm đón và lịch sử dụng. Checklist thông tin cần xác nhận trước khi đặt xe.',
     category: 'Chọn xe đi Nha Trang',
     date: '2026-11-17',
+    updatedAt: '2026-11-26',
+    showFirstSectionBeforeImage: true,
     image: '/images/van.jpg',
-    imageAlt: 'Ford Transit 16 chỗ trong bộ ảnh do Hành Trình Phương Nam cung cấp',
-    imageCaption: 'Ảnh xe do doanh nghiệp cung cấp; xe phục vụ cần xác nhận theo ngày đi.',
+    imageAlt: 'Thân xe Ford Transit minh họa nhóm xe 16 chỗ',
+    imageCaption: 'Xe 16 chỗ minh họa. Hỏi ảnh bố trí ghế và khoang hành lý trên xe dự kiến.',
     sections: [
       {
         heading: 'Bắt đầu bằng danh sách khách và hành lý',
         blocks: [
           paragraph(
-            'Xe 7 chỗ có thể là phương án cho gia đình hoặc nhóm nhỏ; xe 16 chỗ đáng cân nhắc khi đoàn đông hơn hoặc cần kiểm tra thêm không gian cho người và đồ. Không nên quyết định chỉ bằng tên nhóm xe: hãy hỏi số ghế dành cho khách, cấu hình ghế và khoang chứa của chiếc xe thực tế. Trẻ em cũng phải được báo đầy đủ khi tư vấn chỗ ngồi.',
+            'Chọn xe 7 chỗ khi nhà xe xác nhận đủ ghế cho cả đoàn và xếp vừa hành lý trên chiếc xe dự kiến. Nếu thiếu ghế hoặc có vali lớn, xe đẩy hay thùng đồ chưa có chỗ, hỏi thêm phương án 16 chỗ với cùng danh sách khách và đồ.',
           ),
           paragraph(
-            'Lập một danh sách chung thay vì để từng người báo hành lý vào ngày đi. Ghi số vali, kích cỡ, túi mềm, xe đẩy và thùng đồ; đồ dài hoặc khó gấp cần gửi kích thước. Một đoàn ít người nhưng nhiều kiện lớn có thể cần phương án khác với đoàn cùng số khách chỉ mang túi nhỏ.',
+            'Tính cả trẻ em khi đếm khách. Với kiện khó xếp, gửi kích thước và ảnh lúc đã gấp để nhà xe kiểm tra cùng cấu hình ghế sẽ dùng.',
           ),
         ],
       },
@@ -204,7 +199,7 @@ export const travelGuides: Article[] = [
         heading: 'Ba tình huống minh họa khi chọn xe',
         blocks: [
           checklist([
-            'Gia đình ít người có xe đẩy: gửi ảnh khi xe đẩy đã gấp cùng số vali, hỏi cách xếp đồ và chỗ ngồi trên nhóm 7 chỗ trước.',
+            'Gia đình mang xe đẩy và vali cứng: hỏi xe 7 chỗ có chỗ xếp cả hai khi đang dùng đủ ghế cần thiết. Nếu phải gập một ghế đang cần dùng, hỏi phương án 16 chỗ.',
             'Hai gia đình đi cùng: báo tổng số người lớn và trẻ em, không chỉ số hộ; hỏi cả phương án 7 và 16 chỗ nếu số khách/hành lý chưa chốt.',
             'Nhóm bạn đi nhiều đêm: chốt số kiện lớn của từng người, giờ tập kết và điểm trả; nếu cần xe lớn hơn, hỏi trước khi đặt cọc.',
           ]),
@@ -230,6 +225,11 @@ export const travelGuides: Article[] = [
             'Tổng hành lý, đồ cồng kềnh và những món cần lấy ở điểm nghỉ.',
             'Điểm đón/trả, giờ khởi hành, số đêm lưu trú và các lượt dùng xe tại điểm đến.',
             'Giá tổng, phạm vi chờ, khoản phát sinh và cách xử lý khi số khách thay đổi.',
+          ]),
+          paragraph([
+            { text: 'Gửi số khách, số vali, kiện lớn nhất và ghim đón qua ' },
+            { text: 'Zalo', href: contact.zalo },
+            { text: ' để kiểm tra hai cỡ xe theo cùng lịch.' },
           ]),
           paragraph([
             { text: 'Nếu chưa có lịch từng ngày, tham khảo ' },
@@ -637,6 +637,8 @@ export const travelGuides: Article[] = [
       'So sánh nhu cầu thuê xe cưới Mercedes và Camry theo lịch đón dâu, đồ lễ, trang trí và điểm dừng. Checklist xác nhận xe trước ngày cưới.',
     category: 'Chọn xe cưới',
     date: '2026-11-17',
+    updatedAt: '2026-11-26',
+    showFirstSectionBeforeImage: true,
     image: '/images/mercedes.jpg',
     imageAlt: 'Ảnh minh họa dòng Mercedes-Benz trong danh mục xe tham khảo',
     imageCaption: 'Ảnh minh họa dòng xe; đời xe, màu xe và trang bị cần được xác nhận khi đặt.',
@@ -645,7 +647,7 @@ export const travelGuides: Article[] = [
         heading: 'Chọn dòng xe sau khi chốt vai trò trong đoàn cưới',
         blocks: [
           paragraph(
-            'Khi phân vân Mercedes hay Camry làm xe cưới, hãy xác định trước xe chở ai, có mang đồ lễ hoặc váy cưới cồng kềnh không và xe cần xuất hiện ở những điểm nào. Hai tên dòng xe chỉ là bước đầu tham khảo; đời xe, màu xe, nội thất và chiếc xe sẵn có cần được xác nhận theo ngày cưới.',
+            'Nếu màu xe hoặc diện mạo là yêu cầu của lễ đón dâu, xin ảnh chiếc Mercedes E-Class và Camry dự kiến trước khi chọn. Nếu ưu tiên việc lên xuống với váy cưới hoặc cần mang đồ lễ, chọn sau khi đã kiểm tra cửa, ghế và khoang hành lý của từng xe.',
           ),
           paragraph(
             'Xe hoa chở cô dâu chú rể và xe đưa đón người thân là hai nhu cầu nên tách riêng. Không để lịch của xe hoa phải kiêm nhiều lượt gom khách nếu làm ảnh hưởng giờ làm lễ. Khi hỏi xe, gửi số người ở từng chặng thay vì chỉ ghi “thuê xe cưới một ngày”.',
@@ -687,22 +689,15 @@ export const travelGuides: Article[] = [
             ],
           ),
           paragraph(
-            'Không có lựa chọn tốt hơn cho mọi đám cưới. Phương án phù hợp là xe đáp ứng nhu cầu đã xác nhận, xuất hiện đúng trong lịch và có điều kiện rõ ràng. Nếu màu xe là yêu cầu quan trọng của buổi lễ, ghi điều đó trong xác nhận trước khi đặt cọc, không chỉ trao đổi miệng.',
+            'Ví dụ, nếu một xe có màu bạn muốn nhưng đồ lễ không xếp vừa, hãy hỏi có thể chuyển đồ sang xe người thân hay cần đổi xe hoa. Trước khi đặt cọc, ghi rõ màu xe và phương án thay xe nếu đó là yêu cầu của buổi lễ.',
           ),
         ],
       },
       {
-        heading: 'Lập lịch đón dâu theo các mốc bắt buộc',
+        heading: 'Dùng cùng một lịch để hỏi giá hai xe',
         blocks: [
-          checklist([
-            'Giờ xe tới nơi trang trí và thời gian hoàn tất, nếu trang trí trước khi đón.',
-            'Địa chỉ nhà trai, nhà gái và giờ cần có mặt để chuẩn bị làm lễ.',
-            'Điểm chụp ảnh, thời gian dừng và vị trí xe có thể chờ.',
-            'Lượt tới nhà hàng, khách sạn hoặc nơi tổ chức tiệc; ai đi cùng ở từng chặng.',
-            'Địa chỉ kết thúc, giờ trả xe dự kiến và người báo khi chương trình kéo dài.',
-          ]),
           paragraph(
-            'Nếu đường vào nhà hẹp, gửi ghim đầu hẻm và trao đổi nơi xe có thể dừng. Gia đình cần biết có phải đi bộ một đoạn hay không để chuẩn bị trang phục và đồ lễ. Khoảng dự phòng nên được đặt giữa các mốc quan trọng; không giải quyết lịch quá sát bằng cách yêu cầu tài xế rút ngắn thời gian di chuyển.',
+            'Gửi cùng giờ lắp hoa, ghim đón dâu, các điểm dừng và giờ kết thúc cho cả hai phương án. Nếu hẻm hẹp, hỏi chỗ dừng cụ thể của từng xe để gia đình biết phải đi bộ bao xa khi mặc trang phục cưới hoặc mang đồ lễ.',
           ),
         ],
       },
@@ -725,6 +720,11 @@ export const travelGuides: Article[] = [
             { text: '. Bài ' },
             { text: 'chuẩn bị thuê xe cưới', href: '/kinh-nghiem/chuan-bi-thue-xe-cuoi' },
             { text: ' giúp rà lại lịch và các thông tin trước khi trao đổi.' },
+          ]),
+          paragraph([
+            { text: 'Gửi ngày cưới, lịch đón dâu và yêu cầu về màu xe hoặc đồ lễ qua ' },
+            { text: 'Zalo', href: contact.zalo },
+            { text: ' để hỏi xe còn trống và báo giá theo cùng lịch.' },
           ]),
         ],
       },
@@ -863,19 +863,17 @@ export const travelGuides: Article[] = [
       'Chuẩn bị xe đi tỉnh cùng người lớn tuổi: trao đổi nhu cầu lên xuống, chọn điểm nghỉ, bố trí hành lý và thống nhất lịch đón trả cho gia đình.',
     category: 'Chuyến đi gia đình',
     date: '2026-11-17',
+    updatedAt: '2026-11-26',
+    showFirstSectionBeforeImage: true,
     image: '/images/kia-carnival-2.jpg',
-    imageAlt: 'Ảnh xe Kia Carnival do doanh nghiệp cung cấp để tham khảo khi chọn xe gia đình',
-    imageCaption:
-      'Ảnh xe do doanh nghiệp cung cấp; nhu cầu hỗ trợ cần được trao đổi cho từng chuyến.',
+    imageAlt: 'Khoang hành khách Kia Carnival với ghế rời ở hàng giữa',
+    imageCaption: 'Vị trí ghế và lối đi có thể khác theo xe. Hỏi trước về bậc lên xuống và chỗ xếp đồ hỗ trợ.',
     sections: [
       {
         heading: 'Trao đổi nhu cầu sinh hoạt trước khi chọn xe',
         blocks: [
           paragraph(
-            'Khi đi tỉnh cùng người lớn tuổi, nên bắt đầu từ việc lên xuống xe, đồ dùng mang theo và khả năng tham gia lịch trình của từng người. Hỏi người thân điều gì giúp chuyến đi thuận tiện, rồi gửi các nhu cầu đó cho nhà xe. Đừng chỉ chọn xe lớn hơn mà chưa kiểm tra bậc lên xuống, vị trí ngồi và khoang chứa trên xe thực tế.',
-          ),
-          paragraph(
-            'Bài viết tập trung vào tổ chức chuyến đi, không đưa hướng dẫn y tế. Nếu người thân cần đánh giá sức khỏe trước chuyến hoặc hỗ trợ y tế chuyên biệt, gia đình nên hỏi người có chuyên môn và chuẩn bị phương tiện phù hợp; xe du lịch thông thường không thay thế phương tiện y tế.',
+            'Hỏi người thân cần hỗ trợ gì khi lên xuống xe và muốn nghỉ ở đâu trước khi chốt lịch. Gửi nhà xe kích thước đồ hỗ trợ khi gấp, rồi xác nhận bậc lên xuống, vị trí ghế và chỗ xếp đồ trên chiếc xe dự kiến.',
           ),
         ],
       },
@@ -935,7 +933,7 @@ export const travelGuides: Article[] = [
             ],
           ),
           paragraph(
-            'Không có một khoảng nghỉ cố định phù hợp mọi người và mọi tuyến. Hãy trao đổi nhu cầu với người thân và nhà xe rồi chọn lịch có khoảng dự phòng. Nếu có nhiều điểm muốn ghé, phân biệt điểm bắt buộc với điểm có thể bỏ để không khiến ngày đi quá dài.',
+            'Ví dụ, gia đình có người mang khung tập đi gấp. Buổi sáng, hẹn xe ở chỗ có thể dừng gần nhà và để khung ở vị trí dễ lấy. Giữa đường, chọn điểm nghỉ có lối đi phù hợp sau khi hỏi người thân. Khi tới khách sạn, hẹn trả tại cổng gần sảnh để lấy khung trước khi dỡ vali.',
           ),
         ],
       },
@@ -954,11 +952,9 @@ export const travelGuides: Article[] = [
         heading: 'Xác nhận nhu cầu hỗ trợ với nhà xe',
         blocks: [
           paragraph([
-            { text: 'Xem ' },
-            { text: 'dịch vụ thuê xe', href: '/dich-vu' },
-            {
-              text: ' và gửi lịch để kiểm tra khả năng đáp ứng. Nếu có thay đổi về người đi hoặc đồ hỗ trợ, báo lại trước chuyến để nhà xe xác nhận phương án, không tự coi xe đã đặt chắc chắn phù hợp với nhu cầu mới.',
-            },
+            { text: 'Gửi điểm đón, điểm nghỉ dự kiến, nhu cầu lên xuống và kích thước đồ hỗ trợ qua ' },
+            { text: 'Zalo', href: contact.zalo },
+            { text: '. Nếu cần thiết bị cố định hoặc phương tiện chuyên dụng, trao đổi riêng trước khi đặt.' },
           ]),
         ],
       },

@@ -16,7 +16,8 @@ export function RoutePriceSummary({
     <div className="route-price-summary" data-route-price={row.id}>
       <p>
         <strong>
-          Giá tham khảo đến {destination.name} · {row.duration} theo bảng giá
+          Giá tham khảo từ TP.HCM đến {destination.name} · {row.duration}
+          {row.km != null && ` · định mức ${row.km} km`}
         </strong>
       </p>
       {seats === undefined ? (
@@ -37,7 +38,11 @@ export function RoutePriceSummary({
           </strong>
         </p>
       )}
-      <p>Cần xác nhận khi báo giá: VAT, phí cầu đường, bãi đỗ, giờ chờ và phụ phí nếu có.</p>
+      <p>
+        {row.destination !== destination.name && <>Dòng bảng giá: {row.destination}. </>}
+        Giá theo chuyến. Hỏi lại giá nếu lịch khác bảng và xác nhận VAT, phí cầu đường, bãi đỗ,
+        giờ chờ và phụ phí nếu có.
+      </p>
       <a className="button" href={site.zalo} target="_blank" rel="noopener noreferrer">
         Hỏi giá {seats === undefined ? 'xe' : `xe ${seats} chỗ`} đi {destination.name} qua Zalo
       </a>

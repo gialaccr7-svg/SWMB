@@ -768,27 +768,40 @@ export const articles: Article[] = [
     slug: 'chuan-bi-thue-xe-cuoi',
     topics: ['xe-cuoi', 'dat-xe'],
     image: '/images/wedding.jpg',
-    imageAlt: 'Xe hoa minh họa dịch vụ đưa đón trong ngày cưới',
-    imageCaption: 'Xe thực tế được xác nhận khi tư vấn.',
+    imageAlt: 'Mercedes-Benz màu bạc minh họa một lựa chọn xe cưới',
+    imageCaption: 'Hỏi trước mẫu xe và cách gắn hoa khi chốt lịch.',
     title: 'Những điều cần chuẩn bị khi thuê xe cưới',
     description:
       'Lập lịch xe đón dâu, hẹn giờ lắp hoa, bố trí xe cho hai họ và chốt người liên hệ trong ngày cưới.',
     category: 'Xe cưới',
     date: '2026-10-08',
-    updatedAt: '2026-11-10',
+    updatedAt: '2026-11-26',
+    showFirstSectionBeforeImage: true,
     sections: [
       {
-        heading: 'Chốt mốc giờ quan trọng',
+        heading: 'Chốt giờ làm lễ rồi xếp các lượt xe',
         paragraphs: [
-          'Giờ đón dâu, giờ làm lễ và giờ đến nhà hàng là những mốc cần cung cấp trước tiên. Chừa khoảng thời gian đệm cho trang trí xe, chụp ảnh và tình huống giao thông.',
-          'Thống nhất xe cần có mặt tại đâu, ai là người liên hệ và số điện thoại người phụ trách trong ngày cưới.',
+          'Chốt giờ làm lễ trước, rồi tính ngược giờ xe có mặt để lắp hoa, đón dâu và đến điểm làm lễ. Ghi riêng lịch xe hoa và lịch xe đưa đón hai họ nếu các xe đi khác giờ.',
+          'Với mỗi lượt, gửi ghim cổng đón, giờ xe cần có mặt và người báo cho tài xế nếu lịch thay đổi.',
         ],
       },
       {
         heading: 'Trao đổi dòng xe và hoa trang trí',
         paragraphs: [
           'Gửi phong cách lễ cưới, màu xe mong muốn và mẫu hoa tham khảo. Xác nhận bên nào chuẩn bị hoa, thời điểm lắp đặt và chi phí liên quan.',
-          'Ảnh tham khảo không thay thế xác nhận xe thực tế. Yêu cầu đơn vị tư vấn xác nhận dòng xe, màu xe và tình trạng sẵn có vào ngày cưới.',
+        ],
+        blocks: [
+          {
+            type: 'paragraph',
+            content: [
+              { text: 'Nếu đang cân nhắc hai dòng xe, xem cách ' },
+              {
+                text: 'chọn Mercedes hay Camry theo lịch đón dâu',
+                href: '/kinh-nghiem/thue-xe-cuoi-mercedes-hay-camry',
+              },
+              { text: ' rồi xin ảnh xe dự kiến và xác nhận có xe vào ngày cưới.' },
+            ],
+          },
         ],
       },
       {
@@ -799,23 +812,29 @@ export const articles: Article[] = [
         ],
       },
       {
-        heading: 'Bảng kiểm xe hoa và xe đưa đón trong ngày cưới',
+        heading: 'Lịch riêng cho xe hoa và xe chở khách',
         blocks: [
           {
-            type: 'list',
-            ordered: true,
-            items: [
-              'Lập lịch theo thứ tự các điểm. Ghi giờ xe có mặt để lắp hoa, giờ khởi hành, giờ đến nhà gái, giờ về nhà trai và chặng đến nhà hàng nếu có.',
-              'Gửi ghim bản đồ từng điểm và xác nhận cổng vào. Nếu đường hẹp, hẹn một điểm để xe đoàn dừng đón khách và chỉ định người hướng dẫn.',
-              'Chốt ai chuẩn bị hoa, lắp ở đâu và cần xe đến trước bao lâu. Thống nhất với đơn vị xe về vị trí và cách gắn hoa trước ngày cưới.',
-              'Chỉ định đầu mối nhà trai và nhà gái. Gửi lịch cho cả hai và xác nhận ai báo tài xế khi nghi thức hoặc chụp ảnh kéo dài.',
-              'Xác nhận giờ kết thúc, số điểm dừng và cách tính thời gian chờ. Ghi riêng lịch của xe hoa và lịch của xe chở khách nếu hai xe đi khác giờ.',
+            type: 'table',
+            caption: 'Thông tin cần chốt với từng xe trong ngày cưới',
+            columns: ['Xe', 'Mốc phải chốt', 'Điểm dừng và đầu mối'],
+            rows: [
+              [
+                'Xe hoa',
+                'Giờ có mặt để lắp hoa, giờ đón dâu, giờ làm lễ, thời gian chụp ảnh và giờ kết thúc.',
+                'Ghim nơi lắp hoa, cổng nhà trai và nhà gái. Chốt người báo tài xế khi lễ hoặc chụp ảnh kéo dài.',
+              ],
+              [
+                'Xe cho hai họ',
+                'Giờ gom khách, số người mỗi lượt và giờ cần tới nhà hàng.',
+                'Ghim điểm tập kết và cổng trả khách. Nếu đường hẹp, cử người dẫn khách ra chỗ xe dừng đã xác nhận.',
+              ],
             ],
           },
           {
             type: 'paragraph',
             content: [
-              { text: 'Khi gửi lịch, bạn có thể xem trước ' },
+              { text: 'Tham khảo ' },
               { text: 'dịch vụ xe cưới và xe hoa', href: '/xe-cuoi' },
               { text: ' rồi chọn xe đưa đón theo ' },
               {
@@ -823,8 +842,16 @@ export const articles: Article[] = [
                 href: '/kinh-nghiem/chon-xe-du-lich-theo-so-nguoi',
               },
               {
-                text: '. Ví dụ, nếu xe hoa chờ chụp ảnh còn khách cần tới nhà hàng trước, ghi hai giờ xuất phát riêng để bên điều xe báo giá đúng lịch.',
+                text: '. Ví dụ, nếu xe hoa chờ chụp ảnh còn khách cần tới nhà hàng trước, ghi hai giờ xuất phát riêng.',
               },
+            ],
+          },
+          {
+            type: 'paragraph',
+            content: [
+              { text: 'Gửi ngày cưới, giờ làm lễ và các ghim đón trả qua ' },
+              { text: 'Zalo', href: contact.zalo },
+              { text: '. Nếu cần xe cho hai họ, gửi thêm số người và giờ tập kết của từng lượt.' },
             ],
           },
         ],
