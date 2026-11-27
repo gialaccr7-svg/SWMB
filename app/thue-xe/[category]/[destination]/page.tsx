@@ -24,7 +24,7 @@ import {
 } from '@/lib/content/seat-routes';
 import { pricesForDestination } from '@/lib/pricing';
 import { RoutePriceSummary } from '@/components/route-price-summary';
-import { seatRouteTripTips } from '@/lib/content/seat-route-trip-tips';
+import { seatRouteDecisions, seatRouteTripTips } from '@/lib/content/seat-route-trip-tips';
 import { findVehicles } from '@/lib/services/vehicle-service';
 import { absoluteUrl, site } from '@/lib/site';
 import { breadcrumbSchema, seo } from '@/lib/seo';
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     seats === 7 && destination.slug === 'vung-tau'
       ? 'Thuê xe 7 chỗ có tài xế từ TP.HCM đi Vũng Tàu: giá tham khảo, chọn xe và hành lý, lịch trong ngày hoặc 2 ngày 1 đêm. Hỏi giá theo chuyến qua Zalo.'
       : (guide?.description ??
-          `Xem giá tham khảo thuê xe ${seats} chỗ từ TP.HCM đi ${destination.name}. ${seats <= 7 ? 'Chuẩn bị số khách, vali và xe đẩy để chọn xe.' : 'Chốt điểm tập kết, hành lý và giờ xe chờ trước khi hỏi giá.'}`),
+          `Giá thuê xe ${seats} chỗ có tài xế từ TP.HCM đi ${destination.name}. ${seatRouteDecisions[destination.slug][seats].question}`),
     seatRoutePath(seats, destination.slug),
     media ? { image: media.images[0].src } : undefined,
   );
@@ -75,6 +75,7 @@ export default async function SeatRoutePage({ params }: { params: Params }) {
   const profile = seatRouteProfiles[seats];
   const categoryGuide = rentalCategoryGuides[seats];
   const media = seatRouteMediaFor(seats, destination.slug);
+  const decision = seatRouteDecisions[destination.slug][seats];
   const title = `Thuê xe ${seats} chỗ đi ${destination.name} từ TP.HCM`;
   const isVungTauSevenSeat = seats === 7 && destination.slug === 'vung-tau';
   const guide = rentalRouteGuides[path];
@@ -193,18 +194,11 @@ export default async function SeatRoutePage({ params }: { params: Params }) {
               <p>{profile.pickup}</p>
               {vungTauGuide && <p>{seatRouteTripTips[destination.slug][seats]}</p>}
 
-              {vungTauGuide ? (
+              {vungTauGuide && (
                 <section>
                   <h2>Thời gian phục vụ xe {seats} chỗ</h2>
                   <p>{vungTauGuide.service}</p>
                 </section>
-              ) : (
-                destination.sections.map((section) => (
-                  <section key={section.heading}>
-                    <h2>{section.heading}</h2>
-                    <p>{section.text}</p>
-                  </section>
-                ))
               )}
 
               <h2>
@@ -243,6 +237,14 @@ export default async function SeatRoutePage({ params }: { params: Params }) {
         {summary && (
           <RentalRouteBooking summary={summary} seats={seats} destination={destination.name} />
         )}
+
+        <section className="article-layout" aria-labelledby="route-question">
+          <h2 id="route-question">{decision.question}</h2>
+          <p>{decision.answer}</p>
+          <a className="text-link" href={articlePath(decision.article.slug)}>
+            {decision.article.label}
+          </a>
+        </section>
 
         <h2 className="route-heading">So sánh phương án khác</h2>
         {destination.slug === 'nha-trang' && (

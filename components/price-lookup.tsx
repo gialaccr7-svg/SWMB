@@ -79,7 +79,9 @@ export function PriceLookup({
         </button>
       </form>
       <p className="price-result" role="status" aria-live="polite">
-        {filtered.length} tuyến phù hợp · Khởi hành từ TP.HCM
+        {filtered.length
+          ? `${filtered.length} tuyến phù hợp · Khởi hành từ TP.HCM`
+          : 'Chưa thấy điểm đến với bộ lọc hiện tại. Hãy thử tên địa danh khác hoặc đặt lại bộ lọc.'}
       </p>
       <p className="price-result">
         Giá thuê nguyên xe theo thời gian và định mức km của từng dòng. Lịch khác bảng cần báo

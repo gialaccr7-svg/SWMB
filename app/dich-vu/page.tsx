@@ -1,9 +1,13 @@
 import { PageBanner } from '@/components/page-banner';
 import { seo } from '@/lib/seo';
 import { site } from '@/lib/site';
+import { articlePath } from '@/lib/paths';
+
+const title = 'Dịch vụ thuê xe có tài xế tại TP.HCM';
+
 export const metadata = seo(
-  'Dịch vụ thuê xe du lịch, sân bay & công tác',
-  'Dịch vụ thuê xe theo lịch trình: du lịch, đi tỉnh, đưa đón sân bay, công tác, sự kiện và xe cưới.',
+  title,
+  'Thuê nguyên xe có tài xế đón ở TP.HCM, đi tỉnh, đón sân bay, chở đoàn công ty và phục vụ lễ cưới. Xem giá theo tuyến và hỏi lịch qua Zalo.',
   '/dich-vu',
   { image: '/images/hero.jpg' },
 );
@@ -11,8 +15,8 @@ export default function Services() {
   return (
     <main id="main">
       <PageBanner
-        title="Dịch vụ thuê xe du lịch, sân bay & công tác"
-        description="Một chuyến đi gia đình, một buổi đón đối tác hay ngày cưới đáng nhớ. Bắt đầu từ nhu cầu của bạn để chọn xe phù hợp."
+        title={title}
+        description="Thuê nguyên xe có tài xế, đón tại khu vực TP.HCM trước sáp nhập. Tư vấn tuyến đi toàn quốc, đón sân bay, đưa đón đoàn và xe cưới theo lịch."
       />
       <div className="container">
         <div className="page-brand-highlight">
@@ -45,6 +49,13 @@ export default function Services() {
             <a className="text-link" href="/doi-xe">
               Xem xe du lịch
             </a>
+            <p>
+              Nếu chưa thấy địa chỉ muốn đến, gửi ghim nơi trả và các điểm ghé qua Zalo. Bạn có
+              thể tra trước <a href="/bang-gia">bảng giá theo điểm đến</a> và xem{' '}
+              <a href={articlePath('thue-xe-nhieu-ngay-giu-xe-hay-hen-don-ve')}>
+                cách bố trí xe cho chuyến nhiều ngày
+              </a>.
+            </p>
           </section>
           <section id="san-bay">
             <h2>Đưa đón sân bay</h2>
@@ -69,6 +80,9 @@ export default function Services() {
               </a>
               . Nếu đoàn mang nhiều vali, gửi tổng số kiện để kiểm tra nhóm xe lớn hơn.
             </p>
+            <a className="text-link" href={articlePath('thue-xe-don-san-bay-tan-son-nhat-cho-doan')}>
+              Cách hẹn điểm gặp đoàn ở Tân Sơn Nhất
+            </a>
           </section>
           <section id="cong-tac">
             <h2>Công tác & sự kiện</h2>
@@ -97,6 +111,9 @@ export default function Services() {
               </a>{' '}
               theo quy mô đoàn.
             </p>
+            <a className="text-link" href={articlePath('chon-diem-tap-ket-khi-thue-xe-16-cho')}>
+              Cách chọn điểm tập kết cho nhóm công ty
+            </a>
           </section>
           <section>
             <h2>Xe cưới & đưa đón gia đình</h2>

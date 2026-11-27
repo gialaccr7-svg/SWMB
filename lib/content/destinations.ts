@@ -4,10 +4,11 @@ export const destinations = [
     primaryPriceId: 'can-tho-tp-can-tho',
     name: 'Cần Thơ',
     region: 'Cần Thơ',
+    updatedAt: '2026-11-27',
     description:
       'Tra giá thuê xe từ TP.HCM đi Cần Thơ cho xe 4–45 chỗ, đối chiếu các điểm đến và chuẩn bị lịch trình khám phá miền sông nước.',
     intro:
-      'Cần Thơ gắn với đời sống sông nước, chợ nổi Cái Răng và không gian dạo bộ ở bến Ninh Kiều. Thuê xe riêng từ TP.HCM giúp gia đình hoặc đoàn công ty chủ động điểm đón, hành lý và các chặng dừng trên đường.',
+      'Xem dòng TP Cần Thơ nếu bạn đến khu vực trung tâm. Nếu đi Ô Môn, Thốt Nốt hoặc theo lịch họp kết hợp chợ nổi, gửi địa chỉ từng điểm và giờ hẹn bến để tư vấn xác nhận dòng giá và các lượt xe.',
     sections: [
       {
         heading: 'Chợ nổi Cái Răng và bến Ninh Kiều',
@@ -22,13 +23,14 @@ export const destinations = [
         text: 'Nếu ưu tiên chợ nổi vào buổi sáng, bạn có thể cân nhắc đến Cần Thơ từ hôm trước để giảm áp lực khởi hành sớm. Bảng dưới ghi thời gian 1 ngày theo dữ liệu gốc; chương trình nghỉ qua đêm cần báo lại số ngày, chỗ nghỉ tài xế và các điểm dừng để nhận giá tương ứng, không nhân giá ngày một cách máy móc.',
       },
     ],
-    source: 'https://vietnam.travel/vi/places-to-go/southern-vietnam/can-tho',
+    source: 'https://vietnam.travel/vi/place-to-go/mekong-delta/can-tho/',
   },
   {
     slug: 'vung-tau',
     primaryPriceId: 'vung-tau-thanh-pho-vung-tau',
     name: 'Vũng Tàu',
     region: 'Vũng Tàu',
+    updatedAt: '2026-11-27',
     description:
       'Bảng giá xe từ TP.HCM đi Vũng Tàu, Long Hải, Hồ Tràm, Hồ Cốc cho xe 4–45 chỗ cùng gợi ý chuẩn bị chuyến đi biển.',
     intro:
@@ -54,10 +56,11 @@ export const destinations = [
     primaryPriceId: 'khanh-hoa-nha-trang',
     name: 'Nha Trang',
     region: 'Khánh Hoà',
+    updatedAt: '2026-11-27',
     description:
       'Tra giá xe từ TP.HCM đi Nha Trang và các điểm trong bảng Khánh Hoà. Xem lưu ý hành trình đường dài, hành lý và các chặng tham quan biển đảo.',
     intro:
-      'Nha Trang là điểm đến du lịch biển với bãi biển đô thị và các đảo trong vịnh. Khi xuất phát từ TP.HCM bằng xe riêng, nên xác định rõ lịch lưu trú, các điểm đón và nhu cầu tham quan để bố trí hành trình đường dài phù hợp với cả đoàn.',
+      'Tra dòng Nha Trang cho phần đường bộ từ TP.HCM. Nếu ghé Cam Ranh hoặc cần xe đưa đón ở bến tham quan vịnh, ghi các lượt đó và lịch từng ngày để nhận báo giá theo đúng điểm trả và giờ chờ.',
     sections: [
       {
         heading: 'Kết hợp nghỉ biển với chuyến đi trên vịnh',
@@ -72,7 +75,7 @@ export const destinations = [
         text: 'Với hành trình từ TP.HCM đi Nha Trang, nên trao đổi các chặng nghỉ và lịch chạy với đơn vị vận chuyển. Mốc 1 ngày và số km dưới đây được giữ nguyên từ bảng gốc, không phải cam kết thời gian lái xe. Chuyến nhiều ngày cần báo giá riêng theo lịch thực tế, thời gian chờ và điều kiện phục vụ tài xế.',
       },
     ],
-    source: 'https://vietnam.travel/node/220',
+    source: 'https://vietnam.travel/vi/place-to-go/south-central-coast-central-highlands/nha-trang/',
   },
 ];
 export function destinationPath(slug: string) {

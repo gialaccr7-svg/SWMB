@@ -7,6 +7,7 @@ import { seo, breadcrumbSchema } from '@/lib/seo';
 import { destinations, destinationPath } from '@/lib/content/destinations';
 import { seatRouteCounts, seatRouteDestinations, seatRoutePath } from '@/lib/content/seat-routes';
 import { priceSeats, routePrices } from '@/lib/pricing';
+import { articlePath } from '@/lib/paths';
 
 const title = 'Bảng giá thuê xe từ TP.HCM đi các tuyến';
 export async function generateMetadata({
@@ -79,6 +80,27 @@ export default async function Prices({
         </section>
         <PriceLookup initialQuery={q} initialRegion={region} initialSeats={seats} />
         <PriceNotes />
+        <section className="article-layout">
+          <h2>Tra giá khi một khu vực có nhiều điểm trả</h2>
+          <ul>
+            <li>
+              <a href="/bang-gia?q=N%C3%BAi%20B%C3%A0%20%C4%90en">Núi Bà Đen</a> · Xem{' '}
+              <a href={articlePath('lich-di-tay-ninh-trong-ngay-bang-xe-rieng')}>
+                cách xếp lịch ghé núi và Tòa Thánh trong ngày
+              </a>.
+            </li>
+            <li>
+              <a href="/bang-gia?q=M%C5%A9i%20N%C3%A9">Mũi Né</a> · Xem{' '}
+              <a href={articlePath('chon-xe-di-mui-ne-theo-vali-diem-tra')}>
+                cách xác nhận điểm trả và chọn xe cho resort
+              </a>.
+            </li>
+            <li>
+              <a href="/bang-gia?q=%C4%90%C3%A0%20L%E1%BA%A1t">Đà Lạt</a> · Nếu ghé Đức Trọng
+              hoặc cần xe ở lại nhiều ngày, gửi cả hai ghim và lịch xe từng ngày.
+            </li>
+          </ul>
+        </section>
         <h2 className="route-heading">Lên lịch trình cho điểm đến</h2>
         <div className="route-guides">
           {destinations.map((item) => (

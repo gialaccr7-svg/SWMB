@@ -1,6 +1,8 @@
 import type { Article } from './articles';
 
-const routeTopics = new Set(['nha-trang', 'can-tho', 'vung-tau', 'ho-tram', 'xe-cuoi', 'san-bay']);
+const routeTopics = new Set([
+  'nha-trang', 'can-tho', 'vung-tau', 'ho-tram', 'mui-ne', 'tay-ninh', 'xe-cuoi', 'san-bay',
+]);
 
 /** Prioritize the same destination or service, then shared planning needs. */
 export function relatedArticles(article: Article, candidates: Article[]) {

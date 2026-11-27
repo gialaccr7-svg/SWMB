@@ -16,7 +16,7 @@ export default function Wedding() {
     <main id="main">
       <PageBanner
         title="Thuê xe cưới Mercedes-Benz & xe hoa"
-        description="Một hành trình ngắn, một kỷ niệm dài. Chọn chiếc xe thanh lịch cho lễ đón dâu và ngày cưới của bạn."
+        description="Tư vấn xe đón dâu và xe đưa đón khách cưới tại TP.HCM theo giờ làm lễ, địa chỉ hai nhà và lịch đến nhà hàng."
       />
       <section className="container wedding-section">
         <ZaloRentalNotice />
@@ -31,15 +31,10 @@ export default function Wedding() {
           />
         </div>
         <div className="wedding-copy">
-          <p className="eyebrow">XE CƯỚI & XE HOA</p>
-          <h2>
-            Chăm chút cho
-            <br />
-            hành trình hạnh phúc.
-          </h2>
+          <h2>Xếp lượt xe theo giờ làm lễ</h2>
           <p>
-            Trao đổi phong cách lễ cưới, giờ đón dâu và lộ trình hai bên gia đình để tư vấn dòng xe,
-            hoa trang trí và thời gian sử dụng phù hợp.
+            Chốt giờ xe hoa cần có mặt để lắp hoa và đón dâu. Nếu khách đi bằng xe riêng, ghi giờ
+            xuất phát, số khách và điểm hẹn của xe chở khách để hai lượt đến đúng nơi.
           </p>
           <a
             className="button"
@@ -76,6 +71,12 @@ export default function Wedding() {
           <a className="text-link" href="/kinh-nghiem/chuan-bi-thue-xe-cuoi">
             Đọc hướng dẫn chuẩn bị thuê xe cưới
           </a>
+          <p>
+            Nếu đang chọn dòng xe hoa, xem{' '}
+            <a className="text-link" href="/kinh-nghiem/thue-xe-cuoi-mercedes-hay-camry">
+              cách so Mercedes-Benz và Camry theo lịch đón dâu
+            </a>.
+          </p>
         </article>
       </section>
     </main>

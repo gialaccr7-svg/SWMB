@@ -1,4 +1,4 @@
-import { categoryPath } from '@/lib/paths';
+import { articlePath, categoryPath } from '@/lib/paths';
 import { notFound } from 'next/navigation';
 import { StructuredData } from '@/components/structured-data';
 import { breadcrumbSchema } from '@/lib/seo';
@@ -10,6 +10,11 @@ import { site } from '@/lib/site';
 import { seatCounts as categories, parseCategory } from '@/lib/catalog';
 import { rentalCategoryGuides } from '@/lib/content/rental-categories';
 import { isSeatRouteCount, seatRouteDestinations, seatRoutePath } from '@/lib/content/seat-routes';
+
+function categoryTitle(seats: number) {
+  return `Thuê xe ${seats} chỗ có tài xế tại TP.HCM`;
+}
+
 export function generateStaticParams() {
   return categories.map((n) => ({ category: `${n}-cho` }));
 }
@@ -17,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   const { category } = await params;
   const n = parseCategory(category);
   if (!n) notFound();
-  return seo(`Thuê xe du lịch ${n} chỗ`, rentalCategoryGuides[n].description, categoryPath(n));
+  return seo(categoryTitle(n), rentalCategoryGuides[n].description, categoryPath(n));
 }
 export default async function Category({ params }: { params: Promise<{ category: string }> }) {
   const { category } = await params;
@@ -30,17 +35,17 @@ export default async function Category({ params }: { params: Promise<{ category:
         data={breadcrumbSchema([
           { name: 'Trang chủ', path: '/' },
           { name: 'Đội xe', path: '/doi-xe' },
-          { name: `Thuê xe du lịch ${n} chỗ`, path: categoryPath(n) },
+          { name: categoryTitle(n), path: categoryPath(n) },
         ])}
       />
       <PageBanner
-        title={`Thuê xe du lịch ${n} chỗ`}
-        description={guide.description}
+        title={categoryTitle(n)}
+        description={guide.decision}
         parent={{ title: 'Đội xe', href: '/doi-xe' }}
       />
       <section className="section container">
         <p className="price-notes">
-          Xuất phát từ TP.HCM.{' '}
+          Thuê nguyên xe có tài xế, đón tại khu vực TP.HCM trước sáp nhập.{' '}
           <a className="text-link" href={`/bang-gia?seats=${n}`}>
             Tra giá xe {n} chỗ theo từng điểm đến →
           </a>
@@ -65,6 +70,7 @@ export default async function Category({ params }: { params: Promise<{ category:
           </p>
           <h2>Chuẩn bị lịch trình cho xe {n} chỗ</h2>
           <p>{guide.planning}</p>
+          <p><a className="text-link" href={articlePath(guide.article.slug)}>{guide.article.label}</a></p>
           <h2>Chỗ ngồi và hành lý: cần kiểm tra gì?</h2>
           <ul>
             {guide.checklist.map((item) => (

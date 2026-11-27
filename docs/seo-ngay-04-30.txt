@@ -1,0 +1,319 @@
+BÀN GIAO SEO NGÀY 04–30
+Hành Trình Phương Nam · 27/11/2026 (giờ Việt Nam)
+
+KẾT QUẢ
+
+Bản local có 24 bài Kinh nghiệm. Bản live có 18 bài và 58 URL trong sitemap tại
+thời điểm kiểm tra. Bản local có 64 URL trong sitemap. Toàn bộ sáu URL bài mới
+trả 404 trên live trong lần kiểm. Chờ duyệt trước khi push.
+
+Ba bài đã có trong workspace khi bắt đầu, được rà và tích hợp:
+- /kinh-nghiem/chon-xe-4-hay-7-cho-di-vung-tau
+- /kinh-nghiem/chon-xe-7-hay-16-cho-khi-nhieu-hanh-ly
+- /kinh-nghiem/chon-diem-tap-ket-khi-thue-xe-16-cho
+
+Ba bài viết thêm trong đợt này:
+- /kinh-nghiem/thue-xe-nhieu-ngay-giu-xe-hay-hen-don-ve
+- /kinh-nghiem/chon-xe-di-mui-ne-theo-vali-diem-tra
+- /kinh-nghiem/lich-di-tay-ninh-trong-ngay-bang-xe-rieng
+
+Hai bài dự thảo cho tháng sau ở cuối tài liệu. Nội dung đoàn chia thuyền,
+đón đoàn nhiều vali ở Tân Sơn Nhất và đoàn khoảng 50 người đi Vũng Tàu
+được bổ sung trên trang hoặc bài hiện hữu theo kế hoạch.
+
+Đã cập nhật 18 bài hiện hữu ở các mức khác nhau. Ba cụm bài Vũng Tàu, Cần Thơ
+và Nha Trang có hướng dẫn riêng theo quyết định của người đọc. Đã cập nhật
+5 trang cỡ xe, 3 trang tuyến, 15 trang cỡ xe theo tuyến, /bang-gia, /dich-vu,
+/xe-cuoi và /kinh-nghiem. Giữ slug của các trang hiện hữu. 15 trang cỡ xe
+theo tuyến có tình huống hỏi đáp và liên kết theo đúng cỡ xe.
+
+Đối soát 166 dòng giá, gồm 816 ô có giá và 14 ô Liên hệ. Chuyến khác thời
+lượng, khác điểm trả, một chiều hoặc nhiều ngày được hướng dẫn xác nhận
+theo lịch. Nguồn giá và tệp logo được giữ nguyên. Logo nguồn và logo website
+trùng SHA-256.
+
+Ảnh mới trong sáu bài dùng tài sản Kia Carnival hoặc Ford Transit đã có
+trong hồ sơ đội xe. Các hình minh họa lịch và tập kết dùng bảng hoặc danh
+sách thay cho tệp ảnh. Đã thay 24 bản WebP thuộc 14 nhóm ảnh bằng tệp cùng
+kích thước, từ 3.885.640 còn 3.029.358 byte, giảm 22% ở các bản được nén.
+Thư mục ảnh công khai giảm 856.282 byte (0,86 MB). Ví dụ, bản 768 px của
+ảnh bìa lịch Nha Trang giảm từ 89.248 xuống 72.164 byte. Bản 720 px ảnh xe
+trong bài đón sân bay giảm từ 267.108 xuống 220.926 byte. Ảnh gốc giữ đường
+dẫn hiện có. Không thêm ảnh hãng cần ghi công vào các bài mới.
+
+NHẬT KÝ THỰC HIỆN THEO NGÀY
+
+04 · Gói 022–028. Rà trang xe 7 chỗ, trang xe 7 chỗ đi Vũng Tàu và trang
+tuyến Vũng Tàu. Thêm hướng dẫn kiểm ghế và khoang đồ, phân biệt Vũng Tàu,
+Long Hải, Hồ Tràm, và kiểm đường dẫn Zalo. Ảnh khoang theo cấu hình cụ thể
+cần điều xe xác nhận trước khi bổ sung.
+05 · Gói 029–035. Rà xe 16/4 chỗ và hai trang đi Vũng Tàu tương ứng. Cập
+nhật tình huống đón đoàn ăn tối và gia đình có xe đẩy. Giá tra theo đúng
+dòng trong nguồn, không dùng một dòng cho mọi điểm thuộc cụm Vũng Tàu.
+06 · Gói 036–042. Rà tuyến Cần Thơ, trang 29 chỗ và trang 29 chỗ đi Cần
+Thơ. Thêm tình huống bàn giao đoàn từ nơi họp tới bến. Giá trung tâm và
+các điểm Ô Môn, Thốt Nốt, Cờ Đỏ được trình bày theo dòng riêng.
+07 · Gói 043–049. Chỉnh bài Vũng Tàu trong ngày/qua đêm, xe ở lại/hai
+lượt và chọn Vũng Tàu/Long Hải/Hồ Tràm. Gắn liên kết vào trang tuyến và
+trang cỡ xe. Đã so ảnh Vũng Tàu trước và sau nén. Mốc tuần 1 dùng dữ liệu
+trong kế hoạch, cần xuất GSC mới để đối chiếu.
+08 · Gói 050–056. Rà hai bài mới so 4/7 và 7/16, thêm thứ tự kiểm kiện
+lớn, chỉnh bài chọn xe theo số khách. Dùng tài sản đội xe và bảng. Ảnh
+ngoại thất chỉ minh họa mẫu xe. Không suy ra kích thước cốp từ ảnh.
+09 · Gói 057–063. Sửa ba bài Cần Thơ, bổ sung ví dụ trả phòng, giữ đồ và
+gom đoàn tại bến. Mỹ Tho, Cồn Phụng, Vĩnh Long và Cái Bè tiếp tục tra theo
+địa chỉ thực và bảng giá khi chưa có trang riêng.
+10 · Gói 064–070. Soạn dàn trang Tây Ninh, kiểm cách tách điểm đến với
+Hồ Tràm, Long Hải, Trị An và các điểm công nghiệp. Giữ các đầu mối ở bảng
+giá hoặc trang dịch vụ. Ảnh cổng và điểm dừng chờ hồ sơ tài sản.
+11 · Gói 071–077. Gộp tình huống chia thuyền vào bài Cái Răng. Rà lộ
+trình miền Tây và tuyến công nghiệp ngoài khu vực đón. Với chuyến nối ra
+đảo, xác nhận bến trên đất liền và dịch vụ tàu riêng.
+12 · Gói 078–084. Rà /dich-vu, /xe-cuoi, bài đón sân bay và bài 29/45
+chỗ cho công ty. Kiểm cách đọc dòng sân bay và City tour, cùng thông tin
+thực tế cần gửi khi đổi lượt. Dùng checklist, bỏ mẫu văn nhắn điền sẵn.
+13 · Gói 085–091. Thêm tình huống riêng cho 4/7/16/45 chỗ đi Cần Thơ và
+29/45 chỗ đi Vũng Tàu. Tách việc hỏi giá từng cỡ khỏi trang tuyến tổng.
+Mốc giữa tháng cần quyền GSC để đo tín hiệu phát sinh.
+14 · Gói 092–098. Viết bài giữ xe hay hẹn đón về, rà bài tập kết 16 chỗ,
+thêm hướng dẫn phí, cọc và gửi lịch báo giá. Dùng bảng ba ngày và trình tự
+tập kết bằng chữ, đọc được trên điện thoại.
+15 · Gói 099–105. Rà tuyến Nha Trang, 45 chỗ và 45 chỗ đi Nha Trang.
+Thêm yêu cầu về nơi dỡ đồ và chỗ đỗ. Rà các dòng Nha Trang và Cam Ranh,
+phần đường bộ và phần tàu tách riêng.
+16 · Gói 106–112. Rà bốn trang cỡ xe Nha Trang còn lại và hai bài hỗ trợ
+lịch ba ngày, chọn 7 hay 16 chỗ. So ảnh bìa Nha Trang trước và sau nén.
+17 · Gói 113–119. Viết bài chọn xe đi Mũi Né, nối với bảng giá theo địa
+điểm, rà Phan Thiết, Hòn Rơm, La Gi, Cam Bình, Phan Rang, Tháp Chàm và
+Núi Chúa. Trang dịch vụ Phan Thiết/Mũi Né giữ bản đề cương.
+18 · Gói 120–126. Rà các điểm cao nguyên, chuẩn bị đề cương Đà Lạt và
+đường dẫn bảng giá. Kiểm dòng riêng Đức Trọng, Bảo Lộc, Di Linh, Buôn Ma
+Thuột, Buôn Đôn, Gia Nghĩa, Pleiku và Kon Tum trong nguồn.
+19 · Gói 127–133. Làm rõ phạm vi đón ở /dich-vu, đường tới bảng giá hoặc
+Zalo khi chưa có điểm. Đà Nẵng và Huế có dòng tham khảo trong bảng, xe
+29/45 ghi Liên hệ. Xác nhận điều xe cho tuyến xa trước khi mở URL.
+20 · Gói 134–140. Nén ảnh bài viết theo kích thước hiện có. Rà bài người
+lớn tuổi, chuẩn bị xe cưới và so Mercedes/Camry. Ảnh hãng hoặc ảnh hầm đồ
+mới chờ xác nhận quyền và đúng mẫu sử dụng.
+21 · Gói 141–146. Đối chiếu cách đối thủ trình bày giá, gói, ảnh và CTA.
+Chọn danh sách URL ưu tiên duyệt đầu tiên. Tuần 3 cần GSC, GA4 và số liệu
+điều xe để đo tác động.
+22 · Gói 147–152. Kiểm bản build và 10 trang ở 360, 390 và 1366 px.
+Kiểm liên kết Zalo tới đúng tài khoản, vị trí CTA, bộ lọc và cuộn bảng.
+Chưa xác minh mở ứng dụng Zalo trên điện thoại Android/iPhone thật.
+23 · Gói 153–158. Đối chiếu truy vấn–URL theo bảng bên dưới. Phân biệt
+vùng trong bảng với điểm trả thực tế. Cạnh tranh URL trong GSC cần dữ liệu
+tab Trang theo từng truy vấn.
+24 · Gói 159–164. Viết bài lịch Tây Ninh. Gộp tình huống vali lớn vào
+bài sân bay và câu hỏi đoàn 50 người vào trang 45 chỗ đi Vũng Tàu. Số
+liệu hiển thị, click và Zalo mới cần quyền đọc.
+25 · Gói 165–170. Đối soát điều kiện ngay cạnh giá và phân biệt lịch
+ngoài bảng. Rà ví dụ giả lập và tài sản dùng cho bài mới. Điều xe xác nhận
+VAT, phí, thời gian chờ và phương án cho các chuyến đặc biệt.
+26 · Gói 171–176. Kiểm live chỉ đọc, kiểm 64 canonical URL trên bản build.
+Ghi nhận live còn 58 URL. Đợt B trang tuyến mới giữ đề cương cho tới khi
+xác nhận dữ kiện và quyền ảnh. Kiểm sau triển khai chờ phát hành.
+27 · Gói 177–182. Ghi sáu cặp truy vấn–URL ưu tiên. Đề xuất theo dõi một
+biến là tiêu đề trang xe 7 chỗ, so cùng kỳ, thiết bị và truy vấn. Dữ liệu
+tuần cuối và thay đổi thứ hạng vẫn cần tài khoản.
+28 · Gói 183–188. Chuẩn bị hai bản nháp tháng sau và danh sách ảnh cần
+bổ sung. Giữ các cụm mở rộng ở bảng giá/dịch vụ trong khi chờ tín hiệu.
+29 · Gói 189–194. Chốt 18 bài hiện hữu cập nhật, 6 URL bài mới local,
+2 nháp tháng sau. Trạng thái Google lập chỉ mục và yêu cầu báo giá thực
+chờ GSC, GA4 và bộ phận tư vấn.
+30 · Gói 195–200. Bàn giao danh mục URL, bản đồ từ khóa, điều kiện mở
+tuyến mới và kết quả kiểm. Chưa có dữ liệu để tổng kết KPI tháng hoặc
+xác nhận từng mục trong 4.475 mục còn lại đã đạt.
+
+LẬP CHỈ MỤC SAU KHI PHÁT HÀNH
+
+Sitemap cần gửi: https://hanhtrinhphuongnam.vn/sitemap.xml
+Gửi sitemap sau khi 6 URL mới trả HTTP 200 trên tên miền thật. Dùng Kiểm
+tra URL cho sáu bài và các trang thương mại có thay đổi đáng kể bên dưới.
+Nguồn hướng dẫn của Google:
+https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
+https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+
+6 bài mới cần kiểm đầu tiên:
+https://hanhtrinhphuongnam.vn/kinh-nghiem/chon-xe-4-hay-7-cho-di-vung-tau
+https://hanhtrinhphuongnam.vn/kinh-nghiem/chon-xe-7-hay-16-cho-khi-nhieu-hanh-ly
+https://hanhtrinhphuongnam.vn/kinh-nghiem/chon-diem-tap-ket-khi-thue-xe-16-cho
+https://hanhtrinhphuongnam.vn/kinh-nghiem/thue-xe-nhieu-ngay-giu-xe-hay-hen-don-ve
+https://hanhtrinhphuongnam.vn/kinh-nghiem/chon-xe-di-mui-ne-theo-vali-diem-tra
+https://hanhtrinhphuongnam.vn/kinh-nghiem/lich-di-tay-ninh-trong-ngay-bang-xe-rieng
+
+9 trang đã có trên live cần ưu tiên kiểm lại sau cập nhật:
+https://hanhtrinhphuongnam.vn/thue-xe/7-cho
+https://hanhtrinhphuongnam.vn/thue-xe/16-cho
+https://hanhtrinhphuongnam.vn/tuyen-xe/can-tho
+https://hanhtrinhphuongnam.vn/tuyen-xe/vung-tau
+https://hanhtrinhphuongnam.vn/thue-xe/7-cho/di-vung-tau
+https://hanhtrinhphuongnam.vn/thue-xe/4-cho/di-vung-tau
+https://hanhtrinhphuongnam.vn/thue-xe/45-cho/di-vung-tau
+https://hanhtrinhphuongnam.vn/thue-xe/29-cho/di-can-tho
+https://hanhtrinhphuongnam.vn/thue-xe/45-cho/di-nha-trang
+
+Các trang đã sửa khác có trong sitemap. URL có bộ lọc bảng giá, URL
+preview, và nháp tuyến mới không gửi qua Kiểm tra URL.
+
+BẢN ĐỒ TRUY VẤN
+
+- Thuê xe 7/16/4/29/45 chỗ TP.HCM có tài xế → /thue-xe/{cỡ}-cho.
+- Thuê xe đi Cần Thơ, Vũng Tàu, Nha Trang → /tuyen-xe/{địa-danh}.
+- Thuê xe theo cỡ và điểm đến → /thue-xe/{cỡ}-cho/di-{địa-danh}.
+- Xe 50 chỗ đi Vũng Tàu → hỏi đáp nhiều xe tại /thue-xe/45-cho/di-vung-tau.
+- Chọn 4/7 chỗ có trẻ nhỏ, 7/16 có nhiều vali → hai bài so sánh theo
+  đúng nhu cầu. Bài chọn xe tổng quát dẫn sang hai bài khi phù hợp.
+- Đón sân bay Tân Sơn Nhất, công ty → /dich-vu#san-bay và
+  /dich-vu#cong-tac. Bài sân bay và bài tập kết xử lý kế hoạch đón.
+- Xe cưới, xe hoa, đưa đón khách cưới → /xe-cuoi. Bài Mercedes/Camry
+  phục vụ chọn mẫu, bài chuẩn bị xe cưới phục vụ xếp lịch.
+- Điểm có bảng nhưng chưa đủ dữ kiện mở trang riêng → /bang-gia.
+  Điểm chưa có dòng giá phù hợp hoặc cần lịch riêng → /dich-vu và Zalo.
+
+Số liệu gốc đọc được trong kế hoạch: 6 truy vấn, 73 lượt hiển thị, 0 nhấp.
+Lần đo tiếp theo dùng cùng truy vấn, Web, vị trí, thiết bị và cửa sổ ngày
+tương đương. Đối chiếu theo tab Trang và URL canonical. Đọc riêng
+click_zalo, số yêu cầu có đủ lịch và số chuyến chốt. Hai chỉ số sau cần
+dữ liệu tư vấn. Lượt mở liên kết chỉ cho biết người dùng đã bấm nút.
+
+ĐỀ CƯƠNG TUYẾN CHỜ XÁC NHẬN
+
+Tây Ninh và núi Bà Đen. H1 ứng viên “Thuê xe từ TP.HCM đi Tây Ninh và
+núi Bà Đen”. Khách chọn cổng trả trước rồi so cỡ xe. Bảng gốc tách TP
+Tây Ninh (tay-ninh-tp-tay-ninh, dòng 33, 1 ngày/200 km) với Núi Bà Đen
+(tay-ninh-nui-ba-den, dòng 39, 1 ngày/220 km). Nếu đoàn ghé cả Tòa Thánh,
+ghi từng lượt, điểm đỗ và giờ hẹn. Khi mở trang tuyến, liên kết bài lịch
+Tây Ninh để trang dịch vụ tiếp tục tập trung giá, đón trả và điều xe.
+
+Phan Thiết, Mũi Né, Hòn Rơm. H1 ứng viên “Thuê xe từ TP.HCM đi Phan
+Thiết và Mũi Né”. Đặt bộ chọn cổng resort trước bảng 7/16 chỗ. Nguồn:
+binh-thuan-tp-phan-thiet dòng 172, 1 ngày/400 km; binh-thuan-hon-rom dòng
+173, 1 ngày/420 km; binh-thuan-mui-ne dòng 174, 1 ngày/420 km. Ghi riêng
+thời gian dỡ đồ, địa chỉ ghé và giờ đón về. Dẫn sang bài chọn xe theo
+vali khi khách cần so sức chứa. Không lấy định mức làm quãng đường một chiều.
+
+Đà Lạt và Đức Trọng. H1 ứng viên “Thuê xe từ TP.HCM đi Đà Lạt”. Bắt đầu
+bằng ghim nơi ở và đường xe vào. Ghi riêng nhu cầu ghé Đức Trọng, ngày xe
+ở lại, điểm đỗ đêm và giờ xe phục vụ. lam-dong-da-lat dòng 188, 1 ngày/
+600 km; lam-dong-duc-trong dòng 186, 1 ngày/500 km. Mở URL khi xác nhận
+luồng nhận báo giá và có nội dung điều xe riêng cho chuyến, ngoài thông
+tin đã có ở bảng giá.
+
+Đường dẫn thông tin điểm đến:
+https://vietnam.travel/vi/place-to-go/southeastern-vietnam/tay-ninh/
+https://vietnam.travel/vi/place-to-go/mekong-delta/can-tho/
+https://vietnam.travel/vi/place-to-go/south-central-coast-central-highlands/nha-trang/
+https://vietnam.travel/vi/place-to-go/south-central-coast-central-highlands/lam-dong/
+https://vietnam.travel/place-to-go/south-central-coast-central-highlands/dalat/
+https://vietnam.travel/vi/place-to-go/mekong-delta/chau-doc/
+https://vietnam.travel/vi/place-to-go/southeastern-vietnam/dong-nai/
+
+ĐỐI CHIẾU TRANG CÙNG THỊ TRƯỜNG
+
+Vũng Tàu. Car Rental Vietnam tách một chiều và khứ hồi. Tuấn Phương có
+gói qua đêm và điều kiện theo cỡ. Hamy có nhiều cỡ trên một trang.
+SaoMaiFly hiển thị cả hai chiều. Bản local ghi chiều TP.HCM → điểm đến,
+dòng giá và thời lượng sát nhau, thêm cách đổi ghim resort.
+https://carrentalvietnam.vn/thue-xe-tp-hcm-di-vung-tau
+https://tuanphuongcar.com/thue-xe-di-vung-tau-tu-tphcm
+https://hamytravel.com/thue-xe/thue-xe-di-vung-tau/
+https://saomaifly.com/dich-vu-cho-thue-xe-du-lich-sai-gon-vung-tau
+
+Trang cỡ xe. BCarHome và VietnamDrive đưa lịch hoặc giờ để người đọc tìm
+giá. AZCAR nối danh mục xe với trang tuyến. Minh Quân và Xe Miền Nam cho
+thấy các lựa chọn thuê theo nhóm. Bản local dùng tên cỡ xe, phạm vi đón,
+tình huống xếp đồ và đường sang trang tuyến.
+https://bcarhome.vn/thue-xe-4-cho-co-tai-xe
+https://www.vietnamdrive.com/vn/thue-xe/tphcm/
+https://azcar.vn/thue-xe-7-cho
+https://minhquantravel.com/thue-xe-7-cho-co-tai-xe
+https://xemiennam.vn/thue-xe-co-tai-xe-tphcm/
+
+Cần Thơ. SMOVE đặt khoản gồm/chưa gồm cạnh bảng. Nguyễn Duy Travel dùng
+trang 29 chỗ chuyên tuyến. SaigonCar tách gói xe lớn. Thắng Cảnh Việt tổ
+chức theo điểm đến. Bản local bổ sung tình huống xe, điểm họp và bến thuyền.
+https://vantaismove.vn/cho-thue-xe-di-can-tho/
+https://dulichcanthomientay.vn/tin-tuc-moi/thue-xe-29-cho-sai-gon-can-tho/
+https://thuexesaigoncar.com/thue-xe-29-34-45-cho-di-tinh/
+https://thangcanhviet.com/dich-vu-cho-thue-xe-tu-sai-gon-di-can-tho-gia-uu-dai-2026-95967/
+
+Tuyến dài và tuyến ứng viên. Tuấn Phương có trang Tây Ninh. Car Rental
+Vietnam có bảng một chiều theo tuyến. Xe Saigon Luxury tách 3N2Đ/4N3Đ
+ở bảng Nha Trang. Tân Triều có tình huống báo xe 45 chỗ theo lịch riêng.
+Vexere giải thích khác biệt giữa cỡ xe khi vào resort. SMOVE có trang
+16 chỗ đi Đà Lạt. Trang thay thế của Saigon VIP Service tách giá một
+chiều, khứ hồi và qua đêm, cùng phần đã gồm và chưa gồm. URL gốc
+SunTravel247 hết thời gian chờ, bản trích từ bài cùng tên miền hiển thị
+Mũi Né trong nhóm thuê một chiều. Bản local dùng giá 1 ngày từ nguồn
+hiện có và đưa chuyến nhiều ngày hoặc nhiều điểm sang tư vấn. Các điều
+kiện giá quan sát được thuộc từng gói riêng và chưa đủ cơ sở để so giá
+trực tiếp.
+https://tuanphuongcar.com/thue-xe-di-tay-ninh
+https://carrentalvietnam.vn/bang-gia-thue-xe-mot-chieu-tu-tp-hcm
+https://xesaigonluxury.com/products/thue-xe-di-nha-trang-tphcm
+https://tantrieutravel.com/cho-thue-xe-du-lich-45-cho-di-nha-trang.html
+https://vexere.com/vn/thue-xe/di-mui-ne-tu-sai-gon.vi
+https://saigonvipservice.com/thue-xe-di-phan-thiet-mui-ne/
+https://suntravel247.com/thue-xe-mot-chieu-di-tinh/
+https://vantaismove.vn/thue-xe-16-cho-di-da-lat/
+
+NHÁP THÁNG SAU · GÓI 186
+
+Chuẩn bị hành lý cho đoàn đi xe 16 chỗ
+
+Trưởng đoàn nên nhận số vali theo từng điểm đón, rồi tách hành lý cá
+nhân khỏi thiết bị chung. Đo kiện lớn nhất và hỏi nhà xe vị trí xếp khi
+các ghế cần dùng đều mở. Báo sớm nếu đoàn cần lấy đồ giữa hành trình.
+
+Quyết định theo loại đồ. Vali cá nhân có thể đánh dấu theo nhóm và điểm
+trả. Thùng thiết bị nên ghi người chịu trách nhiệm, chiều dài lớn nhất,
+điểm chất và cổng dỡ. Vật cần dùng trên đường nên tách thành một túi
+riêng, gửi danh sách cho người xếp đồ trước lúc đến điểm đón.
+
+Ví dụ minh họa. Đoàn lên xe ở hai nơi và nhận thêm một thùng thiết bị ở
+điểm thứ hai. Người phụ trách tập hợp kích thước và hỏi cách dành chỗ cho
+thùng ngay từ lúc chất vali ở điểm thứ nhất. Nếu vẫn chưa đủ chỗ, so thêm
+phương án đổi cỡ hoặc bố trí thiết bị riêng trên cùng lịch.
+
+Đích liên kết: /thue-xe/16-cho và bài tập kết 16 chỗ. Cần duyệt hình
+khoang và cách xếp đúng xe, cùng một ví dụ khác với bài chọn cỡ 7/16.
+
+NHÁP THÁNG SAU · GÓI 187
+
+Thuê xe đi hành hương miền Tây từ TP.HCM cần chốt lịch gì?
+
+Chọn điểm có giờ hẹn cố định trước, sau đó thêm điểm nghỉ, ăn và nhóm
+khách có nhu cầu hỗ trợ lên xuống. Nếu đi Châu Đốc và còn ghé điểm khác,
+gửi từng ghim để nhà xe xác nhận chỗ trả, giờ xe chờ và lịch về.
+
+Lịch một ngày. Chọn ít điểm và thống nhất giờ rời nơi cuối để về TP.HCM.
+Lịch qua đêm. Ghi rõ nơi lưu trú, những lượt xe chạy trong ngày ở lại,
+chỗ xe đỗ và người giữ liên lạc khi đoàn tách nhóm. Với mỗi điểm, xác
+nhận quy định tham quan và đoạn đi bộ từ nơi xe dừng.
+
+Ví dụ minh họa. Đoàn có khách lớn tuổi muốn đến Miếu Bà Chúa Xứ và ghé
+thêm một điểm ở An Giang. Nếu xe chỉ dừng được ở điểm tập trung cách cổng,
+phân công một người dẫn nhóm và một người đón khách ở chỗ hẹn. Khi thêm
+điểm mới, gửi lại toàn bộ lịch để xác nhận giờ về và chi phí.
+
+Đích liên kết: /bang-gia và bài đi tỉnh cùng người lớn tuổi. Chờ xác
+nhận các điểm dừng xe lớn, lịch tham quan và quyền ảnh trước khi đăng.
+https://vietnam.travel/vi/place-to-go/mekong-delta/chau-doc/
+
+NGHIỆM THU VÀ PHẦN CHỜ
+
+- Đạt trên local: typecheck, check:content, check:prices, check:seo,
+  build và verify:local. Kiểm H1 duy nhất, title, mô tả, canonical,
+  JSON-LD, robots, URL bộ lọc noindex, bố cục bảng và ảnh WebP.
+- Kiểm Chrome: 10 trang ở 360, 390 và 1366 px. Đã thử tìm Mũi Né bằng
+  chữ không dấu, đặt lại bộ lọc và trường hợp không có kết quả. Kiểm CTA
+  dẫn đúng Zalo. Việc mở ứng dụng và gửi tin trên thiết bị thật còn chờ.
+- Đã xem live chỉ đọc: sitemap 58 mục, robots khai báo đúng sitemap.
+  Các trang thương mại đã kiểm trả 200. Không có quyền Search Console,
+  GA4 hoặc lịch sử tư vấn để xác nhận thay đổi thứ hạng, lượt nhấp, yêu
+  cầu báo giá hay trạng thái lập chỉ mục.
+- Chủ website duyệt phát hành và ảnh. Điều xe xác nhận điều kiện giá
+  trọn gói, lịch xa, sức chứa theo mẫu và ảnh góc cốp, lối lên, hầm đồ.
+- Kiểm sau phát hành: so sitemap live với bản 64 URL, kiểm 6 bài trả
+  200, canonical tự trỏ, robots cho thu thập và kiểm lại CTA trên thiết bị.

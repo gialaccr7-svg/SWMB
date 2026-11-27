@@ -10,13 +10,14 @@ export const tripPlanningArticles: Article[] = [
       'So sánh xe ở lại và đưa đón hai lượt khi đi Vũng Tàu theo nhu cầu di chuyển và chi phí từng phương án.',
     category: 'Lịch trình Vũng Tàu',
     date: '2026-11-13',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     image: '/images/vung-tau-thanh-pho-ve-chieu.jpg',
     imageAlt: 'Toàn cảnh đô thị Vũng Tàu nhìn từ trên đồi qua những tán cây',
     sections: [
       {
         heading: 'Chọn theo các chặng cần xe trong thời gian lưu trú',
         paragraphs: [
+          'Nếu khách sạn, chỗ ăn tối và điểm chơi ở cùng khu vực, hỏi đoàn có tự đi lại được không. Khi lịch ghép thêm Long Hải hay Hồ Tràm, liệt kê từng lượt xe giữa các điểm để so tổng chi phí của hai phương án.',
           'Nếu đã chốt ngủ lại Vũng Tàu và cần xe đi ăn, tham quan hoặc đón thêm khách, hãy hỏi báo giá xe ở lại theo từng khung giờ. Nếu đoàn tự đi lại tại chỗ, hãy hỏi hai lượt đưa đến và đón về, kèm giờ và ghim cho từng lượt.',
           'Xe ở lại phục vụ theo lịch đã thống nhất không có nghĩa xe sẵn sàng chạy bất kỳ giờ nào. Với đưa đón hai lượt, cũng không mặc định cùng một chiếc xe hoặc cùng tài xế thực hiện cả lượt đi và về. Những yêu cầu này cần được xác nhận trong nội dung đặt xe.',
         ],
@@ -143,7 +144,7 @@ export const tripPlanningArticles: Article[] = [
       'Khung lịch đi Cần Thơ 2 ngày 1 đêm bằng xe riêng từ TP.HCM: bố trí chợ nổi, khách sạn, hành lý và các chặng cần xe phục vụ.',
     category: 'Lịch trình Cần Thơ',
     date: '2026-11-13',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/seo-can-tho-7-1.jpg',
     imageAlt: 'Cầu Cần Thơ bắc qua sông Hậu',
@@ -194,6 +195,10 @@ export const tripPlanningArticles: Article[] = [
       {
         heading: 'Ngày 2: hẹn thuyền, trả phòng và trở về',
         blocks: [
+          {
+            type: 'paragraph',
+            content: 'Nếu trả phòng trước giờ thuyền, chốt ai giữ hành lý và lúc nào đoàn lấy lại. Nếu trả phòng sau, dành thời gian quay về khách sạn trước khi hẹn lượt xe rời Cần Thơ.',
+          },
           {
             type: 'table',
             caption: 'Khung minh họa cho ngày thứ hai',
@@ -285,7 +290,7 @@ export const tripPlanningArticles: Article[] = [
       'Checklist tổ chức đoàn đi Cần Thơ: tổng hợp khách và hành lý, chia điểm đón, chốt đầu mối, hẹn bến thuyền và kiểm tra trước lượt về.',
     category: 'Tổ chức chuyến đi',
     date: '2026-11-13',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/ford-transit-1.jpg',
     imageAlt: 'Xe Ford Transit trong bộ ảnh do Hành Trình Phương Nam cung cấp',
@@ -363,6 +368,10 @@ export const tripPlanningArticles: Article[] = [
       {
         heading: 'Chia người kiểm khách ở bến thuyền',
         blocks: [
+          {
+            type: 'paragraph',
+            content: 'Nếu đoàn chia nhiều thuyền, mỗi nhóm có một người báo số khách lên và xuống. Trưởng đoàn trao đổi với tài xế một giờ đón và một nơi tập trung đã được bên thuyền xác nhận.',
+          },
           {
             type: 'list',
             items: [

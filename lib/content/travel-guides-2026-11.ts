@@ -20,7 +20,7 @@ export const travelGuides: Article[] = [
       'Gợi ý lịch đi Nha Trang 3 ngày 2 đêm từ TP.HCM bằng xe riêng: chia ngày di chuyển, chọn điểm tham quan và chốt phạm vi dùng xe.',
     category: 'Lịch trình Nha Trang',
     date: '2026-11-17',
-    updatedAt: '2026-11-26',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/seo-nha-trang-7-2.jpg',
     imageAlt: 'Hàng dừa và ô che nắng bên bãi biển Nha Trang',
@@ -110,6 +110,11 @@ export const travelGuides: Article[] = [
         heading: 'Gửi lịch đi Nha Trang để hỏi giá',
         blocks: [
           paragraph([
+            { text: 'Nếu cả đoàn còn phân vân về xe ngày giữa, xem ' },
+            { text: 'cách so xe ở lại với hẹn đón về', href: '/kinh-nghiem/thue-xe-nhieu-ngay-giu-xe-hay-hen-don-ve' },
+            { text: '. Với lịch đi đảo, tách giờ và ghim bến của các lượt xe trên bờ khỏi lịch tàu.' },
+          ]),
+          paragraph([
             { text: 'Gửi ngày đi, ngày về, địa chỉ khách sạn và các lượt cần xe ở Nha Trang qua ' },
             { text: 'Zalo', href: contact.zalo },
             { text: '. Nếu đi đảo, gửi thêm bến đi và bến về khi đã có.' },
@@ -139,7 +144,7 @@ export const travelGuides: Article[] = [
       'So sánh xe 7 và 16 chỗ đi Nha Trang theo số khách, vali, điểm đón và lịch sử dụng. Checklist thông tin cần xác nhận trước khi đặt xe.',
     category: 'Chọn xe đi Nha Trang',
     date: '2026-11-17',
-    updatedAt: '2026-11-26',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/van.jpg',
     imageAlt: 'Thân xe Ford Transit minh họa nhóm xe 16 chỗ',
@@ -198,6 +203,7 @@ export const travelGuides: Article[] = [
       {
         heading: 'Ba tình huống minh họa khi chọn xe',
         blocks: [
+          paragraph('Với hành trình dài, thống nhất trước món nào cần lấy trong lúc nghỉ. Nếu đoàn mang cả đồ tắm biển, xe đẩy và vali, hỏi cách xếp riêng túi dùng giữa đường mà vẫn giữ đủ ghế.'),
           checklist([
             'Gia đình mang xe đẩy và vali cứng: hỏi xe 7 chỗ có chỗ xếp cả hai khi đang dùng đủ ghế cần thiết. Nếu phải gập một ghế đang cần dùng, hỏi phương án 16 chỗ.',
             'Hai gia đình đi cùng: báo tổng số người lớn và trẻ em, không chỉ số hộ; hỏi cả phương án 7 và 16 chỗ nếu số khách/hành lý chưa chốt.',
@@ -266,7 +272,7 @@ export const travelGuides: Article[] = [
       'Phân biệt điểm trả Vũng Tàu, Long Hải và Hồ Tràm khi hỏi giá xe. Chuẩn bị địa chỉ lưu trú, điểm ghé và thời lượng để đối chiếu đúng báo giá.',
     category: 'Tuyến biển và báo giá',
     date: '2026-11-17',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     image: '/images/mpv.jpg',
     imageAlt: 'Ảnh minh họa xe Toyota Innova cho nhu cầu thuê xe đi biển',
     imageCaption: 'Ảnh minh họa dòng xe đi biển.',
@@ -274,6 +280,7 @@ export const travelGuides: Article[] = [
       {
         heading: 'Tên điểm đến ảnh hưởng trực tiếp đến phạm vi báo giá',
         blocks: [
+          paragraph('Khi đổi từ khách sạn ở Vũng Tàu sang resort ở Hồ Tràm, gửi ghim mới kể cả khi giữ nguyên ngày giờ và loại xe. Nếu vẫn ăn trưa ở Long Hải, nói rõ nơi nào là điểm ghé và nơi nào là điểm trả cuối.'),
           paragraph(
             'Khi hỏi xe đi Vũng Tàu, Long Hải hoặc Hồ Tràm, hãy gửi tên nơi trả khách và ghim đúng cổng. Liệt kê riêng các điểm chỉ ghé để nhà xe tra theo đúng địa chỉ và lịch của đoàn.',
           ),
@@ -383,7 +390,7 @@ export const travelGuides: Article[] = [
       'Chọn xe 29 hay 45 chỗ cho đoàn công ty theo số khách, hành lý, thiết bị và bãi đỗ. Có checklist lịch đưa đón và cách so sánh báo giá.',
     category: 'Xe đoàn và sự kiện',
     date: '2026-11-17',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/bus.jpg',
     imageAlt: 'Ảnh minh họa xe khách du lịch cho chương trình đưa đón đoàn công ty',
@@ -442,6 +449,7 @@ export const travelGuides: Article[] = [
       {
         heading: 'Lập lịch sự kiện theo từng lượt đón trả',
         blocks: [
+          paragraph('Khi đoàn có thùng thiết bị, phân công người nhận đồ ở điểm đến và hỏi ban tổ chức xe có thể dừng ở cổng nào. Nếu số khách thay đổi sát ngày hoặc đông hơn số ghế đã xác nhận, báo lại trước khi chia danh sách theo xe.'),
           checklist([
             'Ghi giờ đoàn phải có mặt tại sự kiện, thời gian lên xuống xe và khoảng dự phòng tập trung.',
             'Mỗi lượt có điểm đón, giờ đón, số khách, người phụ trách và nơi trả cụ thể.',
@@ -513,7 +521,7 @@ export const travelGuides: Article[] = [
       'Checklist đặt xe đón đoàn ở Tân Sơn Nhất: mã chuyến bay, nhà ga, hành lý, điểm gặp và cách thống nhất thời gian chờ khi chuyến bay thay đổi.',
     category: 'Đưa đón sân bay',
     date: '2026-11-17',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/ford-transit-2.jpg',
     imageAlt: 'Xe Ford Transit minh họa cho phương án đón đoàn sân bay',
@@ -593,6 +601,12 @@ export const travelGuides: Article[] = [
       {
         heading: 'Chọn xe và kiểm tra báo giá đón sân bay',
         blocks: [
+          paragraph('Ví dụ, hai nhóm khách đến cách nhau một khoảng thời gian và mang nhiều vali cứng. Ghi số người và kiện theo từng chuyến bay, rồi hỏi phương án chờ đón chung và hai lượt đón. So luôn giờ đoàn cần đến khách sạn và mức phí chờ nếu nhóm sau ra muộn.'),
+          paragraph([
+            { text: 'Nếu khó hình dung sức chứa, dùng ' },
+            { text: 'bảng so xe 7 và 16 chỗ cho nhóm nhiều vali', href: '/kinh-nghiem/chon-xe-7-hay-16-cho-khi-nhieu-hanh-ly' },
+            { text: ' để chuẩn bị kích thước kiện lớn trước khi hỏi.' },
+          ]),
           paragraph([
             { text: 'Tham khảo ' },
             { text: 'xe 7 chỗ', href: '/thue-xe/7-cho' },
@@ -637,7 +651,7 @@ export const travelGuides: Article[] = [
       'So sánh nhu cầu thuê xe cưới Mercedes và Camry theo lịch đón dâu, đồ lễ, trang trí và điểm dừng. Checklist xác nhận xe trước ngày cưới.',
     category: 'Chọn xe cưới',
     date: '2026-11-17',
-    updatedAt: '2026-11-26',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/mercedes.jpg',
     imageAlt: 'Ảnh minh họa dòng Mercedes-Benz trong danh mục xe tham khảo',
@@ -696,6 +710,7 @@ export const travelGuides: Article[] = [
       {
         heading: 'Dùng cùng một lịch để hỏi giá hai xe',
         blocks: [
+          paragraph('Gửi cùng giờ cần xe có mặt để lắp hoa, ghim nhà trai, nhà gái và nhà hàng khi hỏi hai dòng xe. Nếu một phương án phải đổi chỗ lắp hoa hoặc đổi điểm đỗ, hỏi phần thời gian và chi phí tăng trước khi chọn.'),
           paragraph(
             'Gửi cùng giờ lắp hoa, ghim đón dâu, các điểm dừng và giờ kết thúc cho cả hai phương án. Nếu hẻm hẹp, hỏi chỗ dừng cụ thể của từng xe để gia đình biết phải đi bộ bao xa khi mặc trang phục cưới hoặc mang đồ lễ.',
           ),
@@ -751,7 +766,7 @@ export const travelGuides: Article[] = [
       'Lên lịch xe đi Hồ Tràm 2 ngày 1 đêm theo giờ nhận trả phòng, nhu cầu ra ngoài resort và phương án xe ở lại hoặc đón về hôm sau.',
     category: 'Lịch nghỉ Hồ Tràm',
     date: '2026-11-17',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     image: '/images/kia-carnival-1.jpg',
     imageAlt:
       'Xe Kia Carnival trong bộ ảnh doanh nghiệp cung cấp để tham khảo chuyến nghỉ gia đình',
@@ -805,6 +820,7 @@ export const travelGuides: Article[] = [
       {
         heading: 'Hẹn điểm đón về và chỗ xe chờ',
         blocks: [
+          paragraph('Nếu trả phòng sớm rồi dùng tiện ích ở resort, hỏi điểm gửi đồ và cổng đón sau cùng. Báo nhà xe giờ cả nhóm có thể tập trung đủ thay vì chỉ gửi giờ trả phòng.'),
           paragraph(
             'Ngày đi, thống nhất cổng hoặc sảnh trả khách và nơi xe chờ nếu đoàn có lượt đi ăn tối. Ngày về, trả phòng → gom đồ tại nơi resort hướng dẫn → ra ghim đón đã hẹn → kiểm hành lý trước khi xe chạy.',
           ),
@@ -863,7 +879,7 @@ export const travelGuides: Article[] = [
       'Chuẩn bị xe đi tỉnh cùng người lớn tuổi: trao đổi nhu cầu lên xuống, chọn điểm nghỉ, bố trí hành lý và thống nhất lịch đón trả cho gia đình.',
     category: 'Chuyến đi gia đình',
     date: '2026-11-17',
-    updatedAt: '2026-11-26',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/kia-carnival-2.jpg',
     imageAlt: 'Khoang hành khách Kia Carnival với ghế rời ở hàng giữa',
@@ -906,6 +922,7 @@ export const travelGuides: Article[] = [
       {
         heading: 'Đặt các điểm nghỉ vào lịch từ đầu',
         blocks: [
+          paragraph('Khi người lớn tuổi cần điểm nghỉ dễ tiếp cận, hỏi trước khoảng đi bộ từ chỗ xe dừng đến cửa và vị trí có thể lên xuống thuận tiện. Nếu mang khung gấp, gửi số đo và ghi rõ cần lấy ra ở những điểm nào.'),
           table(
             'Checklist chọn điểm dừng cho chuyến gia đình',
             ['Nhu cầu', 'Thông tin cần hỏi', 'Cách đưa vào lịch'],

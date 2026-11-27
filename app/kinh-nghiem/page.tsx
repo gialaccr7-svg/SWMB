@@ -11,8 +11,8 @@ export default function Blog() {
   return (
     <main id="main">
       <PageBanner
-        title="Chuẩn bị tốt, đi thảnh thơi"
-        description="Những hướng dẫn thực tế giúp bạn chọn xe, lên lịch trình và trao đổi dịch vụ rõ ràng hơn."
+        title="Kinh nghiệm thuê xe có tài xế từ TP.HCM"
+        description="Cách chọn xe theo số khách và hành lý, xếp lịch đi tỉnh, đón sân bay và kiểm tra báo giá trước khi đặt."
       />
       <section className="section container">
         <div className="editorial-grid">

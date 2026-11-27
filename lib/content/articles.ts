@@ -1,5 +1,7 @@
 import { tripPlanningArticles } from './trip-planning-articles.ts';
 import { travelGuides } from './travel-guides-2026-11.ts';
+import { vehiclePlanningArticles } from './vehicle-planning-articles.ts';
+import { routePlanningArticles } from './route-planning-articles.ts';
 import { contact } from '../contact.ts';
 
 export type InlineContent = string | { text: string; href?: string }[];
@@ -27,6 +29,8 @@ export type Article = {
 };
 /** Add an article here: list, detail route, metadata and sitemap update automatically. */
 export const articles: Article[] = [
+  ...vehiclePlanningArticles,
+  ...routePlanningArticles,
   ...travelGuides,
   ...tripPlanningArticles,
   {
@@ -37,7 +41,7 @@ export const articles: Article[] = [
       'Lên lịch đi chợ nổi Cái Răng từ TP.HCM. Xem cách chọn chuyến trong ngày hoặc qua đêm, hẹn bến đón và tách chi phí xe với thuyền.',
     category: 'Lịch trình Cần Thơ',
     date: '2026-11-10',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/seo-can-tho-7-2.jpg',
     imageAlt: 'Các ghe chở hàng và thuyền nhỏ tại chợ nổi Cái Răng ở Cần Thơ',
@@ -104,6 +108,13 @@ export const articles: Article[] = [
         ],
       },
       {
+        heading: 'Khi đoàn cần chia khách sang nhiều thuyền',
+        paragraphs: [
+          'Xin lịch và bến trả của từng thuyền. Cử một người chờ nhóm lên bờ trước ở điểm tập trung và một người báo giờ về nhóm sau. Nếu hai thuyền trả ở hai bến, hẹn rõ xe đón cả đoàn tại một bến hay chạy thêm một lượt.',
+          'Ví dụ, nhóm thứ nhất kết thúc sớm và muốn đi bộ tới quán ăn, còn nhóm thứ hai vẫn ở trên sông. Chốt lại nơi cả đoàn sẽ lên xe và mốc báo tài xế trước khi nhóm đầu rời bến.',
+        ],
+      },
+      {
         heading: 'Chọn xe và tách báo giá xe với thuyền',
         blocks: [
           {
@@ -148,7 +159,7 @@ export const articles: Article[] = [
       'Kiểm tra tiền xe, phí cầu đường, bãi đỗ, thời gian chờ và chi phí qua đêm trước khi chốt báo giá thuê xe có tài xế từ TP.HCM.',
     category: 'Chi phí thuê xe',
     date: '2026-11-02',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/chi-phi-thue-xe-bao-gia.jpg',
     imageAlt: 'Đối chiếu giấy tờ và các khoản chi phí bằng máy tính cầm tay',
@@ -239,6 +250,7 @@ export const articles: Article[] = [
       {
         heading: 'Giờ chờ, thêm điểm đón và thay đổi hành trình',
         paragraphs: [
+          'Nếu có thêm lượt đón sau khi đã nhận báo giá, gửi lại lịch đầy đủ và hỏi số tiền chênh. Ví dụ, thêm một điểm đón có thể làm đổi thứ tự di chuyển và giờ đến. Yêu cầu báo rõ khoản thêm do lượt xe, giờ chờ hay thay đổi điểm đến.',
           '“Thuê một ngày” cần được gắn với giờ bắt đầu và giờ kết thúc cụ thể. Bạn nên hỏi xe có chờ trong thời gian đoàn tham quan hay chỉ thực hiện các lượt đón trả đã hẹn. Nếu tiệc kết thúc muộn, cần biết cách tính phần thời gian vượt lịch trước khi đặt.',
             'Ví dụ minh họa. Nếu đoàn thêm điểm đón hoặc đổi giờ về sau khi đã có báo giá, hãy gửi lại lịch mới và hỏi khoản nào thay đổi. Chốt chi phí của phần phát sinh trước khi thực hiện.',
         ],
@@ -324,7 +336,7 @@ export const articles: Article[] = [
       'Checklist đặt cọc thuê xe có tài xế: xác nhận đơn vị nhận tiền, xe, lịch trình, số tiền, điều kiện đổi hủy và thông báo đã nhận cọc.',
     category: 'Đặt xe và thanh toán',
     date: '2026-11-02',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     image: '/images/dat-coc-thue-xe-xac-nhan.jpg',
     imageAlt: 'Kiểm tra và ký nội dung thỏa thuận trên bàn có máy tính xách tay',
@@ -423,6 +435,7 @@ export const articles: Article[] = [
       {
         heading: '4. Hỏi điều kiện đổi lịch, hủy và xử lý tiền đã chuyển',
         paragraphs: [
+          'Nếu ngày đi còn phụ thuộc lịch họp hoặc phòng lưu trú, hỏi hạn chốt ngày và cách xử lý cọc khi chỉ đổi giờ, đổi sang ngày khác hoặc giảm số xe. Lưu phần phản hồi cùng nội dung xác nhận chuyến để dễ đối chiếu.',
           'Các tình huống cần hỏi gồm khách đổi ngày, giảm số xe, hủy chuyến, đổi điểm đến hoặc đơn vị không cung cấp được xe như đã hẹn. Với mỗi tình huống, cần rõ cách thông báo, mốc thời gian, khoản được xử lý và thời hạn phản hồi hoặc hoàn tiền nếu áp dụng.',
           'Nếu lịch của đoàn còn có thể đổi, hỏi trước hạn báo đổi và cách xử lý tiền đã chuyển. Lưu phần xác nhận này cùng báo giá để đối chiếu nếu đổi ngày, giảm số xe hoặc hủy chuyến.',
         ],
@@ -500,13 +513,14 @@ export const articles: Article[] = [
       'So sánh đi Vũng Tàu trong ngày và 2 ngày 1 đêm theo giờ tập kết, giờ nhận trả phòng và lịch xe về.',
     category: 'Lịch trình đi tỉnh',
     date: '2026-11-02',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     image: '/images/vung-tau-bien-nui-nho.jpg',
     imageAlt: 'Biển Vũng Tàu và tượng Chúa Kitô trên đỉnh đồi xanh nhìn từ xa',
     sections: [
       {
         heading: 'Chọn theo giờ muốn về và lịch phòng',
         paragraphs: [
+          'Khi chọn đi trong ngày, bắt đầu từ giờ cả nhà muốn có mặt lại ở TP.HCM rồi bố trí giờ rời bãi biển và giờ ăn. Nếu muốn ở lại đến tối, kiểm giờ nhận và trả phòng trước khi so lịch 2 ngày 1 đêm.',
           'Nếu các điểm ghé và giờ tập kết đều vừa với lịch về, đi Vũng Tàu trong ngày giúp giữ lịch gọn. Nếu muốn nghỉ qua đêm, hãy chốt giờ nhận phòng, trả phòng và giờ xe đón ngày thứ hai trước khi hỏi giá.',
         ],
       },
@@ -689,7 +703,7 @@ export const articles: Article[] = [
       'Từ xe 4 chỗ đến 45 chỗ: cách cân đối quy mô đoàn, hành lý và lịch trình để chọn xe phù hợp.',
     category: 'Kinh nghiệm thuê xe',
     date: '2026-10-08',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     sections: [
       {
         heading: 'Đếm số khách trước, kiểm tra hành lý sau',
@@ -700,6 +714,14 @@ export const articles: Article[] = [
       {
         heading: 'Chọn xe khi đoàn mang nhiều hành lý',
         blocks: [
+          {
+            type: 'paragraph',
+            content: [
+              { text: 'Nếu đã thu hẹp còn hai cỡ xe, xem ' },
+              { text: 'cách kiểm ghế và kiện lớn khi so xe 7 với 16 chỗ', href: '/kinh-nghiem/chon-xe-7-hay-16-cho-khi-nhieu-hanh-ly' },
+              { text: ' trước khi hỏi cùng một lịch cho cả hai phương án.' },
+            ],
+          },
           {
             type: 'table',
             caption: 'Tình huống minh họa để hỏi đúng xe',
@@ -775,7 +797,7 @@ export const articles: Article[] = [
       'Lập lịch xe đón dâu, hẹn giờ lắp hoa, bố trí xe cho hai họ và chốt người liên hệ trong ngày cưới.',
     category: 'Xe cưới',
     date: '2026-10-08',
-    updatedAt: '2026-11-26',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     sections: [
       {
@@ -813,6 +835,9 @@ export const articles: Article[] = [
       },
       {
         heading: 'Lịch riêng cho xe hoa và xe chở khách',
+        paragraphs: [
+          'Nếu lễ lùi giờ, xác định người báo cho bên trang trí và người cập nhật xe chở khách. Hỏi trước xe nào sẽ chờ tại nhà gái, xe nào đi thẳng tới nhà hàng và điều kiện nếu cần thêm thời gian.',
+        ],
         blocks: [
           {
             type: 'table',
@@ -864,16 +889,16 @@ export const articles: Article[] = [
     image: '/images/sedan.jpg',
     imageAlt: 'Xe sedan minh họa một phương án thuê xe cho nhóm nhỏ',
     imageCaption: 'Xe thực tế được xác nhận khi tư vấn.',
-    title: 'Mẫu tin nhắn hỏi báo giá thuê xe theo lịch trình',
+    title: 'Hỏi báo giá thuê xe cần gửi những thông tin gì?',
     description:
-      'Sao chép mẫu hỏi báo giá thuê xe. Điền ngày giờ, điểm đón trả, số khách, hành lý và nhu cầu xe chờ để nhận báo giá theo chuyến.',
+      'Thông tin cần chuẩn bị khi hỏi giá thuê xe: lịch đi và về, điểm đón trả, hành lý, số khách và thời gian cần xe chờ.',
     category: 'Lên kế hoạch',
     date: '2026-10-08',
-    updatedAt: '2026-11-25',
+    updatedAt: '2026-11-27',
     showFirstSectionBeforeImage: true,
     sections: [
       {
-        heading: 'Sao chép mẫu tin nhắn này và điền lịch của bạn',
+        heading: 'Thông tin cần chuẩn bị trước khi hỏi giá',
         paragraphs: [
           'Gửi một tin Zalo gồm loại chuyến, ngày giờ, ghim đón và trả, số khách và hành lý để nhà xe chọn phương án. Nếu có lượt về, ghi riêng ngày giờ và ghim đón về, rồi thêm địa chỉ trả khách cuối cùng.',
         ],
@@ -881,16 +906,16 @@ export const articles: Article[] = [
           {
             type: 'list',
             items: [
-              'Em cần xe [một chiều/khứ hồi/phục vụ theo lịch]. Đón [ngày/giờ] tại [ghim], trả lượt đi tại [ghim]. Các điểm ghé theo thứ tự là [ghim và thời gian dừng].',
-              'Đoàn có [số người lớn/trẻ em], hành lý gồm [số vali theo cỡ và kích thước kiện lớn].',
-              'Nếu có lượt về, đón về lúc [ngày/giờ] tại [ghim], trả khách cuối tại [địa chỉ].',
-              'Xe cần [chờ/chỉ đưa đi rồi đón lại]. Mốc còn dự kiến là […]. Nhờ xác nhận xe phù hợp, phạm vi phục vụ và tổng giá.',
+              'Lịch lượt đi: ngày giờ, điểm đón, điểm trả và thứ tự các điểm ghé.',
+              'Số người lớn, trẻ em, số vali và kích thước những kiện khó xếp.',
+              'Lịch lượt về nếu có: giờ đón, ghim nơi gặp xe và địa chỉ trả cuối.',
+              'Các chặng cần xe chờ hoặc đón lại, kèm giờ dự kiến nếu chưa chốt.',
             ],
           },
           {
             type: 'paragraph',
             content: [
-              { text: 'Mẫu đã điền có thể gửi qua ' },
+              { text: 'Khi đã có lịch, gửi qua ' },
               { text: 'Zalo Hành Trình Phương Nam', href: contact.zalo },
               { text: '. Nếu đang cân nhắc hai lịch, gửi riêng từng phương án để nhận báo giá tương ứng.' },
             ],

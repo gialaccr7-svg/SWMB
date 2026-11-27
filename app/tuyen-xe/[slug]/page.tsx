@@ -63,7 +63,7 @@ export default async function Destination({ params }: { params: Promise<{ slug: 
       <section className="section container">
         <p className="route-intro">
           {isVungTau
-            ? 'Nếu đi từ TP.HCM đến trung tâm Vũng Tàu trong ngày, hãy xem dòng “Thành Phố Vũng Tàu” và chọn cột theo số chỗ. Long Hải, Hồ Tràm và Hồ Cốc có dòng giá riêng.'
+            ? 'Nếu đi từ TP.HCM đến trung tâm Vũng Tàu trong ngày, hãy xem dòng “Thành Phố Vũng Tàu” và chọn cột theo số chỗ. Long Hải, Hồ Tràm và Hồ Cốc có dòng giá riêng. Gửi ghim cổng mới nếu đổi khách sạn sau khi đã hỏi giá.'
             : guide.intro}
         </p>
         <h2 className="route-heading">Bảng giá TP.HCM đi {guide.name} và các điểm cùng khu vực</h2>
@@ -107,6 +107,15 @@ export default async function Destination({ params }: { params: Promise<{ slug: 
             </p>
           )}
           <h2>Chọn xe theo đoàn và hành lý</h2>
+          {isVungTau && (
+            <p>
+              Nếu gia đình mang vali cứng hoặc xe đẩy, xem{' '}
+              <a className="text-link" href={articlePath('chon-xe-4-hay-7-cho-di-vung-tau')}>
+                cách so xe 4 và 7 chỗ đi Vũng Tàu
+              </a>
+              . Đoàn lớn nên xác nhận nơi tập kết, cổng trả và chỗ đỗ tại bãi biển hoặc nhà hàng.
+            </p>
+          )}
           {slug === 'nha-trang' && (
             <p>
               Chuẩn bị chuyến đi với{' '}
@@ -146,7 +155,8 @@ export default async function Destination({ params }: { params: Promise<{ slug: 
             <a href={guide.source} target="_blank" rel="noopener noreferrer">
               Vietnam Tourism
             </a>
-            . Biên tập bởi <a href="/gioi-thieu">Hành Trình Phương Nam</a> · Cập nhật 24/10/2026.
+            . Biên tập bởi <a href="/gioi-thieu">Hành Trình Phương Nam</a> ·{' '}
+            <time dateTime={guide.updatedAt}>{guide.updatedAt.split('-').reverse().join('/')}</time>.
           </p>
           <p>
             <a className="text-link" href="/bang-gia">

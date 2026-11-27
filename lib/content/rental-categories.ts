@@ -5,7 +5,11 @@ type RentalCategoryGuide = {
   planning: string;
   checklist: string[];
   alternative: SeatCount;
+  decision: string;
+  article: { slug: string; label: string };
 };
+
+export const rentalCategoryUpdatedAt = '2026-11-27';
 
 /** Editorial guidance, without promises about a particular vehicle's capacity or availability. */
 export const rentalCategoryGuides: Record<SeatCount, RentalCategoryGuide> = {
@@ -20,6 +24,8 @@ export const rentalCategoryGuides: Record<SeatCount, RentalCategoryGuide> = {
       'Lịch đón trả, thời gian chờ và yêu cầu về dòng sedan.',
     ],
     alternative: 7,
+    decision: 'Khi đón ít người ở Tân Sơn Nhất hoặc đi công tác trong ngày, hỏi xe 4 chỗ nếu đủ ghế và cốp cho hành lý thực tế. Với xe đẩy gấp hoặc nhiều vali cứng đi Vũng Tàu, gửi kích thước kiện lớn và hỏi cả phương án 7 chỗ trên cùng một lịch.',
+    article: { slug: 'chon-xe-4-hay-7-cho-di-vung-tau', label: 'So xe 4 và 7 chỗ khi đi cùng trẻ nhỏ' },
   },
   7: {
     description:
@@ -32,6 +38,8 @@ export const rentalCategoryGuides: Record<SeatCount, RentalCategoryGuide> = {
       'Điều kiện đường vào điểm đón, nơi lưu trú và điểm đến.',
     ],
     alternative: 16,
+    decision: 'Với gia đình đi Vũng Tàu hoặc Cần Thơ, kiểm tra chỗ để vali khi các ghế cần dùng đều mở. Nếu phải gập ghế đang cần hoặc có thêm đồ chung, hỏi xe 16 chỗ với cùng danh sách người và đồ.',
+    article: { slug: 'chon-xe-7-hay-16-cho-khi-nhieu-hanh-ly', label: 'So xe 7 và 16 chỗ cho nhóm nhiều vali' },
   },
   16: {
     description:
@@ -44,6 +52,8 @@ export const rentalCategoryGuides: Record<SeatCount, RentalCategoryGuide> = {
       'Vị trí tập kết, thời gian lên xuống xe và nơi đỗ tại điểm đến.',
     ],
     alternative: 29,
+    decision: 'Với nhóm công ty có giờ họp cố định, chốt nơi xe được dừng để điểm danh và xếp đồ trước khi hẹn giờ cả đoàn. Nếu cần nhiều điểm đón, ghi số khách và số kiện lên ở từng điểm để xác nhận thứ tự đón.',
+    article: { slug: 'chon-diem-tap-ket-khi-thue-xe-16-cho', label: 'Cách chọn điểm tập kết cho nhóm đi xe 16 chỗ' },
   },
   29: {
     description:
@@ -56,6 +66,8 @@ export const rentalCategoryGuides: Record<SeatCount, RentalCategoryGuide> = {
       'Khả năng tiếp cận nơi tập kết và vị trí đỗ tại sự kiện.',
     ],
     alternative: 45,
+    decision: 'Nếu đoàn đi hội nghị kèm thùng thiết bị, kiểm riêng khoang đồ và cổng nhận thiết bị. Với chuyến Cần Thơ có thuyền, ghi giờ đưa khách xuống bến và giờ xe quay lại đón để tính phần chờ.',
+    article: { slug: 'thue-xe-29-hay-45-cho-cho-doan-cong-ty', label: 'So xe 29 và 45 chỗ cho đoàn công ty' },
   },
   45: {
     description:
@@ -68,5 +80,7 @@ export const rentalCategoryGuides: Record<SeatCount, RentalCategoryGuide> = {
       'Đường vào, vị trí đỗ ở từng điểm và lịch sử dụng xe theo ngày.',
     ],
     alternative: 29,
+    decision: 'Với đoàn đi Nha Trang, xác nhận chỗ xe dừng dỡ hành lý, nơi đỗ và các lượt xe cần chạy từng ngày. Nếu đoàn khoảng 50 người, gửi tổng khách và đồ để điều xe tính phương án nhiều xe phù hợp.',
+    article: { slug: 'di-nha-trang-3-ngay-2-dem-tu-tphcm-bang-xe-rieng', label: 'Cách lập lịch xe đi Nha Trang nhiều ngày' },
   },
 };
